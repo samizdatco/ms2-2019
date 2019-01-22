@@ -1,2 +1,2 @@
-# ms2-2019
-Major Studio²
+# Major Studio²
+PGDV 5200/5210 › Parsons › Spring 2019
