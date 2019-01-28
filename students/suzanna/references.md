@@ -3,6 +3,7 @@
 ## Literature Review
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
@@ -14,6 +15,7 @@ A few sentences describing the book.
 ----
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
@@ -25,6 +27,7 @@ A few sentences describing the book.
 ----
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
@@ -36,6 +39,7 @@ A few sentences describing the book.
 ----
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
@@ -47,6 +51,7 @@ A few sentences describing the book.
 ----
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
@@ -58,6 +63,7 @@ A few sentences describing the book.
 ----
 
 [Article Reference via www.citationmachine.net]
+
 [Call Number from Bobst library catalog]
 
 A few sentences describing the book.
