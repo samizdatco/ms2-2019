@@ -78,7 +78,7 @@ DDC
 
 HV6556.D432014
 
-A few sentences describing the book. Try to summarize the subject it’s dealing with and what its ‘take’ on that subject is. Try reading over the table of contents first, then skimming the openings of the chapters/sections, and finally riffling through the index.
+The criminal justice system has neglected survivors of sexual violence. The toxic culture that creates perpetrators of sexual violence to be entitled to their actions has not changed. We still argue about the logistics of whether or not something was sexual assault; nobody holds accountability. This book is an anthology of letters from female identified survivors for other survivors, created so that healing is possible in this harsh world--because healing starts with love, support, and acceptance, first and foremost.
 
 ### Subjects
 LCC
@@ -99,9 +99,9 @@ DDC
 * 364.9: Historical, geographic, persons treatment of crime and its alleviation
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. How do we change a culture whose values have caused men to devalue the mind and bodies of women?
+2. What sort of services are available for sexual violence survivors in NYC?
+3. What are sexual violence statistics around the world? Are there higher rates of violence in more conservative countries?
 
 ----
 
@@ -141,7 +141,7 @@ DDC
 
 QP353.4.M33A272016
 
-This book focuses on a singular figure, Warren S. McCullocks: 
+This book focuses on a singular figure, Warren S. McCullocks: a transdisciplinary scientist who adopted many identities in search of a 'the mind'. Though ultimately known for his contributions in cybernetics, he was a philosopher, neurophysiologist, neuropsychiatrist, engineer, etc. He was in search of the answer to this question--"What is a number, that a man may know it, and a man, that he may know a number?" The author writes a scientific biography of his life, using his character to paint the scenery of the American scientific mind in the 1900s. 
 
 ### Subjects
 LCC
@@ -163,7 +163,7 @@ DDC
 * 574.9: Geographic treatment of organisms
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. What exactly is cybernetics? What are the different brands of cybernetics, and why is McCullock's unique?
+2. Was there a difference in scientific thought between America and Europe?
+3. How did neuroscience emerge into the modern scientfic landscape? 
 
