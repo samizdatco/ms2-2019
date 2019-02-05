@@ -79,7 +79,7 @@ An autobiography by Rafael Nadal about his childhood, influences, and pivotal Wi
 Subjects
 •	Tennis
 •	Autobiography
-•	Feat of winning big
+•	Explaining one's story
 
 Questions
 1.	Are there any stylistic patterns that the scientific books predict can be found in this autobiography?
@@ -93,8 +93,9 @@ Edmondson, Jacqueline. Jesse Owens: A Biography. Westport, CT: Greenwood Press, 
 A biography of Jesse Owens written by Jacqueline Edmondson (also author of biographies of Condoleezza Rice and Venus and Serena Williams). Jesse Owens won 4 gold medals in track running during the Olympic games in Berlin in 1936. However, because of his skin color, he was not celebrated in the United States and struggled in his life after winning. The book explores the broader theme of race in sports in the United States.
 
 Subjects
-•	Sports records & Olympic gold medals
-•	Race
+•	Sports records
+• Olympic gold medals
+•	Race relations
 •	Public acceptance
 
 Questions
