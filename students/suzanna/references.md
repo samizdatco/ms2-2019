@@ -4,7 +4,7 @@
 
 HF 5482.65.I4 K863 2017
 
-Printed in 2017, this was an interesting read.  The book begins with an overview of economic difficulties in India including the sudden announcements in 2016 that certain currency notes would no longer b legal tender (p. ix).  And concludes (p. 109) that even the definition of the term 'black economy' is a racially loaded and inappropriate. (Perhaps the end conclusion should have been an introduction and the book titled alternative marketplaces.)  However, this book connects to data breaches from the perspective of motivation.  The book (p.56) discusses what fuels the alternative economy and references: low salaries, high rates of inflation, high tax rates, and high degrees of controls. 
+Printed in 2017, this was an interesting read.  The book begins with an overview of economic difficulties in India including the sudden announcements in 2016 that certain currency notes would no longer be considered legal tender (p. ix).  And concludes (p. 109) that even the definition of the term 'black economy' is racially loaded and inappropriate. (Perhaps the end conclusion should have been an introduction and the book titled alternative marketplaces.)  This book connects to data breaches from the perspective of motivation.  The book (p.56) discusses what fuels the alternative economy and references: low salaries, high rates of inflation, high tax rates, and high degrees of controls. 
 
 ### Subjects
 * HF - Commerce  
@@ -20,7 +20,7 @@ Printed in 2017, this was an interesting read.  The book begins with an overview
 
 HF 5482.65.I4 R39 c.|
 
-Written in 1981 by a senior executive from the Indian Railway Board, the author examines socioeconomic problems in India and referes to what he call the parallel economy (p. 23).  Motivations for this parallel economy which include lack of taxes, changes in government regulations, inflation, money supply chain, etc.  The book also discusses somem objectives for smuggling which they list as: conversion of foreign exchange, export/import of contraband.
+Written in 1981 by a senior executive from the Indian Railway Board, the author examines socioeconomic problems in India and referes to what he titles the chaper III "the parallel economy" (p. 23).  Motivations for this parallel economy which include lack of taxes, changes in government regulations, inflation, money supply chain, etc.  The book also discusses somem objectives for smuggling which they list as: conversion of foreign exchange, export/import of contraband.
 
 ### Subjects
 * HF - Commerce  https://en.wikipedia.org/wiki/Library_of_Congress_Classification
