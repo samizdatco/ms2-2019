@@ -1,22 +1,6 @@
-Literature Review
+Literature Review (3 theory books, 2 autobiographies, 1 biography)
 
-Sharapova, Maria. Unstoppable. New York: Sarah Crichton Books, 2017
 
-[GV994.S28 S53 2017]
-
-An autobiography by Maria Sharapova about her early life in Russia, the move to the United States, the navigation through training facilities in Florida, her Wimbledon title, the other important victories on court and her misuse of the illegal drug meldonium.
-
-Subjects
-•	Tennis
-•	Doping
-•	Autobiography
-•	Explaining one’s story
-
-Questions
-1.	Is this a PR attempt by Maria to reconcile the public with her doping scandal?
-2.	What keywords does the biography contain? 
-3.	How was it received by the public? Did the doping scandal negatively predisposed opinions? 
-________________________________________
 Yar, Majid. Crime, Deviance and Doping: Fallen Sports Stars, Autobiography and the Management of Stigma. New York: Palgrave Macmillan, 2014
 
 [E-book at Bobst, NYU access only]
@@ -67,6 +51,25 @@ Questions
 2.	What makes autobiographies a good proxy for developmental evaluations?
 3.	How language/tone/metaphor clues can we look for in autobiographies?
 ________________________________________
+
+Sharapova, Maria. Unstoppable. New York: Sarah Crichton Books, 2017
+
+[GV994.S28 S53 2017]
+
+An autobiography by Maria Sharapova about her early life in Russia, the move to the United States, the navigation through training facilities in Florida, her Wimbledon title, the other important victories on court and her misuse of the illegal drug meldonium.
+
+Subjects
+•	Tennis
+•	Doping
+•	Autobiography
+•	Explaining one’s story
+
+Questions
+1.	Is this a PR attempt by Maria to reconcile the public with her doping scandal?
+2.	What keywords does the biography contain? 
+3.	How was it received by the public? Did the doping scandal negatively predisposed opinions? 
+________________________________________
+
 Nadal, Rafael. Rafa. London: Sphere, 2011
 
 [Not in Bobst library catalogue]
