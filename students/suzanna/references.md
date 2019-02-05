@@ -2,7 +2,7 @@
 
 ## Kumar, Arun. Understanding the Black Economy & Black Money in India. New Delhi:Aleph Book Company, 2017.
 
-HF 5482.65.I4 K863 2017
+HF 54 82.65.I4 K863 2017
 
 Printed in 2017, this was an interesting read.  The book begins with an overview of economic difficulties in India including the sudden announcements in 2016 that certain currency notes would no longer be considered legal tender (p. ix).  And concludes (p. 109) that even the definition of the term 'black economy' is racially loaded and inappropriate. (Perhaps the end conclusion should have been an introduction and the book titled alternative marketplaces.)  This book connects to data breaches from the perspective of motivation.  The book (p.56) discusses what fuels the alternative economy and references: low salaries, high rates of inflation, high tax rates, and high degrees of controls. 
 
@@ -13,6 +13,7 @@ Printed in 2017, this was an interesting read.  The book begins with an overview
 ### Questions
 1. How much does breached data sell for in alternative markets?
 2. What does selling breached data fund?
+3. Is breach data useful to the alternative markets?
 
 ----
 
@@ -27,6 +28,8 @@ Written in 1981 by a senior executive from the Indian Railway Board, the author 
 
 ### Questions
 1. Are the motivations/objectives behind data breaches important for visualizations of the problem?
+2. The historical aspect of the book could parallel histories of data breaches as paralleled with laws, controls, and education.
+3. Similar to #2, are data breaches timed with other historically significant events (e.g. currency changes, etc.)
 
 ----
 
@@ -42,6 +45,7 @@ Commissioned by William the Conqueror in 1085, the Domesday book is a compilatio
 ### Questions
 1. What do databreaches indicate about society and governance?
 2. What are the stories behind the breaches?
+3. What are the key takeaways from the loss of data versus what might already be given away on other locations?
 
 ----
 
@@ -49,16 +53,16 @@ Commissioned by William the Conqueror in 1085, the Domesday book is a compilatio
 
 HF 5482.6.P73 2012
 
-A few sentences describing the book. Try to summarize the subject it’s dealing with and what its ‘take’ on that subject is. Try reading over the table of contents first, then skimming the openings of the chapters/sections, and finally riffling through the index.
+This book references alternative marketplaces as the "Piracy Economy" (p.6).  The author is a reporter for the New York-based Bloomberg Television.  The book begins with a discussion of "Organized Retail Crime Going Glolbal."  The book examines of cases where stolen items (e.g. gift cards) are bought offline; and, cites that gift card industry is potentially $300 billion-a-year (p.45).  Other book discussion include digital versus tangable thefts and the different stages of money laundering.
 
 ### Subjects
 * HF - Commerce  https://en.wikipedia.org/wiki/Library_of_Congress_Classification
 
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. Are alternative marketplaces the motivation for most data breaches?
+2. What legal ramafications are there across the globe for breached data?
+3. Should part of Homeland Security involve helping citizens protect their services?
 
 ----
 
@@ -66,15 +70,15 @@ A few sentences describing the book. Try to summarize the subject it’s dealing w
 
 ebook:  http://dx.doi.org.libproxy.newschool.edu/10.4135/9781526403858
 
-A few sentences describing the book. Try to summarize the subject it’s dealing with and what its ‘take’ on that subject is. Try reading over the table of contents first, then skimming the openings of the chapters/sections, and finally riffling through the index.
+This case study dates back to 2011 when hackers invaded the Sony play station network shutting it down.  The hackers had access to over 77+ million accounts (which included credit card data).  The article actually lists timelines for the attack and ultimate data breach.  
 
 ### Subjects
 * T - Technology
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. Is the timeline and events leading upto a breach predictable?
+2. Are there key indicators across all technology which can identify abnormal behavior?
+3. Can we use this history (e.g. customer reactions) to empower the future to inform how attacks are dealt with?
 
 ----
 
@@ -91,5 +95,6 @@ In 2013 at least one employee at a small HVAC services firm had their credential
 ### Questions
 1. Do most data breaches spring from a certain type of attack?
 2. Why is not the technology built with 'seat-belts" or protections against common types of issues?
-
+3. Where does responsibility end for these products?  
+4. The more technology we have the more attack surfaces are potentially available, are legal requirements and educational needs in place for future growth?
 
