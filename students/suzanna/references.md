@@ -34,15 +34,14 @@ Written in 1981 by a senior executive from the Indian Railway Board, the author 
  
 DA 190.D695 2016
 
-A few sentences describing the book. Try to summarize the subject it’s dealing with and what its ‘take’ on that subject is. Try reading over the table of contents first, then skimming the openings of the chapters/sections, and finally riffling through the index.
+Commissioned by William the Conqueror in 1085, the Domesday book is a compilation from the records of a survey of the kingdom of England.  This 2016 book reexamines many of the original texts and evidences in hopes to shed new light on Anglo-Norman society and governance.
 
 ### Subjects
 * DA - world History of Great Britian https://en.wikipedia.org/wiki/Library_of_Congress_Classification#Class_D_%E2%80%93_World_History_and_History_of_Europe,_Asia,_Africa,_Australia,_New_Zealand,_etc.
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. What do databreaches indicate about society and governance?
+2. What are the stories behind the breaches?
 
 ----
 
@@ -88,12 +87,9 @@ In 2013 at least one employee at a small HVAC services firm had their credential
 
 ### Subjects
 * T - Technology
-* Additional parent or child subject that seems relevant
-* Another parent or child subject (while keeping the list ordered from least- to most-specific)
-* As many additional subjects as are related…
 
 ### Questions
-1. A question you have about the book’s ideas or your own relating to its subject matter
-2. Another question along those lines
-3. A third and final question
+1. Do most data breaches spring from a certain type of attack?
+2. Why is not the technology built with 'seat-belts" or protections against common types of issues?
+
 
