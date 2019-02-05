@@ -88,7 +88,7 @@ The book argues that studying movement from the point of view of mobile liveliho
 
  
 
-## Thompson, Gabriel. _Working in the Shadows: A Year Doing the Jobs (most) Americans Wont Do. _ New York: Nation Books, 2011.
+## Thompson, Gabriel. _Working in the Shadows: A Year Doing the Jobs (most) Americans Wont Do._ New York: Nation Books, 2011.
 
 HD6300 .T46 2010
 
@@ -143,7 +143,7 @@ Piepmeier argues zines can give a complex window in the future of feminism and h
 
  
 
-## Bartel, Julie. From A to Zine: Building a Winning Zine Collection in Your Library. American Library Association, 2004.
+## Bartel, Julie. _From A to Zine: Building a Winning Zine Collection in Your Library._ American Library Association, 2004.
 
 Z692.S5 B367 2004 (this was only available at the New School library)
 
