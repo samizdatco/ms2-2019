@@ -1,5 +1,5 @@
 Literature Review (3 theory books, 2 autobiographies, 1 biography):
-
+________________________________________
 
 Yar, Majid. Crime, Deviance and Doping: Fallen Sports Stars, Autobiography and the Management of Stigma. New York: Palgrave Macmillan, 2014
 
