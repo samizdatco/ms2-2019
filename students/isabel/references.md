@@ -55,7 +55,7 @@ This book makes the alarming claim that modern finance is broken where it predom
 3.	What changes to enhance the social benefits of capital markets does the author advocate?
 
 ---
-## Millstein, Ira. *The Activist Director : Lessons from the Boardroom and the Future of the Corporation*. New York, NY: Columbia University Press, 2016.
+### Millstein, Ira. *The Activist Director : Lessons from the Boardroom and the Future of the Corporation*. New York, NY: Columbia University Press, 2016.
 Call number: HD2745 .M527 2017
 
 Millstein shares concerns with criticisms expressed by Bogle and (later) Shaxson on how the imperatives of directors and their company's shareholders are problematic, or at least ill-managed. He denounces a form of passivist governance that arose from the current capital markets structure, which leads to bad leadership and enables corporate malpractice. Millstein's solution is not more regulation, nor the expansion of shareholder rights. Inspired by shareholder activism, he calls for activist directors who are as involved as activists. The relevance of this book for my research is Milltstein' alternative perspective on the issue of how shareholders' interests and good governance have become increasingly dependent on large asset managers and proxy-advisors. His focus is with not with the asset managers, nor with the shareholders, but rather with the corporates themselves. For him, constructive shareholder activism means installing the soundest directors.
