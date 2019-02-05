@@ -1,7 +1,7 @@
 # Literature Review
 
 
-##Bogle, John C. *The battle for the soul of capitalism*. New Haven: Yale University Press, 2005.
+## Bogle, John C. *The battle for the soul of capitalism*. New Haven: Yale University Press, 2005.
 
 Call number: HB501.B655 2005
 
