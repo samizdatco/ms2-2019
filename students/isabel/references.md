@@ -40,7 +40,7 @@ Bogle’s book reflects on the purpose of the financial system, notably publishe
 
 ---
 
-### Shaxson, Nicholas. * The finance curse : how global finance is making us all poorer*. London: The Bodley Head, 2018.
+### Shaxson, Nicholas. *The finance curse : how global finance is making us all poorer*. London: The Bodley Head, 2018.
 Call number: HG3881.S538 2018g
 
 This book makes the alarming claim that modern finance is broken where it predominantly extracts rent from society at large, instead of fostering wealth. The author finds that contemporary finance did not only become useless, but also socially damaging. 
