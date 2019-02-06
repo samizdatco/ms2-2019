@@ -7,10 +7,16 @@ ML3540.S532010
 This book is often heralded as one of the first books to demystify the genre of techno--shrouded in confusing origins and bastardized in the modern interpretation of electronic music as "all-in-one", techno is difficult to accurately define. Though now frequently mistaken as an European export, the author brings the origin of techno to the city of Detroit, and expands from there. The book is very much centered around Detroit--covering the climate of post-industrial Detroit that gave birth to the techno sound, to the central techno DJs that grew up and created the sound, to the influence it had on Europe and beyond. 
 
 ### Subjects
-* [DDC & LCC subject headings for the call number]
-* Additional parent or child subject that seems relevant
-* Another parent or child subject (while keeping the list ordered from least- to most-specific)
-* As many additional subjects as are related…
+LCC
+* ML: Music literature
+* ML 3540: Popular music
+* ML 3400 - 3465: Dance music
+* ML 3544 - 3776: Folk, national, and ethnic music
+
+DDC
+* 780: Music
+* 780.8: History and description of music with respect to kinds of persons
+
 
 ### Questions
 1. Can we map the reciprocal influences of the techno sound between Detroit/US and Europe?
