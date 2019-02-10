@@ -6,7 +6,7 @@
 
 Call number: EZB-TNS-11254913
 
-The author finds that he efficient markets hypothesis should be extended by a theory that takes in account insights from behavioral finance and frames markets as a human-made biological ecosystem, including the Darwinist and evolutional tendencies therein. He coins this theory as the adaptive markets hypothesis. The adaptive markets theory states that humans make best guesses based on trial and error – and in that sense are fallible not only in their approach itself but also in the process of selecting a better approach. This book provides an interesting context as the efficient markets theory is key to the concept of index-investing.
+The author taps into the discussion on the efficient markets hypothesis, by arguing that the hypothesis should be extended with insights from behavioral finance. Andrew Lo frames financial markets as human-made biological ecosystems, including the Darwinist and evolutional tendencies therein. The author coins this theory as the adaptive markets hypothesis. This theory claims that, rather than decisions rationalized by a pre-determined set of rules, market participants make best guesses based on trial and error. In that sense, markets are fallible: not only in their approach itself but also in the process of selecting a better approach. This book provides an interesting context as the efficient markets theory is key to the concept of index-investing.
 
 **Subjects:**
 
@@ -121,9 +121,7 @@ This book is an annual publication about the developments in the broad field of 
 3. How does the book qualify successful and positive shareholder engagement?
 
 
-
 ---
-
 
 
 ### Additional books
