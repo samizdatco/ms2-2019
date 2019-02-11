@@ -24,7 +24,7 @@ The author taps into the discussion on the efficient markets hypothesis, by argu
 
 Call number: HB501.B655 2005
 
-Bogle’s book reflects on the purpose of the financial system, notably published before the 2008-2009 financial crisis. He calls out how owners’ capitalism – running business largely for the benefit of the providers of capital – has been replaced by a new set of norms where managers run business largely for their own benefit. 
+Bogle’s book reflects on the purpose of the financial system, notably published before the 2008-2009 financial crisis. He calls out how owners’ capitalism – running businesses in benefit of the providers of capital – has been replaced by a new set of norms where managers run business largely for their own benefit. 
 
 
 **Subjects:** 
