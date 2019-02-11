@@ -39,13 +39,13 @@ Precedents:
 2. Question: because I want to find out what relationship it had with popular music, 
 3. Significance: in order to help my reader understand a key part of music history.
 
-1. Topic: I am studying music festivals in the UK over the past 20 years,  
-2. Question: because I want to find out how lineups reflect popular culture, 
-3. Significance: in order to help my reader understand this aspect of British music history.
-
 1. Topic: I am studying live music in the UK over the past 20 years, 
 2. Question: because I want to find out how it was influenced by socio-economic class, 
 3. Significance: in order to help my reader understand the connection between British society and music.
+
+1. Topic: I am studying music festivals in the UK over the past 20 years,  
+2. Question: because I want to find out how lineups reflect popular culture, 
+3. Significance: in order to help my reader understand this aspect of British music history.
 
 1. Topic: I am studying indie music in the UK over the past 20 years, 
 2. Question: because I want to find out how it was influenced by socio-economic class, 
