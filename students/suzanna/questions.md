@@ -22,6 +22,8 @@
 
 #### a.	Sources
 
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
+
 ##### https://hipaahealthlaw.foxrothschild.com/tags/wall-of-shame/
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
@@ -46,11 +48,15 @@
 
 ##### https://www.lawfirmnewswire.com/2015/09/american-company-subjected-to-cyber-security-attacks-after-appealing-court-ruling-dismissing-republic-of-mozambique-to-ninth-circuit-court-of-appeals/
 
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
+
 ##### https://www.medscape.com/viewarticle/504778_2
 
 ### 4.	How many organizations are audited each year by the HHS OCR of health care organizations of 15K+ employees?
 
 #### a.	Sources
+
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
@@ -58,9 +64,10 @@
 
 #### b.	Precedents
 
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
+
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
-##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/audit/protocol/index.html 
 
 
 ### 5.	What are the top HHS OCR findings of health care organizations of 15K+ employees during their audits?
@@ -69,7 +76,13 @@
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
+
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/enforcement-highlights/index.html
+
 #### b.	Precedents
+
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
@@ -118,6 +131,8 @@
 #### b.	Precedents
 
 ##### https://www.akti.org/state-knife-laws/
+
+##### https://www.hipaaone.com/2017-hipaa-breach-stats/
 
 ##### https://en.wikipedia.org/wiki/Water_security
 
