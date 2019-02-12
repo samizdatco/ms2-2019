@@ -6,23 +6,41 @@
 
 #### a.	Sources
 
+##### https://haveibeenpwned.com/
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 #### b.	Precedents
 
+##### https://haveibeenpwned.com/
+
 ##### http://www.visualcapitalist.com/worlds-biggest-data-breaches/
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
 ### 2.	In 2018, what was the timeline of reported HIPAA data breaches?
 
 #### a.	Sources
 
+##### https://hipaahealthlaw.foxrothschild.com/tags/wall-of-shame/
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 #### b.	Precedents
 
 ##### http://www.visualcapitalist.com/worlds-biggest-data-breaches/
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
 ### 3.	In 2018, what was the total number of data breaches per state without business associates agreements?
 
 #### a.	Sources
 
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 #### b.	Precedents
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
 ##### https://www.lawfirmnewswire.com/2015/09/american-company-subjected-to-cyber-security-attacks-after-appealing-court-ruling-dismissing-republic-of-mozambique-to-ninth-circuit-court-of-appeals/
 
@@ -30,13 +48,21 @@
 
 #### a.	Sources
 
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 #### b.	Precedents
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
 ### 5.	What are the top HHS OCR findings of health care organizations of 15K+ employees during their audits?
 
 #### a.	Sources
 
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 #### b.	Precedents
+
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
 ## Topic 2: Data Breach of PCI
 
@@ -44,15 +70,26 @@
 
 #### a.	Sources
 
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
+##### https://haveibeenpwned.com/
+
 #### b.	Precedents: 
 
+##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
+
 ##### http://www.visualcapitalist.com/worlds-biggest-data-breaches/
+
+##### https://haveibeenpwned.com/
 
 ### 2.	With respect to known credit card data breaches, what elements (e.g. expiration date, security code, address, etc.) were involved with the breach?
 
 #### a.	Sources
 
 #### b.	Precedents
+
+
+##### https://www.visualcapitalist.com/worlds-biggest-data-breaches/
 
 ### 3.	Across the states, how many publicize the numbers of data breaches of their state residents?
 
@@ -72,7 +109,15 @@
 
 #### a.	Sources
 
+##### https://www.securitymetrics.com/blog/2017-pci-dss-data-breach-trends
+
+##### https://www.sumologic.com/application/pci-compliance-analyzer/
+
+##### https://www.pcisecuritystandards.org/document_library
+
 #### b.	Precedents
+
+##### https://www.securitymetrics.com/blog/2017-pci-dss-data-breach-trends
 
 ## Topic 3: Data Breach of Passwords
 
