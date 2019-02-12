@@ -64,6 +64,8 @@
 
 #### b.	Precedents
 
+##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/enforcement-highlights-archive/index.html
+
 ##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
