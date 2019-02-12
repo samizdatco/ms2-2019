@@ -41,6 +41,8 @@ Using Content Available on Open Internet Sources](http://lilt.ics.hawaii.edu/pap
 4. [The Rise and Fall of RedBook, the Site That Sex Workers Couldn't Live Without](https://www.wired.com/2015/02/redbook/)
 5. [Hinson L, Mueller J, O’Brien-Milne L, Wandera N. (2018). Technology-facilitated gender-based violence: What
 is it, and how do we measure it? Washington D.C., International Center for Research on Women.](http://www.svri.org/sites/default/files/attachments/2018-07-24/ICRW_TFGBVMarketing_Brief_v8-Web.pdf)
+6. [Why Science is a Breeding Ground for Sexism](https://www.theguardian.com/science/2018/jul/07/why-science-is-breeding-ground-for-sexism)
+7. [Sexual Harassment of Women: Climate, Culture, and Consequences in Academic Sciences, Engineering, and Medicine](https://www.nap.edu/download/24994#)
 
 
 ## Subject: History of Neuro/Science (in Many Perspectives)
