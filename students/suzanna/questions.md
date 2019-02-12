@@ -66,6 +66,7 @@
 
 ##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/enforcement-highlights-archive/index.html
 
+
 ##### https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/data/numbers-glance/index.html
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
@@ -75,6 +76,8 @@
 ### 5.	What are the top HHS OCR findings of health care organizations of 15K+ employees during their audits?
 
 #### a.	Sources
+
+##### https://compliancy-group.com/hipaa-fines-directory-year/
 
 ##### https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf
 
