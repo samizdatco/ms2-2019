@@ -1,4 +1,5 @@
 # Identifying a Topic
+Google Presentation: https://docs.google.com/presentation/d/1h8bQt0Nu42n1NJCwhyXnnyTtj3nPGbfNF-FWBWz3_eY/edit?usp=sharing
 
 ## Assignment
 
