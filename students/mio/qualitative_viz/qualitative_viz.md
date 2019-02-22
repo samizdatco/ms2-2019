@@ -7,7 +7,7 @@ How have women in science been treated throughout history? How has sexual harass
 
 ## Visual 1
 
-![Visual 1: Sexism in Science, Timeline Version]()
+![Visual 1: Sexism in Science, Timeline Version](https://github.com/samizdatco/ms2-2019/blob/master/students/mio/qualitative_viz/MS1_qualitative_1-01.png)
 
 ### Data
 I searched the terms "science", "sexism", and "women" in Google News Search for in the month of January, every ~five years from 2000 to present day (ie. January 01 - January 31 2000, January 01 - January 31 2005, etc). Because I couldn't find a way to automatically obtain all of the article entry titles, I manually selected the first 20 titles that appeared in the search. I did find a Google News API that I plan on exploring to get all of the titles for each year, if possible.
@@ -23,7 +23,7 @@ Ideally this would be an interactive visualization, in which you could scroll th
 
 ## Visual 2
 
-![Visual 2: Sexism in Science, Small Multiples Version]()
+![Visual 2: Sexism in Science, Small Multiples Version](https://github.com/samizdatco/ms2-2019/blob/master/students/mio/qualitative_viz/MS1_qualitative_2-01.png)
 
 ### Data
 The same data from the first visual is used for this.
@@ -37,7 +37,7 @@ I would want to get the concentric circle representation of every year, not just
 
 ## Visual 3
 
-![Visual 3: Academic Sexual Misconduct Violations of Relationship Policies]()
+![Visual 3: Academic Sexual Misconduct Violations of Relationship Policies](https://github.com/samizdatco/ms2-2019/blob/master/students/mio/qualitative_viz/MS1_qualitative_3b-01.png)
 
 ### Data
 I found an amazing dataset by the Geocornition Research Laboratory that has recorded all of the public academic sexual misconduct violations of relationship policies that has occured recently (the earliest is 1917, then jumps to 1978 onwards). It lists the name, institution, position, discipline, details of outcome, and news articles related to the case, amongst other information. I extracted those from scientific disciplines for my visualization.
