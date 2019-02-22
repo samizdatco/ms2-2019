@@ -45,7 +45,7 @@ I found an amazing dataset by the Geocornition Research Laboratory that has reco
 [Source](https://docs.google.com/spreadsheets/d/1CCfcCKmBqyrMbD6fEQ8Llt3eD9MpnUd5eVm2DaIrUKo/edit#gid=0)
 
 ### Visualization
-The purpose of this visualization is to get the names out there, as well as show the sheer number of men (and some women) who have been accused. I was trying to visualize it in a different way, but couldn't get all of the names to fit. Even in this style, I couldn't get all of the names from the 2010s to fit in the allotted space. It kind of ended up being just a list rather than a visualization
+The purpose of this visualization is to get the names out there, as well as show the sheer number of men (and some women) who have been accused. I was trying to visualize it in a different way, but couldn't get all of the names to fit. Even in this style, I couldn't get all of the names from the 2010s to fit in the allotted space. It kind of ended up being just a list rather than a visualization.
 
 ### Improvements
 I think this one definitely needs to be interactive, because there is too much information that I want to show. In hindsight, maybe I should have clustered them into disciplines, but the names are the important information in this dataset. I didn't want to sacrifice the names for aesthetic purposes. An interactive timeline is intriguing, with pop ups for each year listing the information of the person indicted, summary of what happened, and links to the case.
