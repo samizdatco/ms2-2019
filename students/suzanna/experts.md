@@ -32,7 +32,7 @@
 
 
 
-## Topic 3: Law Enforcement realted to Data Breaches
+## Topic 3: Law Enforcement related to Data Breaches
 
 
 ### 3.	United States Federal Bureau of Investigations (FBI)
