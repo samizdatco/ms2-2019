@@ -6,7 +6,7 @@ As SEC Chairman, Clayton has been vocal about the position and protection of "ma
 
 
 
-- **Wei Jiang**, Professor at CBS([link](https://www8.gsb.columbia.edu/cbs-directory/detail/wj2006#research)
+- **Wei Jiang**, Professor at CBS([link](https://www8.gsb.columbia.edu/cbs-directory/detail/wj2006#research))
 
 Jiang's research is revolving around the topic of shareholder activism, recently including proxy voting by large investment funds. She investigated to what extent funds play a stewardship role towards their investee companies.
 
