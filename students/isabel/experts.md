@@ -6,13 +6,13 @@ As SEC Chairman, Clayton has been vocal about the position and protection of "ma
 
 
 
-- **Wei Jiang**, Professor at CBS([link](https://www8.gsb.columbia.edu/cbs-directory/detail/wj2006#research))
+- **Wei Jiang**, Professor at CBS ([link](https://www8.gsb.columbia.edu/cbs-directory/detail/wj2006#research))
 
 Jiang's research is revolving around the topic of shareholder activism, recently including proxy voting by large investment funds. She investigated to what extent funds play a stewardship role towards their investee companies.
 
 
 
-- **Colin Mayer**, Professor at Oxford University Saïd Business School ([](https://www.sbs.ox.ac.uk/about-us/people/colin-mayer-cbe))
+- **Colin Mayer**, Professor at Oxford University Saïd Business School ([link](https://www.sbs.ox.ac.uk/about-us/people/colin-mayer-cbe))
 
 Mayer researches finance and corporations, including shareholder rights and the impact thereof on corporate performance and sustainability. In [this paper](http://eureka.sbs.ox.ac.uk/6308/) from 2017 Mayer emphasizes that economic and political power of shareholders is "to be exercised to benefit the community at large". He finds that this "pluralist frame of reference" deserves more attention. His most recent book, *Prosperity*, tries reformulate the concept of business, its roles and responsibilities and the way it operates. He argues that "the prevailing understanding of corporations leads to inequality, poor innovation, environmental degradation, and a lack of growth". Would be interesting to see how he sees the role of shareholders in this picture.
 
