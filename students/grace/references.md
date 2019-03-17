@@ -168,3 +168,20 @@ DDC 020 Library and information sciences &  LCC 695-718.8 Books. Writing. Paleog
 2. Why are zines still being used when the internet is in many ways faster and more cost effective? 
 3. How are zines similar and different from two decades ago in terms of craft and content? 
  ----
+ 
+ ##Horowitz, D. (1992). _The morality of spending: Attitudes toward the consumer society in America, 1875-1940._ Chicago: I.R. Dee.
+HC110.C6 H58 1992
+This book review's America's history of consumption and attitudes around the consumerism in America from 1875-1940. 
+
+
+--
+##Danziger, P. N. (2004). _Why people buy things they dont need: Understanding and predicting consumer behavior._ Chicago: Dearborn.
+HC110.C6 D369 2002 
+
+Marketing consultant, Pamela Danziger, explains consumer purchasing power, patterns, and motivations, while providing and overview of consumer spending habits and trends. 
+
+--
+Fox, R. W., & Lears, T. J. (1983). _The Culture of consumption in America: Critical essays in American history_, 1880-1980. New York: Pantheon Books.
+HC110.C6 C84 1983
+
+ A collection of consumption culture history and examination essays focusing on advertising, modern electioneering, the development of mass market magazines and the industrialization of space. 
