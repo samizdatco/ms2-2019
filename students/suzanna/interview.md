@@ -3,7 +3,7 @@
 
 ## References
 
-### https://drive.google.com/open?id=0B-a74MN7FO28TkctNjlZaFN5UkU
+### https://github.com/samizdatco/ms2-2019/blob/master/students/suzanna/Improving%20UNIX%20Security%20(SRI).pdf
 
 ### https://www.bitsinthewind.com/about-dac/publications/unix-system-security
 
