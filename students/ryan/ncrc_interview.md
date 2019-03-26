@@ -1,4 +1,4 @@
-# Professor Thomas Shapiro
+# Bruce C. Mitchell, PhD and Jason Richardson
 ### Monday, March 18th 3:30PM
 #### In-Person Interview at the National Community Reinvestment Coalition, Washington DC
 
