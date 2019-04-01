@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	   <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+		<title>TravelImpactInTennis</title>
+	</head>
+	<body>
 
+		<script src='jquery-3.2.1.min.js'></script>
+		<script src='main.js'></script>
+
+
+		<h1>Impact of Travel on Tennis Players on the WTA</h1>
+
+		<div class ="wrapperleft" >
+
+		<div class="court">
+        <div class="court__grid">
+        <div class="court__cell court__alley--top-left"></div>
+        <div class="court__cell court__alley--top-right"></div>
+        <div class="court__cell court__nml--left">I. Background</div>
+        <div class="court__cell court__ad--left">II. Problem</div>
+        <div class="court__cell court__ad--right">IV. Players' Data</div>
+        <div class="court__cell court__dc--left">III. Approach</div>
+        <div class="court__cell court__dc--right">V. Discussion</div>
+        <div class="court__cell court__nml--right">VI. Conclusion & Significance</div>
+        <div class="court__cell court__alley--bottom-left"></div>
+        <div class="court__cell court__alley--bottom-right"></div>
+        </div>
+        </div>
+		
+		<div class="withAFewWords">
+		<br>	
+		<p id="short"> </p>
+	    </div>
+
+	    </div>
+
+	    <div class="charts">	
+		<h3 class="headlineForChart"></h3>
+		<p id="forI"><em>Graph of incremental ranking points earned per miles traveled from one tournament to another:</em></p>
+		<p id="forII"><em>Graph of most frequent routes traveled in <b>consecutive weeks</b> by the top 30 players in 2018:</em></p>
+		<p id="forIII">The analysis employs a <b>multilinear regression</b> to quantify the effect of travel.
+			           <br>
+			           <br>
+		               There is 1 dependent and 8 independent variables that make up the model: 
+		               <br>
+		               <br>
+		               <em>Dependent variable:</em> 
+		               <br>
+		               <br>
+		               P<sub>TW</sub>: Ranking points earned <b>this week</b>
+		               <br>
+		               <br>
+		               <em>Independent variables:</em>
+		               <br>
+		               <br>
+		               A<sub>LW</sub>: Age of the player <b>last week</b><br>
+		               M<sub>LW</sub>: Number of matches played <b>last week</b><br>
+		               O<sub>LW</sub>: Average rank of opponents <b>last week</b><br>
+		               Tournament category <b>last week</b> (expressed in dummy variables)<br>
+		               <b>T<sub>TW</sub>: Miles traveled between last week's and this week's tourament</b><br>
+		               M<sub>TW</sub>: Number of matches played <b>this week</b><br>
+		               O<sub>TW</sub>: Average rank of opponents <b>this week</b><br>
+		               Tournament category <b>this week</b> (expressed in dummy variables)
+		               </p>
+		<p id="forIV"></p>
+		<p id="forV"></p>
+		<p id="forVI"></p>
+	    </div>
+	
+		
+
+
+	   <p id = "footnote1">Data Source: WTA records for full season 2018 for the year-end top 30 women's tennis players. Full research paper with citations available <a href="https://github.com/samizdatco/ms2-2019/blob/master/students/kiril/introduction.pdf">here</a>.</p>
+    
+
+	</body>
+</html>
