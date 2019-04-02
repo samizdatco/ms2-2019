@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Redlining in New York</title>
+  <meta name="description" content="Ryan Best Thesis 2019 Initial Wireframe">
+
+  <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
+</head>
+<body>
+
+  <header>
+
+    <div class="title" id="title">
+      <div class="title-text">
+        <h1>Redlining in New York</h1>
+        <h2>How New Deal Housing Policy Entrenched Housing Segregation and the Racial Wealth Gap</h2>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="intro-text">
+        <p>This paragraph should introduce the racial wealth gap and housing's role in it.
+        It should introduce the federal policies that created the post-Great Depression mortgage market boom and a surge in homeownership rates nationwide.
+        It should explain how African Americans were shut out of that market, and how that created a vicious negative feedback loop.
+        </p>
+        <p>This paragraph should orient the user to the analysis approach and perspective of what they should see as they continue down the page.
+          It should explain that we're exploring how redlining maps give us a lens into housing discrimination practices and that we're exploring
+          how they impact housing markets in present-day New York, which is still one of the most segregated cities in the United States.
+      </div>
+      <div class="annotation">
+        <p>Background placeholder for image, video, or animation that humanizes the project and stays in the background until the visualization section</p>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <article>
+      <section class="argument">
+        <div class="text">
+          <div class="child-text">
+            <p class="eyebrow">Understanding Redlining in 1930's New York</p>
+            <h1>Where were redline zones drawn in New York?</h1>
+            <div class="argument-content">
+              <p>
+                The goal of this section is to explain why redlining maps were drawn in the mid-1930's,
+                the mortgage opportunities that were made available to different grades,
+                the racial motivations behind the gradings, and what the gradings were across New York.
+              </p>
+            </div>
+            <div class="argument-content annotation">
+              <h2>User should leave with:</h2>
+              <ul>
+                <li>Broad understanding of what redline maps and specific grades represent re: housing discrimination</li>
+                <li>What that landscape looked like in New York</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="graphic">
+          <img src="img/redline.svg" class="map">
+          <div class="annotation">
+            <ul>
+              <li>Graphic will stay in position on page, while text on the left scrolls</li>
+              <li>Grade will appear or be highlighted when their description is presented in the text</li>
+              <li>Could add in real apprasial text descriptions from HOLC area descriptions (during animation?)</li>
+              <li>Zones should have hoverable tooltips</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="argument">
+        <div class="text">
+          <div class="child-text">
+            <p class="eyebrow">Understanding Redlining in 1930's New York</p>
+            <h1>How did redlining entrench housing discrimination?</h1>
+            <div class="argument-content">
+              <p>
+                The goal of this section is to give users an understanding of the racial composition, home values, and homeownership at the time the maps were drawn.
+              </p>
+              <p>
+                The first section of this text will explain which zone gradings we want to look at and what metrics are important in those zones.
+                The second part will give the reader a broad take-away and potentially highlight a couple interesting examples to look at (e.g. "high white population in Yonkers, high home values in Westchester county")
+              </p>
+            </div>
+            <div class="argument-content annotation">
+              <h2>User should leave with:</h2>
+              <ul>
+                <li>Overarching understanding of racial composition and housing market at the time the maps were drawn</li>
+                <li>Connection between racial composition of neighborhoods and redlining grades</li>
+                <li>Examples of specific neighborhoods for context</li>
+              </ul>
+            <!-- </div>
+            <div class="argument-content annotation"> -->
+              <!-- <h2>Interactivity:</h2>
+              <ul>
+                <li>Zones under a certain grade should be populated in an animation or one by one</li>
+                <li>Could add in some kind of text description of the HOLC text as a zone is given a grade</li>
+                <li>Zones should have hoverable tooltips</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="graphic">
+          <img src="img/redline_dots.svg" class="map">
+          <div class="annotation">
+            <p>Dots should appear over zones for the grades I focus on, sized according to metric discussed in narrative on left hand side</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="argument">
+        <div class="text">
+          <div class="child-text">
+            <p  class="eyebrow">change in racial composition and home market</p>
+            <h1>How has the legacy of discrimination persisted?</h1>
+            <div class="argument-content">
+              <p>
+                The goal of this section is to explore the relationship between racial composition, homeownership, and homevalues in neighborhoods over time.
+                Ideally this could both show macro-trends across gradings or for neighborhoods within a grading.
+                This section should identify interesting neighborhood comparisons.
+              </p>
+            </div>
+
+            <div class="argument-content annotation">
+              <h2>User should leave with:</h2>
+              <ul>
+                <li>Understanding of how racial composition and housing market across have progressed since the 1930's</li>
+                <li>Examples of neighborhood case-studies and comparisons we will be looking at in more detail in section 4</li>
+              </ul>
+            </div>
+            <!-- <h2>Interactivity:</h2>
+            <div class="argument-content">
+              <ul>
+                <li>Zones under a certain grade should be populated in an animation or one by one</li>
+                <li>Could add in some kind of text description of the HOLC text as a zone is given a grade</li>
+                <li>Zones should have hoverable tooltips</li>
+              </ul>
+              <img src="img/slider.svg" id="slider">
+            </div> -->
+          </div>
+        </div>
+        <div class="graphic">
+          <img src="img/scatter.svg">
+          <div class="annotation">
+            <ul>
+              <li>Dots should animate position and size as the years progress, potentially leaving a trail</li>
+              <li>Narrative will highlight case studies that started at a similar baseline but ended up in different places</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="argument">
+        <div class="text">
+          <div class="child-text">
+            <p class="eyebrow">change in racial composition and home market</p>
+            <h1>How did the market respond to changing neighborhoods?</h1>
+            <p>
+              The goal of this section is to compare the change in racial composition, homeownership, and home value over time for a selected small handfull of neighborhoods.
+              These neighborhoods should start out with similar metrics but diverge over time, ending up with different racial compositions and/or real estate markets.
+              This type of comparison should portray how housing discrimination affected wealth building and homeownership opportunities within these particular neighborhoods.
+              Hopefully I can anchor this story with specific examples of particular houses that were sold, images of the neighborhood today, etc.
+            </p>
+            <div class="argument-context annotation">
+              <h2>Users should leave with:</h2>
+              <ul>
+                <li>Examples of how changing racial compositions of a neighborhood affected its housing markets</li>
+                <li>Personalized stories of real neighborhoods, houses, or families that had different opportunities to grow wealth in the housing market</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="graphic">
+          <img src="img/comparison.svg">
+        </div>
+      </section>
+
+      <section class="discussion conclusion">
+        <div class="conclusion-text">
+            <p>
+              At this point, the user should have a broad understanding of how redlining and housing discrimination operated in the mid-30's,
+              where avenues for wealth-building homeownership were available and unavailable in New York,
+              what legacy access to these avenues has on New York's segregated housing market today,
+              and stories of neighborhoods or houses with different levels of access to these avenues and their resulting differences in home value, ownership, and wealth-building opportunities.
+            </p>
+            <p>
+              The user should leave understanding the <b>generational</b> implications of housing discrimination
+               – why just preventing future discrimination won't be enough to address today's levels of residential segregation and racial wealth disparities.
+               I will also aim to open up the data visualization to exploration once the guided narrative is done, allowing users to explore the map, scatter-plot, and/or neighborhood details for areas in New York that interest them.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+</body>
+</html>

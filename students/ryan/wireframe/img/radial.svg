@@ -1,0 +1,38 @@
+
+<svg width="989px" height="856px" viewBox="0 0 989 856" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zone-Profile-Graphics" transform="translate(-185.000000, -184.000000)">
+            <polygon id="Triangle" fill-opacity="0.95" fill="#8C9F5B" points="662.648438 486 1021.14844 968 520.197266 886.666016"></polygon>
+            <polygon id="Triangle" fill-opacity="0.8" fill="#4A5530" points="662.648438 580 978.203125 952.867188 573.609375 866.109375"></polygon>
+            <polygon id="Triangle" fill-opacity="0.8" fill="#384025" points="663 727 775.90625 873.601562 635.554687 843.570313"></polygon>
+            <g id="Axis" transform="translate(304.000000, 409.000000)" stroke="#A1A8A7">
+                <path d="M0,559 L358.5,422.5" id="Line" stroke-width="2" stroke-linecap="square" stroke-dasharray="15,15"></path>
+                <path d="M717,559 L359,422" id="Line-2" stroke-width="2" stroke-linecap="square" stroke-dasharray="15,15"></path>
+                <path d="M358.5,422 L358.5,0" id="Line-3" stroke-width="2" stroke-linecap="square" stroke-dasharray="15,15"></path>
+                <polygon id="Path-2" stroke-width="7" points="359 0 228.528665 203.157315 0 559 717 559"></polygon>
+            </g>
+            <rect id="Rectangle" fill-opacity="0.1" fill="#8C9F5B" x="341" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy" fill-opacity="0.25" fill="#8C9F5B" x="435" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy-2" fill-opacity="0.4" fill="#8C9F5B" x="530" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy-3" fill-opacity="0.55" fill="#8C9F5B" x="624" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy-4" fill-opacity="0.65" fill="#8C9F5B" x="718" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy-5" fill-opacity="0.8" fill="#8C9F5B" x="813" y="220" width="76" height="33"></rect>
+            <rect id="Rectangle-Copy-6" fill-opacity="0.95" fill="#8C9F5B" x="907" y="220" width="76" height="33"></rect>
+            <text id="1950" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#A1A8A7">
+                <tspan x="351.082031" y="202">1950</tspan>
+            </text>
+            <text id="2010" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#A1A8A7">
+                <tspan x="917.082031" y="202">2010</tspan>
+            </text>
+            <text id="Pct-White" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#A1A8A7">
+                <tspan x="604.782959" y="377">Pct White</tspan>
+            </text>
+            <text id="Median-Home-Value" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#A1A8A7">
+                <tspan x="948.664307" y="1039">Median Home Value</tspan>
+            </text>
+            <text id="Pct-Homeowners" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#A1A8A7">
+                <tspan x="184.28418" y="1039">Pct Homeowners</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
