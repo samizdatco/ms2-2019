@@ -29,3 +29,13 @@ sbessa@bronxmuseum.org | 718-681-6000 X 138
 The Bronx Museum of the Arts
 1040 Grand Concourse Bronx NY 10456
 www.bronxmuseum.org | FB/TW/IG @bronxmuseum
+
+======
+
+Interview with Liam Sweeney, March 15 - approved quote:
+
+
+"Talking about representational diversity is really important because it hasn’t been solved. Representational diversity is the demographic composition of a certain population, and representational diversity can be quantified….It’s important to understand that representational diversity has a part to play because you can’t even hope to talk about equitable power structures if you have a homogenous environment that’s homogeneously privileged… Inclusion has to do with the atmosphere of a place so that people feel welcome. It’s so important to talk about the climate of these institutions, and how to interact with audiences, how to design workspaces… I think that it’s a crucial conversation. Equity is really about how power operates, about who has a seat at the table, how people advance through institutions, whether there are tacit rules or barriers… it’s a more intractable problem."
+
+
+Liam Sweeney, Senior Analyst, Libraries, Scholarly Communication, and Museums program, Ithaka S+R
