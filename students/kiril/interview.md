@@ -1,3 +1,5 @@
+Interview with Nick McCarvel, journalist, presenter, commentator focusing on the WTA Tour (Prfoile at https://www.linkedin.com/in/nickmccarvel/).
+
 (1) How do the WTA players talk about travel in general? Do they like it? Do they hate it? Do they bring it up often in interviews?
 
 I think tennis professionals are pros - too - at travel. They have to be: The tour moves from Australia to the Middle East to the US to Europe, and that's just in the first few months of the season. WTA players talk about travel just the way the men do: They accept it as part of their jobs and do their best to be professional about it, staying hydrated, sleeping the hours they should in whatever time zone they have arrived in and the like. They don't bring it up in interviews, no, unless asked about it in particular. In small talk around interviews at the beginning or end of an event you might discuss travel, however. 
