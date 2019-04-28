@@ -2,7 +2,7 @@ Interview with Nick McCarvel, journalist, presenter, commentator focusing on the
 
 (1) How do the WTA players talk about travel in general? Do they like it? Do they hate it? Do they bring it up often in interviews?
 
-I think tennis professionals are pros - too - at travel. They have to be: The tour moves from Australia to the Middle East to the US to Europe, and that's just in the first few months of the season. WTA players talk about travel just the way the men do: They accept it as part of their jobs and do their best to be professional about it, staying hydrated, sleeping the hours they should in whatever time zone they have arrived in and the like. They don't bring it up in interviews, no, unless asked about it in particular. In small talk around interviews at the beginning or end of an event you might discuss travel, however. 
+I think tennis professionals are pros - too - at travel. They have to be: the tour moves from Australia to the Middle East to the US to Europe, and that's just in the first few months of the season. WTA players talk about travel just the way the men do: They accept it as part of their jobs and do their best to be professional about it, staying hydrated, sleeping the hours they should in whatever time zone they have arrived in and the like. They don't bring it up in interviews, no, unless asked about it in particular. In small talk around interviews at the beginning or end of an event you might discuss travel, however. 
 
 (2) How do they deal with any travel-related fatigue?
 
@@ -22,4 +22,4 @@ That really depends. But most of the top players will arrive 4, 5, 6 days before
 
 (6) How do you think travel affects them overall?
 
-You know that's a good question. I'm always impressed by the athletes: They rarely talk about travel or fatigue or jet lag. They are consummate professionals. When you do here about it, it's because of outstanding circumstances: Delayed flights, missed connections, lost baggage or falling ill due to... well, being human. But they are always very attentive to their schedules, their bodies and how they can best perform on the court itself. 
+You know that's a good question. I'm always impressed by the athletes: They rarely talk about travel or fatigue or jet lag. They are consummate professionals. When you do hear about it, it's because of outstanding circumstances: Delayed flights, missed connections, lost baggage or falling ill due to... well, being human. But they are always very attentive to their schedules, their bodies and how they can best perform on the court itself. 
