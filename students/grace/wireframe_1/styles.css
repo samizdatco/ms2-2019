@@ -1,0 +1,235 @@
+/* look around on https://fonts.google.com to find other typefaces… */
+ @import url("https://use.typekit.net/kry8cxw.css");
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+/* end reset */
+
+
+
+/* use the sensible version of the box model */
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+/* set default font for body text */
+
+body {
+  font-family:"capitolium-2", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size:18px;
+  line-height:1.3em;
+  background:#fcf1e0;
+  color: #000099;
+}
+
+
+/*added javascript */
+header {
+  position: fixed;
+  top: 36px;
+  left: 36px;
+  z-index: 1;
+  transition: color 0.5s;
+    padding-right: 100px;
+
+}
+
+header.white {
+  color: #ffffff;
+}
+div.content {
+  position: relative;
+}
+
+div.square {
+  width: 100px;
+  height: 100px;
+  background-color: #d54156;
+  
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+
+div.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #5982a0;
+  
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
+  
+  border-radius: 50%;
+}
+
+div.content img {
+  position: relative;
+}
+ div.summary {
+    padding-right: 50px;
+
+ }
+
+section {
+  background-color: #c8dee0;
+  min-height: 100vh;
+  padding: 80px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.s2 {
+  background-color: #c5c5c5;
+}
+
+section.s2 div.square {
+  background-color: #d6ac35;
+}
+
+section.s2 div.circle {
+  background-color: #be3c52;
+}
+
+section.s3 {
+  background-color: #292121;
+}
+
+section.s3 div.square {
+  background-color: #5f3736;
+}
+
+section.s3 div.circle {
+  background-color: #6e5f67;
+}
+
+section.s4 {
+  background-color: #f3f1f2;
+}
+
+section.s4 div.square {
+  background-color: #d54156;
+}
+
+section.s4 div.circle {
+  background-color: #5982a0;
+}
+
+div.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: #333333;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+
+div.progress.white {
+  background-color: #ffffff;
+}
+
+/*end of added javascript */
+summary {
+  font-family: "commuters-sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;  
+  font-size:18px;
+  line-height:1.3em;
+  background:#fcf1e0;
+  text-align: left;
+
+}
+
+
+/* headline typography */
+
+h1, h2, h3{
+  font-family:"orpheuspro", serif;
+  font-weight: 400;
+  line-height:1.3em;
+  text-align: left;
+}
+h1{ font-size:75px; color: #000099; border-top:2px }
+h2{ font-size:24px; font-family: "commuters-sans", sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  color: #000099; }
+h3{font-family: "commuters-sans", sans-serif; font-size:100px; color:#000099;}
+
+
+
+/* spacing & borders at the top and bottom of the page */
+
+main{
+  max-width:1000px;
+  margin:4em auto;
+}
+
+header{
+  padding-bottom:2em;
+}
+
+header .intro{
+  margin-top:2em;
+}
+
+article{
+  border-bottom:1px solid black;
+  padding-bottom:1em;
+  padding-top: 200px;
+}
+
+
+p{font-family: "commuters-sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;  
+  margin-bottom:1em;
+  max-width:1000px;
+  text-align: left;
+  color: #000099;
+}
+
+
+
+/* simple two-column layout within each 'argument' subsection */
+body .summary{
+   font-family: "commuters-sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;  
+  font-size:18px;
+  line-height:1.3em;
+  background:#fcf1e0;
+  text-align: left;
+  color: #000099;
+}
+
+article section.argument{
+  display: flex;  /* delete this line to disable the multi-column layout */
+  margin-top:1em;
+  margin-bottom:2em;
+}
+
+article .argument .graphic{
+  margin-right:1em;  /* add some horizontal breathing room b/t the image and the text */
+}
+
+article .argument .text{
+  color:#444;  /* customize the typography for the descriptive text */
+  font-style:italic;
+}
+
