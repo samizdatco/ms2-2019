@@ -1,0 +1,825 @@
+/************* ALL ******************/
+* {
+  font-family: 'Taviraj', serif;
+  color: #fff;
+}
+
+.sans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+body, main, figure, #scrolly {
+  background-color: #24272E;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a:hover, ::selection {
+  color: #666f83;
+}
+
+.highlight {
+  background: #3E4450;
+  padding: 1.4em;
+  width: 50%;
+  margin: 0 25% 4em 25%;
+  box-sizing: border-box;
+}
+
+.highlight p {
+  text-align: left;
+  margin: 0 1.4em 1.4em 1.4em;
+}
+
+@media screen and (max-width : 600px){
+  .highlight {
+    width: 100%;
+    margin: 0 0 4em 0;
+  }
+
+  .byline {
+    font-size: 16px;
+  }
+}
+/************************************/
+
+/************ INTRO *****************/
+#intro {
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+#intro h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 5.75vw;
+  margin: 0;
+}
+
+#intro h2 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  width: 85%;
+}
+
+.vert-center {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+.introduction {
+  width: 70%;
+  left: 15%;
+}
+
+.vert-bottom {
+  width: 70%;
+  left: 15%;
+  bottom: 0;
+  position: absolute;
+  /* transform: translateY(-50%); */
+  margin: auto;
+}
+
+.horiz-center {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.author a, p.author {
+  color: #686f84;
+}
+
+p.appraiser {
+  font-size: 17px;
+}
+
+p.byline {
+  font-size: 24px;
+}
+
+@media screen and (max-width : 600px){
+  .introduction {
+    width: 100%;
+    left: 0%;
+  }
+  #intro h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+  #intro h2 {
+    font-size: 14px;
+  }
+}
+/************************************/
+
+/********** REDLINING MAP ***********/
+figure svg {
+  width: 100%;
+  height: 100%;
+}
+
+.borough {
+  stroke-width:0.5;
+  stroke:#515661;
+  opacity: 0.8;
+  fill:none;
+  z-index:2;
+}
+
+path.holc {
+  stroke-width: 0;
+}
+
+path.holc-A {
+  stroke: #8C9F5B;
+  fill:   #8C9F5B;
+}
+
+path.holc-B {
+  stroke: #8AA1AB;
+  fill:   #8AA1AB;
+}
+
+path.holc-C {
+  stroke: #D6B64C;
+  fill:   #D6B64C;
+}
+
+path.holc-D {
+  stroke: #CC6D7B;
+  fill:   #CC6D7B;
+}
+
+path.holc-E {
+  stroke: none;
+  fill: none;
+}
+
+path {
+  transition: opacity 0.2s ease-in-out;
+}
+
+path.hide {
+  opacity: 0;
+}
+
+path.fade {
+  opacity: 0.1;
+}
+
+path.show {
+  opacity: 1;
+}
+
+path.light {
+  opacity: 0.5;
+}
+
+path.light:hover {
+  opacity:1;
+}
+
+path.hover-path {
+  opacity: 1;
+}
+
+path {
+  transition: opacity 0.2s ease-in-out;
+}
+/************************************/
+
+/********* INTRO ANIMATION **********/
+
+#intro-animation {
+  width: 100%;
+  height: 100%;
+}
+
+path.intro-animation {
+  fill: none;
+  stroke-width: 3px;
+}
+
+path.intro-animation-hide {
+  fill: none;
+  stroke-width: 0px;
+}
+
+path.intro-holc-A {
+  stroke: #8C9F5B;
+}
+
+path.intro-holc-B {
+  stroke: #8AA1AB;
+}
+
+path.intro-holc-C {
+  stroke: #D6B64C;
+}
+
+path.intro-holc-D {
+  stroke: #CC6D7B;
+}
+
+/************************************/
+
+/******** COMP SPARK LINES **********/
+svg.sparkSVG, svg.exploreSparkSVG {
+  width: 100%;
+  margin: 1em auto;
+}
+
+svg.sparkSVG {
+  height: 28vh;
+}
+
+svg.exploreSparkSVG {
+  height: 24vh;
+}
+
+.sparkLine, .exploreSparkLine {
+  fill: none;
+  stroke-width: 6;
+}
+
+text {
+  font-size: 14px;
+  font-weight: 500;
+  fill: #fff;
+}
+
+/* grid */
+.grid-line, .explore-grid-line, .tick line {
+  stroke: #515661;
+}
+
+/* hover tooltip */
+.hoverRect, .explore-hoverRect {
+  stroke: #fff;
+  fill: #000;
+  opacity: 0;
+}
+
+.col h2 {
+  text-align: right;
+  padding-right: 0.5em;
+  margin-top: 16px;
+  font-size: 0.9em;
+  /* letter-spacing: 0.07em; */
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.col h2.tooltip {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-family: 'Taviraj', serif;
+}
+
+text.hover-year {
+  font-weight: 700;
+  font-size: 18px;
+  fill: currentColor;
+}
+
+text.non-hover-year {
+  fill: #515661;
+}
+
+circle.hoverCircle, circle.explore-hoverCircle {
+  display: none;
+  fill: none;
+  stroke-width: 3px;
+  r: 5;
+  /* stroke-dasharray: 2; */
+}
+/************************************/
+
+/*********** COMPARISONS ************/
+.text-a {
+  color: #8C9F5B;
+}
+.text-b {
+  color: #8AA1AB;
+}
+.text-c {
+  color: #D6B64C;
+}
+.text-d {
+  color: #CC6D7B;
+}
+
+.background-a, .background-b, .background-c, .background-d {
+  padding: 5px;
+}
+
+.background-a {
+  background: #8C9F5B;
+}
+.background-b {
+  background: #8AA1AB;
+}
+.background-c {
+  background: #D6B64C;
+}
+.background-d {
+  background: #CC6D7B;
+}
+
+.border-a {
+  border: 5px solid #8C9F5B;
+}
+.border-b {
+  border: 5px solid #8AA1AB;
+}
+.border-c {
+  border: 5px solid #D6B64C;
+}
+.border-d {
+  border: 5px solid #CC6D7B;
+}
+
+blockquote {
+  /* background: #f9f9f9; */
+  font-size: 1.05em;
+  line-height: 1.4;
+  border-left: 8px solid #515661;
+  margin: 1.5em 10px 5em 10px;
+  padding: 0.5em 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #515661;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #24272E;
+  content: close-quote;
+}
+/************************************/
+
+/********** HOUSE MAP DOTS **********/
+#figureSVG circle {
+  fill: #fff;
+  /* stroke: #000;
+  stroke-width: 2px; */
+  r: 4px;
+}
+
+circle.house-hide {
+  display:none;
+}
+
+/* circle.house-a {
+  stroke:#8C9F5B
+}
+
+circle.house-b {
+  stroke:#8C9F5B
+}
+
+circle.house-c {
+  stroke:#8C9F5B
+}
+
+circle.house-d {
+  stroke:#8C9F5B
+} */
+/************************************/
+
+/************* EXPLORE **************/
+path.click-path {
+  opacity: 1;
+}
+
+#sticky-button {
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  transition: transform 0.5s;
+}
+
+.sticky-button-hide {
+  transform: translateX(-340px);
+}
+
+.sticky-button-toggle {
+  transform: translateX(-300px);
+}
+
+.sticky-button-show {
+  transform: translateX(0px);
+}
+
+#sticky-button-explore, #sticky-button-toggle, #sticky-button-no-explore {
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #515661;
+  outline: none;
+}
+
+#sticky-button-explore, #sticky-button-no-explore {
+  width: 300px;
+  /* background: rgba(36,39,46,0.5); */
+}
+
+#sticky-button-toggle {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  width: 40px;
+}
+
+#sticky-button-toggle:hover,#sticky-button-explore:hover,#sticky-button-no-explore:hover {
+  background: #fff;
+  color: #515661;
+  transition: 0.2s ease-in-out;
+}
+
+.jump-to-explore {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/************************************/
+
+/********** COLUMN LAYOUT ***********/
+/* https://www.w3schools.com/howto/howto_css_three_columns.asp */
+.col {
+  float: left;
+  text-align: center;
+}
+
+.one-third {
+  width: 33.3%;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.full {
+  width: 100%;
+}
+
+.thirty {
+  width: 30%;
+  min-width: 30%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.seventy {
+  width: 68%;
+}
+
+.left {
+  width: 20%;
+  min-width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
+.half-right {
+  width: 40%;
+}
+
+p.comparison-summary {
+  text-align: left;
+  margin: 20px 0px;
+  max-width: 700px;
+}
+
+p.comparison-title, span.comparison-title {
+  text-align: left;
+  font-size: 26px;
+  line-height: 1.65;
+  margin: 0 auto;
+  /* border-top: 10px solid #515661;
+  border-bottom: 2px solid #515661; */
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  max-width: 700px;
+}
+
+.comparison-left {
+  position: sticky;
+  top: 50vh;
+  height: 50vh;
+  margin-top: 40vh;
+}
+
+.comparison-left p {
+  text-align: left;
+}
+
+.comparison-header p {
+  box-sizing: border-box;
+  padding-left: 60px;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 5vh;
+}
+
+p.comparison-eyebrow {
+  font-size: 14px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 400;
+  letter-spacing: .2em;
+}
+
+/* .drop-cap {
+  float: left;
+  font-size: 54px;
+  line-height: 1.2;
+  margin-right: .2em;
+  height: .7em;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+} */
+
+p.caption {
+  margin: 0 2.5% 1.4em 2.5%;
+  line-height: 1.3;
+  font-size: 80%;
+  text-align: left;
+  /* font-style: italic; */
+  color: #999999;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+/* neighborhood icons */
+.row img {
+  /* max-height: 110px; */
+  /* margin: 0 1em; */
+  max-width: 95%;
+}
+
+.first-row {
+  /* position: sticky;
+  top: 0; */
+}
+
+.first-row p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6em;
+  padding: 0.4em 0;
+  margin: 1em 0.5em;
+}
+
+/************************************/
+
+/********** SCROLLYTELLING **********/
+#scrolly {
+  position: relative;
+}
+
+.step, .bottom-buffer {
+  margin-bottom: 5em;
+  /* padding: 1%; */
+}
+
+.no-bottom-margin {
+  margin-bottom: 0em;
+}
+
+.display-none {
+  display: none;
+}
+
+.scrolly-block {
+  display: block;
+}
+
+.scrolly-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.scrolly-flex > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.scrolly-flex > article {
+  max-width: 50%;
+}
+
+#explore {
+  position: fixed;
+  width: 50%;
+  top: 0;
+  left: 50%;
+  height: 100vh;
+  background-image: linear-gradient(to left,rgba(36,39,46,1),rgba(36,39,46,0.9),rgba(36,39,46,0.9),rgba(36,39,46,0.9),rgba(36,39,46,0.1));
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+article {
+  position: relative;
+  /* transform: translateY(-60vh); /* The text starts a bit far down, so bump it up on start */ */
+}
+
+.gradient-background {
+  background-image: linear-gradient(to left,rgba(36,39,46,0.8),rgba(36,39,46,0.7),rgba(36,39,46,0),rgba(36,39,46,0));
+}
+
+figure {
+	position: -webkit-sticky;
+	position: sticky;
+  /* left: 39%; */
+	width: 100%;
+	margin: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+figure.hover:hover {
+  cursor: pointer;
+}
+
+/*********** SCROLLY (STEPS) ************/
+
+.narrow-left {
+  width: 30%;
+  padding-left: 5%;
+}
+
+.narrow-right {
+  width: 35%;
+  padding-left: 60%;
+}
+
+.wide-right {
+  width: 68%;
+  left: 30%;
+  position: relative;
+}
+
+.wide-right-child {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-comp {
+  height: 100vh;
+}
+
+.section-end {
+  padding-bottom: 60vh;
+}
+
+.section-start {
+  padding-top: 60vh;
+}
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+}
+
+/************************************/
+
+/************ FOOTNOTE **************/
+
+#footnote {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+#footnote * {
+  color: #c9c9c9;
+  margin-top: 0px;
+}
+
+#footnote h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+#footnote p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#footnote a {
+  font-weight: 400;
+}
+
+#footnote a:hover {
+  color: #666f83;
+}
+
+#footnote:before {
+    width: 40%;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    margin: 0;
+    background-color: #c9c9c9;
+}
+
+/************************************/
+
+/*********** MOBILE WARN ************/
+#mobile-warning {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: #434851;
+  z-index: 99999;
+  cursor: pointer;
+
+}
+
+.mobile-warning-show {
+  display: block;
+}
+
+.mobile-warning-hide {
+  display: none;
+}
+
+#mobile-warning-close {
+  font-size: 4em;
+  line-height: 1;
+  width: 5%;
+  padding-left: 95%;
+  text-align: right;
+  font-family: "Work Sans", sans-serif;
+}
+
+#mobile-warning h1 {
+  margin: 5% 0 0 0;
+  width: 93%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3.5em;
+  line-height: 1.3;
+}
+
+#mobile-warning p {
+  font-size: 1.5em;
+}
+
+#mobile-warning-text {
+  background: #515661;
+  padding: 5%;
+}
+
+#mobile-warning-menu {
+  padding: 0 5% 1% 5%;
+}
+/************************************/

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Drawing Discrimination</title>
+  <link rel="icon" type="image/png" href="https://github.com/ryanabest/ryanabest.github.io/blob/master/assets/favicon.png?raw=true"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="packages/scrollama.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Taviraj:400,500,700|Work+Sans:600,700" rel="stylesheet">
+
+  <!-- juxtapose -->
+  <script src="packages/juxtapose.js"></script>
+  <link rel="stylesheet" href="css/juxtapose.css">
+</head>
+
+<body>
+
+  <div id='mobile-warning' class='mobile-warning-hide'>
+    <div id='mobile-warning-menu'>
+      <span id='mobile-warning-close' onclick='d3.select("#mobile-warning").attr("class","mobile-warning-hide"); return false;'>x</span>
+    </div>
+    <div id='mobile-warning-text'>
+      <h1>Drawing Discrimination is a Desktop&nbsp;Experience</h1>
+      <p>
+        This visualization was built as a desktop-only project, <i>for now</i>. For the best experience viewing Drawing Discrimination, please visit on a desktop&nbsp;computer.
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <section id="intro">
+      <svg id='intro-animation'></svg>
+      <div class="vert-center horiz-center introduction">
+        <h1>Drawing Discrimination</h1>
+        <h2>Exploring redlining and discriminatory federal New Deal housing policy’s lasting impact on homeownership, home equity, and wealth building opportunities across New York City</h2>
+        <p class="center author">by <a href="https://www.ryanabest.com">RYAN BEST</a></p>
+      </div>
+    </section>
+    <div id="background" class="row">
+      <div class="col highlight">
+        <p>In the mid-1930’s, there was a widespread assumption that houses in white neighborhoods were much more valuable than those in non&#8209;white neighborhoods.
+          The federal government adopted this notion into federal policy, officially valuing white-owned property in segregated areas higher than houses in non&#8209;white or mixed-race neighborhoods.</p>
+        <img src="img/FHA_Underwriting.png"/>
+        <p class='caption'>An excerpt from the 1938 FHA Underwriting Manual – the rulebook for how the federal government determined real estate value at the time.</p>
+        <p>
+          The federal government also incorporated these discriminatory practices in detailed maps of over 250 American cities it created in the mid to late 1930's. In a process that later became known as redlining, these so-called 'security maps' graded each neighborhood on perceived real estate risk, with race being one of the main factors determining who was able to get a mortgage and where properties were deemed valuable for decades to come.
+          The discrimination captured in these maps was legal government policy until the Fair Housing Act of 1968 banned racial discrimination in housing.
+          During that time, these practices created massive wealth-building opportunities in housing for white Americans and entrenched discriminatory market structures that still influence housing opportunities&nbsp;today.
+        </p>
+        <!-- <img src="img/brooklyn-holc-scan.jpg"/>
+        <p class='caption'>A Homeowners Loan Coroporation (HOLC) security map from 1938 grading Brooklyn on its perceived real estate risk, which was heavily coded by race.</p> -->
+      </div>
+    </div>
+    <section id="scrolly" class="scrolly-block">
+
+      <figure>
+        <svg id="figureSVG"></svg>
+  		</figure>
+      <article>
+        <section id='redline-explainer'>
+          <!-- <div class='step narrow-right redline section-end' data-step='0'>
+            <p>While countless factors affect housing markets in the New York City’s neighborhoods, there is a direct connection between this official government discrimination of the past and the wealth-building opportunities in housing available to New Yorkers today.</p>
+          </div> -->
+          <div class='step narrow-right redline section-end' data-step='1'>
+            <p class='byline'>D-Graded <span class='text-d bold'>'Hazardous'</span> Neighborhoods</p>
+    				<!-- <p>Neighborhoods receiving the lowest possible “<span class='text-d bold'>declining</span>” grade were colored red on the map, coining the phrase ‘redlining’. Appraisers gave this grade to neighborhoods with less native-born white residents, keeping property values low and cutting off access to&nbsp;mortgages.</p> -->
+            <p class='appraiser'>Appraisers gave this grading to neighborhoods where they&nbsp;cited:</p>
+            <blockquote>
+              ...
+              Very undesirable neighborhood of <span class='text-d'>mixed races</span> ... Italian, Danish, Polish, Swedish, Jewish <!-- Brooklyn D14 -->
+              ...
+              Formerly a good residential district with many well built private homes. Now practically entirely negro with many tenements
+              ...
+              Obsolescence and poor maintenance. <span class='text-d'>Infiltration of Negroes</span> <!-- Brooklyn D7 -->
+              ...
+              Colored infiltration a definitely adverse influence on neighborhood desirability <!-- Brooklyn D8 --> <!-- USE IN PRESENTATION -->
+              ...
+              <span class='text-d'>Low grade Italian population</span> of questionable occupation and income. Very little likelihood of improvement <!-- Brooklyn D16 -->
+              ...
+            </blockquote>
+          </div>
+    			<div class='step narrow-right redline section-end' data-step='2'>
+            <p class='byline'>A-Graded <span class='text-a bold'>'Best'</span> Neighborhoods</p>
+    				<!-- <p>The highest rating, “<span class='text-a bold'>best</span>,” was given to neighborhoods that were insulated from lower-graded areas and were more likely to be occupied by wealthy native-born whites – who enjoyed higher property values as&nbsp;a&nbsp;result.</p> -->
+            <p class='appraiser'>Appraisers gave this grading to neighborhoods where they&nbsp;cited:</p>
+            <blockquote>
+              ...
+              Probably the best area in Staten Island, due to location, <span class='text-a'>homogeneity</span>, and high type of structures <!-- Staten A4 --> <!-- USE IN PRESENTATION -->
+              ...
+              The major portion of this neighborhood is presently help up by wealthy people, many of whom have large estates overlooking the Hudson.
+              ...
+              A steep bluff <span class='text-a'>separates this area from the yellow and red areas</span> on the east. <!-- Staten A3 -->
+              ...
+              Contains many of the finest and largest private homes.
+              ...
+            </blockquote>
+          </div>
+    			<div class='step narrow-right redline section-end' data-step='3'>
+            <p class='byline'>B-Graded <span class='text-b bold'>'Still Desirable'</span> Neighborhoods</p>
+    				<!-- <p>Neighborhoods that were “<span class='text-b bold'>still desirable</span>” but not quite as desirable as the highest grade areas, were colored blue. Neighborhoods appraisers thought were “<span class='text-c bold'>definitely declining</span>,” but hadn’t yet reached the depths of redlined areas, were colored yellow. Appraisers' declarations of desirability or decline within these neighborhoods were once again rooted&nbsp;in&nbsp;race.</p> -->
+            <p class='appraiser'>Appraisers gave this grading to neighborhoods where they&nbsp;cited:</p>
+            <blockquote>
+              ...
+              <span class='text-b'>Homogeneous neighborhood</span> of good houses
+              ...
+              A double carfare has protected this neighborhood from any undesirable infiltration <!-- Bronx B3 -->
+              ...
+              A small section of <span class='text-b'>desirable homes well protected from encroachment</span> <!-- Bronx B10 --> <!-- USE IN PRESENTATION -->
+              ...
+            </blockquote>
+            <p class='byline'>C-Graded <span class='text-c bold'>'Declining'</span> Neighborhoods</p>
+            <!-- <p>Neighborhoods that were “<span class='text-b bold'>still desirable</span>” but not quite as desirable as the highest grade areas, were colored blue. Neighborhoods appraisers thought were “<span class='text-c bold'>definitely declining</span>,” but hadn’t yet reached the depths of redlined areas, were colored yellow. Appraisers' declarations of desirability or decline within these neighborhoods were once again rooted&nbsp;in&nbsp;race.</p> -->
+            <p class='appraiser'>Appraisers gave this grading to neighborhoods where they&nbsp;cited:</p>
+
+            <blockquote>
+              ...
+              One hour from Times Square by subway, car and bus.<span class='text-c'> Infiltration of lower grade population</span> <!-- Brooklyn C23-->
+              ...
+              This is rather a mediocre neighborhood with only limited prospects of improvements
+              ...
+              There has been a small settlement of negroes on 99th St. for many years, apparently not spreading. The district may gradually improve <!-- Manhattan C4 -->
+              ...
+              Mostly developed 30-40 years ago with fairly good grade apartment houses, it has been <span class='text-c'>steadily deteriorating due partly to influx of negroes</span> <!-- Manhattan C5 --> <!-- USE IN PRESENTATION -->
+              ...
+            </blockquote>
+          </div>
+          <div class='step narrow-right redline section-end' id="jump" data-step='4'>
+            <p>
+              Studying this map shows us where housing discrimination was strongest in late-1930’s New York. I connected these grades with longitudinal census data from 1940-2010, tracking changes in racial composition and real estate markets to better understand where its damaging effects are still felt.
+              I then picked out specific neighborhoods with similar population demographics or homeownership markets in 1940, connected these communities to the gradings they received at that time, and followed their housing markets through 2010. These case studies offer a first glimpse into where and how racial discrimination may have contributed to imbalanced opportunities to build wealth&nbsp;in&nbsp;housing.
+            </p>
+            <p>
+              You can look through each of these case studies below, or <a class='jump-to-explore'>explore the map on your own</a> to see if you can unearth potential threads of housing discrimination yourself.
+            </p>
+            <!-- href='?explore=true' -->
+            <!-- By comparing how homeownership markets changed across neighborhoods receiving different redlining grades or whose population demographics have evolved differently in the decades since these discriminatory maps were drawn. -->
+    			</div>
+        </section>
+        <section id='comparisons'>
+
+          <!-- MANHATTAN -->
+          <section id='manhattan-section' class="step">
+            <div class='row'>
+              <div class='col thirty comparison-left'>
+                  <div class='vert-center'>
+                  <p class='comparison-title'>
+                    Homeownership rates in <span class="background-d sans">Harlem</span> lag behind the <span class="background-a sans">Upper&nbsp;East&nbsp;Side</span>
+                  </p>
+                  <p>
+                    Homeownership has consistently grown in greenlined Upper East Side while staying stagnant in redlined, majority non&#8209;white&nbsp;Harlem
+                  </p>
+                </div>
+              </div>
+              <div class='step no-bottom-margin col seventy' id='manhattan'>
+                <div class='step wide-right-child' data-step='5'>
+                  <div class='row'>
+                    <div class='col left'>&nbsp;</div>
+                    <div class='col right comparison-header'>
+                      <p class='comparison-eyebrow sans'>Case Study: Manhattan</p>
+                      <p><span class='background-a bold sans'>Upper East Side</span> / <span class='background-d bold sans'>Harlem</span></p>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctWhite'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctHomeownership'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG medianHomeValue2010'></svg></div>
+                  </div>
+                </div>
+                <div class='step row bottom-buffer wide-right-child' data-step='5'>
+                  <p class='comparison-summary'>
+                    <span class='drop-cap'>H</span>ousing markets are dramatically different in Harlem and the Upper East Side, close neighbors in Upper Manhattan.
+                    In the 1940's, over 95% of residents in both neighborhoods lived as tenants.
+                    Homeownership has consistently climbed in greenlined Upper East Side in the decades since, now one of the most lucrative real estate markets in the world.
+                    In redlined Harlem, often considered the cultural center of black America and one of the only majority non&#8209;white neighborhoods in 1940's New York, homeownership has stayed low.
+                    Homeownership in this area of the Upper East Side is now more than four times greater than in Harlem.
+                  </p>
+                </div>
+                <div class='step' data-step='5a' id='manhattan-houses'>
+                  <div class='wide-right-child'>
+                    <div class='row'>
+                      <div class='col one-half'>
+                        <div id = "juxtapose-ues" class="juxtapose border-a" data-makeResponsive=true></div>
+                        <p class='caption'>
+                          A brownstone at 132 East 80th St. currently worth $9.9M
+                        </p>
+                      </div>
+                      <div class='col one-half'>
+                        <div id = "juxtapose-harlem" class="juxtapose border-d" ></div>
+                        <p class='caption'>
+                          A brownstone at 102 West 121st St. currently worth $2.6M
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- QUEENS -->
+          <section id='queens-section' class='step section-start'>
+            <div class='row'>
+              <div class='col thirty comparison-left'>
+                  <div class='vert-center'>
+                  <p class='comparison-title'>
+                    In residential Queens, <span class='background-b sans'>Little Neck</span> property values outpace <span class='background-d sans'>Brookville</span>
+                  </p>
+                  <p>
+                    The average house in Little Neck is now worth almost twice as much as in&nbsp;Brookville
+                  </p>
+                </div>
+              </div>
+              <div class='no-bottom-margin col seventy' id='queens'>
+                <div class='step wide-right-child' data-step='6'>
+                  <div class='row'>
+                    <div class='col left'>&nbsp;</div>
+                    <div class='col right comparison-header'>
+                      <p class='comparison-eyebrow sans'>Case Study: Queens</p>
+                      <p><span class='background-b bold sans'>Little Neck</span> / <span class='background-d bold sans'>Brookville</span></p>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctWhite'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctHomeownership'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG medianHomeValue2010'></svg></div>
+                  </div>
+                </div>
+                <div class='step row bottom-buffer wide-right-child' data-step='6'>
+                  <p class='comparison-summary'>
+                    <span class='drop-cap'>L</span>ittle Neck and Brookville, two residential neighborhoods in eastern Queens, may show the damaging effects of housing discrimination on property values.
+                    Housing prices in these two neighborhoods were a bit closer together before their racial demographics changed – in 1960, both areas were overwhelmingly white and only $60k separated their average homes (in 2010 dollars).
+                    In the decades since, housing prices in now majority-minority Brookville haven't caught up with increases in Little Neck, where the median house is now worth almost $400k more.
+                  </p>
+                </div>
+                <div class='step' data-step='6a' id='queens-houses'>
+                    <div class='wide-right-child'>
+                      <div class='row'>
+                        <div class='col one-half'>
+                          <div id = "juxtapose-queens1" class="juxtapose border-b" ></div>
+                          <p class='caption'>
+                            A house at 6 Beverly Rd. currently worth $2.1M
+                          </p>
+                        </div>
+                        <div class='col one-half'>
+                          <div id = "juxtapose-queens2" class="juxtapose border-d" ></div>
+                          <p class='caption'>
+                            A house at 142-25 230th Pl. currently worth $476K
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+          </section>
+
+          <!-- STATEN ISLAND -->
+          <section id='staten-section' class="step section-start">
+            <div class='row'>
+              <div class='col thirty comparison-left'>
+                  <div class='vert-center'>
+                  <p class='comparison-title'>
+                    In <span class='background-a sans'>Todt&nbsp;Hill</span>, real estate markets outgrow <span class='background-d sans'>New&nbsp;Brighton</span>
+                  </p>
+                  <p>
+                    Todt Hill is one of Staten Island's most exclusive and expensive neighborhoods, with homeownership rates and property values doubling those in nearby redlined&nbsp;areas
+                  </p>
+                </div>
+              </div>
+              <div class='no-bottom-margin col seventy' id='staten'>
+                <div class='step wide-right-child' data-step='7'>
+                  <div class='row'>
+                    <div class='col left'>&nbsp;</div>
+                    <div class='col right comparison-header'>
+                      <p class='comparison-eyebrow sans'>Case Study: Staten Island</p>
+                      <p><span class='background-a bold sans'>Todt Hill</span> / <span class='background-d bold sans'>New Brighton</span></p>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctWhite'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctHomeownership'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG medianHomeValue2010'></svg></div>
+                  </div>
+                </div>
+                <div class='step row bottom-buffer wide-right-child' data-step='7'>
+                  <p class='comparison-summary'>
+                    <span class='drop-cap'>I</span>n the 1940's, greenlined Todt Hill and a redlined area spanning New Brighton, Tompkinsville, and Stapleton were both predominantly white with almost identical property values.
+                    The racial demographics of these neighborhoods now look different, as majority white Todt Hill is now neighbored by more multi-racial communities to its northeast.
+                    Todt Hill has one of the more exclusive and expensive real estate markets in Staten Island, with homeownership rates and property values more than double those of the redlined neighborhoods&nbsp;highlighted.
+                  </p>
+                </div>
+                <div class='step' data-step='7a' id='staten-houses'>
+                  <div class='wide-right-child'>
+                  <div class='row'>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-staten1" class="juxtapose background-a" ></div>
+                      <p class='caption'>
+                        A house at 653 Todt Hill Rd. currently worth $1.6M
+                      </p>
+                    </div>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-staten2" class="juxtapose background-d" ></div>
+                      <p class='caption'>
+                        A house at 16 Cedar St. currently worth $340K
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </section>
+
+          <!-- BROOKLYN -->
+          <section id='brooklyn-section' class="step section-start">
+            <div class='row'>
+              <div class='col thirty comparison-left'>
+                  <div class='vert-center'>
+                  <p class='comparison-title'>
+                    In <span class='background-c sans'>Brighton&nbsp;Beach</span>, housing markets stay consistent with <span class='background-b sans'>Crown&nbsp;Heights</span>
+                  </p>
+                  <p>
+                    Homeownership rates and property values for Brighton Beach's large immigrant population haven't outpaced markets in many majority non&#8209;white&nbsp;areas
+                  </p>
+                </div>
+              </div>
+              <div class='no-bottom-margin col seventy' id='brooklyn'>
+                <div class='step wide-right-child' data-step='8'>
+                  <div class='row'>
+                    <div class='col left'>&nbsp;</div>
+                    <div class='col right comparison-header'>
+                      <p class='comparison-eyebrow sans'>Case Study: Brooklyn</p>
+                      <p><span class='background-c bold sans'>Brighton Beach</span> / <span class='background-b bold sans'>Crown Heights</span></p>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctWhite'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctHomeownership'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG medianHomeValue2010'></svg></div>
+                  </div>
+                </div>
+                <div class='step row bottom-buffer wide-right-child' data-step='8'>
+                  <p class='comparison-summary'>
+                    <span class='drop-cap'>B</span>righton Beach has stayed majority white since the 1940's, but its property values and homeownership rates haven't outpaced many majority-minority neighborhoods.
+                    There is a large immigrant and foreign-born white population in Brighton Beach, especially Russians and Jews, who were also subject to discrimination but are included alongside native-born whites in a white/non&#8209;white distinction.
+                    The homeownership market in Brighton Beach has remained remarkably consistent with that in Crown Heights, where white flight and migration from the American South and the Caribbean contributed to the neighborhood's rapidly changing population demographics in the&nbsp;1960's.
+                  </p>
+                </div>
+                <div class='step' data-step='8a' id='brooklyn-houses'>
+                  <div class='wide-right-child'>
+                  <div class='row'>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-brooklyn1" class="juxtapose background-c" ></div>
+                      <p class='caption'>
+                        A two-family unit at 126 Neptune Ave. currently worth $608K
+                      </p>
+                    </div>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-brooklyn2" class="juxtapose background-b" ></div>
+                      <p class='caption'>
+                        A townhouse at 1312 Union St. currently worth $1.2M
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- BRONX  -->
+          <section id='bronx-section' class="step section-start">
+            <div class='row'>
+              <div class='col thirty comparison-left'>
+                  <div class='vert-center'>
+                  <p class='comparison-title'>
+                    In <span class='background-b sans'>Fordham</span>, the housing market hasn't caught up with lower-graded <span class='background-c sans'>Country&nbsp;Club</span>
+                  </p>
+                  <p>
+                    Though it received a worse redlining grade, markets in Country Club have outpaced those in now majority-minority Fordham
+                  </p>
+                </div>
+              </div>
+              <div class='no-bottom-margin col seventy' id='bronx'>
+                <div class='step wide-right-child' data-step='9'>
+                  <div class='row'>
+                    <div class='col left'>&nbsp;</div>
+                    <div class='col right comparison-header'>
+                      <p class='comparison-eyebrow sans'>Case Study: The Bronx</p>
+                      <p><span class='background-c bold sans'>Country Club</span> / <span class='background-b bold sans'>Fordham</span></p>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctWhite'></svg></div>
+                  </div>
+                  <div class='row'>
+                    <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                    <div class='col right'><svg class='sparkSVG pctHomeownership'></svg></div>
+                  </div>
+                  <div class='row'>
+                      <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip'></h2><h2 class='tooltip'></h2></div>
+                      <div class='col right'><svg class='sparkSVG medianHomeValue2010'></svg></div>
+                    </div>
+                </div>
+                <div class='step row bottom-buffer wide-right-child' data-step='9'>
+                  <p class='comparison-summary'>
+                    <span class='drop-cap'>E</span>ven in neighborhoods receiving more favorable redlining grades, the emerging presence of non&#8209;white residents was often met with suppressed property values and restricted access to mortgages.
+                    Fordham and Country Club are two neighborhoods in the Bronx that were almost exclusively white in the mid-1900's. Country Club is a more owner-centric market, while Fordham has a much higher proportion of renters.
+                    Property values in Fordham, which saw an influx of non&#8209;white residents from 1970 to 1990, are almost $200k lower than in Country Club.
+                  </p>
+                </div>
+                <div class='step' data-step='9a' id='bronx-houses'>
+                  <div class='wide-right-child'>
+                  <div class='row'>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-bronx1" class="juxtapose border-c"></div>
+                      <p class='caption'>
+                        A house at 3135 Country Club Rd. currently worth $645K
+                      </p>
+                    </div>
+                    <div class='col one-half'>
+                      <div id = "juxtapose-bronx2" class="juxtapose border-b"></div>
+                      <p class='caption'>
+                        A three-family unit at 2596 Briggs Ave. currently worth $631K
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </section>
+        <div class='step narrow-right section-start section-end' id='conclusion' data-step='10'>
+          <p class='comparison-title'>
+            A complex, ever-changing market&nbsp;landscape
+          </p>
+          <p class='comparison-summary'>
+            Countless factors influence homeownership and property values, especially in a complex and ever-changing New York market.
+            By connecting official government redlining maps from the late-1930's with changes in housing markets since, we can start exploring where discriminatory practices have left a lasting impact on New York City housing opportunities.
+          </p>
+          <p class='comparison-summary'>
+            <a class='jump-to-explore'>Explore the map on your own</a> to see if you can unearth potential threads of housing discrimination yourself.
+          </p>
+        </div>
+        <div class='step redline display-none' id="explore" data-step='11'>
+          <div class='row first-row'>
+            <div class='col left'><p></div>
+            <div class='col half-right'>
+              <p class='click-label'></p>
+            </div>
+            <div class='col half-right'>
+              <p class='hover-label'></p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col left col-pctWhite'><h2>Pct Non&#8209;White</h2><h2 class='tooltip click'></h2><h2 class='tooltip hover'></h2></div>
+            <div class='col right'><svg class='exploreSparkSVG pctWhite'></svg></div>
+          </div>
+          <div class='row'>
+            <div class='col left col-pctHomeownership'><h2>Pct Homeownership</h2><h2 class='tooltip click'></h2><h2 class='tooltip hover'></h2></div>
+            <div class='col right'><svg class='exploreSparkSVG pctHomeownership'></svg></div>
+          </div>
+          <div class='row'>
+            <div class='col left col-medianHomeValue2010'><h2>Median Home Value (2010 Dollars)</h2><h2 class='tooltip click'></h2><h2 class='tooltip hover'></h2></div>
+            <div class='col right'><svg class='exploreSparkSVG medianHomeValue2010'></svg></div>
+          </div>
+        </div>
+		  </article>
+      <div id="sticky-button" class="sticky-button-hide">
+        <button id="sticky-button-explore">Explore the Map</button>
+        <button id="sticky-button-no-explore" class="display-none">Return to Case Studies</button>
+        <button id="sticky-button-toggle">&rsaquo;</button>
+      </div>
+    </section>
+    <div id="footnote">
+      <h1>About the data and methods:</h1>
+      <p>This project was completed by <a target='_blank' href='https://www.ryanabest.com'>Ryan Best</a> as part of a <a target='_blank' href='http://parsons.nyc/thesis-2019/'>graduate thesis</a> for the Masters of Science in <a target='_blank' href='https://www.newschool.edu/parsons/ms-data-visualization/'>Data Visualization</a> at the Parsons School of Design in New York, NY.</p>
+      <p>My thesis advisors were
+        <a target='_blank' href='http://aaronhill.nyc/'>Aaron Hill</a>,
+        <a target='_blank' href='http://danielsauter.com/'>Daniel Sauter</a>,
+        <a target='_blank' href='http://samizdat.co/'>Christian Swinehart</a>, and
+        <a target='_blank' href='http://www.richardthe.com/'>Richard The</a>.
+      </p>
+      <p>Redlining zone boundaries, gradings, and area descriptions (including apprasier quotes) are from the <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/'>Mapping Inequality</a> project. Data was downloaded in GeoJSON format for <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/#loc=11/40.7940/-73.9570&opacity=0.8&city=manhattan-ny'>Manhttan</a>, <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/#loc=11/40.6543/-73.9490&opacity=0.8&city=brooklyn-ny'>Brooklyn</a>, <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/#loc=11/40.6840/-73.8268&opacity=0.8&city=queens-ny'>Queens</a>, <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/#loc=12/40.8580/-73.8565&opacity=0.8&city=bronx-ny'>the Bronx</a>, <a href='https://dsl.richmond.edu/panorama/redlining/#loc=12/40.5740/-74.1560&opacity=0.8&city=staten-island-ny' target='_blank'>Staten Island</a>, and <a target='_blank' href='https://dsl.richmond.edu/panorama/redlining/#loc=12/40.9360/-73.8250&opacity=0.8&city=lower-westchester-co.-ny'>lower Westchester&nbsp;county</a>.</p>
+      <p>Census data and tract boundaries for each decennial census from 1940 to 2010 are from the <a target='_blank' href='https://www.nhgis.org/'>IPUMS NGHIS database</a>. Included in census data by tract were tabular data tables used to estimate percent non&#8209;white, percent homeownership, and median home value.</p>
+      <p>Census data by tract were joined to redlining zones using geospatial geometric analysis made possible with the <a href='https://pypi.org/project/Shapely/' target='_blank'>Shapely</a> Python library. Census data estimates were weighted by the proportional size of a tract's geographic area of intersection with a redlining zone. Data was averaged across multiple redlining zones for neighboorhoods in case&nbsp;studies.</p>
+      <p>1939-1941 building images are from the <a href='http://nycma.lunaimaging.com/luna/servlet' target='_blank'>online gallery</a> of the New York City Municipal Archives' Tax Photograph Collection. 2019 building images are from the Google Maps <a href='https://developers.google.com/maps/documentation/streetview/intro' target='_blank'>Street View Static&nbsp;API</a></p>
+      <p>Geographic boundaries of New York City boroughs are from dwillis' <a href='https://github.com/dwillis/nyc-maps' target='_blank'>nyc-maps</a> GitHub repository</p>
+      <p>Scrollytelling made possible with&nbsp;<a target='_blank' href='https://github.com/russellgoldenberg/scrollama'>Scrollama</a>.</p>
+      <p>Building image comparisons made possible with&nbsp;<a target='_blank' href='https://juxtapose.knightlab.com/'>JuxtaposeJS</a>.</p>
+    </div>
+  </main>
+
+  <script>
+  // GET THE VALUE OF 'EXPLORE' VARIABLE FROM THE URL STRING
+  // IF NOTHING IS PASSED, DON'T LOAD EXPLORE
+  // https://html-online.com/articles/get-url-parameters-javascript/
+  function getUrlVars() {
+    var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+      });
+      return vars;
+  }
+
+  function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+  }
+
+  var loadExplore = getUrlParam('explore',false);
+
+  // variable selectors that will be available in all JS scripts
+  var main = d3.select('main');
+  var scrolly = main.select('#scrolly');
+  var figure = scrolly.select('figure');
+  var article = scrolly.select('article');
+  var step = article.selectAll('.step');
+  var figureSvg = figure.select('#figureSVG');
+
+  var figureSvgWidth  = parseInt(figureSvg.style('width')),
+      figureSvgHeight = parseInt(figureSvg.style('height'));
+
+  var gridLines = 6;
+  // Initiating the projection and groGenerator variables with dummy variables
+  // These will be updated with bounding box in map.js
+  var projection = d3.geoMercator().scale(1).translate([0,0]),
+	    geoGenerator = d3.geoPath().projection(projection);
+
+  // Neighborhood Comparison Lists
+  var
+      // MAHNATTAN
+       harlem = ['Manhattan_D19','Manhattan_D20','Manhattan_D21','Manhattan_D22','Manhattan_D23','Manhattan_D24','Manhattan_D25','Manhattan_D26']
+      ,upperEastSide = ['Manhattan_A3','Manhattan_A4','Manhattan_A5','Manhattan_A6','Manhattan_A7']
+      // QUEENS
+      ,littleNeck = ['Queens_B12','Queens_B13']
+      // ,stAlbans = ['Queens_C78','Queens_C79','Queens_C80','Queens_C81','Queens_C83','Queens_C84']
+      ,brookvilleRosedale = ['Queens_D23','Queens_D26']
+      // STATEN
+      ,todtHill = ['StatenIsland_A3']
+      ,newBrighton = ['StatenIsland_D2','StatenIsland_D3']
+      // BROOKLYN
+      ,brightonBeach = ['Brooklyn_C24']
+      ,crownHeights = ['Brooklyn_B4']
+      // BRONX
+      ,countryClub = ['Bronx_C13']
+      ,fordham = ['Bronx_B5','Bronx_B8']
+      ;
+
+    var houseLatLngList = [
+       {borough:"Queens",zone:"B12",latLng:[-73.7564437,40.777303]}
+      ,{borough:"Queens",zone:"D26",latLng:[-73.7461153,40.6645016]}
+      ,{borough:"StatenIsland",zone:"A3",latLng:[-74.1128334,40.5963739]}
+      ,{borough:"StatenIsland" ,zone:"D2",latLng:[-74.0832599,40.6253977]}
+      ,{borough:"Manhattan",zone:"A4",latLng:[-73.9611431,40.7756751]}
+      ,{borough:"Manhattan",zone:"D23",latLng:[-73.9501452,40.805272]}
+      ,{borough:"Brooklyn",zone:"C23",latLng:[-73.9603166,40.5821792]}
+      ,{borough:"Brooklyn",zone:"B4",latLng:[-73.9491694,40.6685487]}
+      ,{borough:"Bronx",zone:"C13",latLng:[-73.8264393,40.8426984]}
+      ,{borough:"Bronx",zone:"B8",latLng:[-73.8952842,40.8641489]}
+    ]
+      // eastYonkers = ['LowerWestchesterCo_A1','LowerWestchesterCo_A3','LowerWestchesterCo_A6','LowerWestchesterCo_A7','LowerWestchesterCo_A8'],
+      // westYonkers = ['LowerWestchesterCo_D5','LowerWestchesterCo_D6','LowerWestchesterCo_D7'],
+
+    var pctWhiteVar = {subFrom:1,multBy:1}; // PCT NON-WHITE
+    // var pctWhiteVar = {subFrom:0,multBy:-1}; // PCT WHITE
+  </script>
+
+  <script src="js/introAnimation.js"></script>
+  <script src='js/index.js'></script>
+  <script src='js/juxtapose.js'></script>
+  <script>
+  showMobileWarning();
+  window.addEventListener('resize', showMobileWarning);
+
+  function showMobileWarning() {
+    if (screen.width <= 768) {
+      d3.select('#mobile-warning').attr('class','mobile-warning-show');
+    } else {
+      d3.select('#mobile-warning').attr('class','mobile-warning-hide');
+    }
+  }
+  </script>
+</body>
+
+</html>
