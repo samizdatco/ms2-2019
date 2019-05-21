@@ -1,0 +1,43 @@
+
+<svg width="434px" height="88px" viewBox="0 0 434 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DFE0E2" offset="0%"></stop>
+            <stop stop-color="#F7F7F8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F6F6F6" offset="0%"></stop>
+            <stop stop-color="#ECECEC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M92,34 C101.388841,34 109,26.3888412 109,17 C109,7.61115879 101.388841,0 92,0 C82.6111588,0 75,7.61115879 75,17 C75,26.3888412 82.6111588,34 92,34 Z" id="path-3"></path>
+        <filter x="-26.5%" y="-26.5%" width="152.9%" height="152.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404584099 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-35.3%" y="-35.3%" width="170.6%" height="170.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="4" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Track-01" transform="translate(0.000000, 48.000000)">
+            <g id="Track" transform="translate(0.000000, 11.000000)" fill="url(#linearGradient-1)">
+                <rect id="Rectangle-1" x="0" y="0" width="434" height="12" rx="6"></rect>
+            </g>
+            <g id="Button">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                <path stroke-opacity="0.28" stroke="#979797" stroke-width="1" d="M92,33.5 C101.112699,33.5 108.5,26.1126988 108.5,17 C108.5,7.88730116 101.112699,0.5 92,0.5 C82.8873012,0.5 75.5,7.88730116 75.5,17 C75.5,26.1126988 82.8873012,33.5 92,33.5 Z" stroke-linejoin="square"></path>
+            </g>
+        </g>
+        <rect id="Rectangle" fill-opacity="0.6" fill="#E8E8E8" x="52" y="0" width="88" height="32" rx="8"></rect>
+        <text id="1950" font-family="Roboto-Medium, Roboto" font-size="25" font-weight="400" fill="#24272E">
+            <tspan x="67.5820312" y="25">1950</tspan>
+        </text>
+    </g>
+</svg>

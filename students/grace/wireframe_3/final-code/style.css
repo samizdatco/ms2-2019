@@ -1,0 +1,135 @@
+@import url("https://use.typekit.net/kry8cxw.css");
+
+
+
+body {
+font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size:62px;
+line-height: 75px;
+text-align: center;
+background-image: url('assets/sample1.jpg');
+/*background-repeat: no-repeat;*/
+/*background-size: 100vw 100vh;*/
+  background-color: #edc7a9;
+  background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0));
+  color: #000000;
+  height: 100vh;
+  transition: background-color 0.5s;
+  
+}
+
+.highlightme { background-color:#FFFFFF; }
+
+
+h1 {
+ font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size: 81px;
+line-height: 83px;
+text-align: center;
+  margin: 10px 0 10px 0;
+  
+}
+
+h2 {
+ font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 65px;
+text-align: center;
+  margin: 10px 0 10px 0;
+
+}
+
+h3 {
+ font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size: 3vmin;
+line-height: 40px;
+text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+h4 {
+ font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size: 2vmin;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.05em;
+
+  margin: 10px 0 10px 0;
+
+
+}
+
+h5 {
+ font-family: Stratos;
+font-style: normal;
+font-weight: bold;
+font-size: 3vmin;
+line-height: 40px;
+text-align: center;
+  margin: 10px 0 10px 0;
+color: #FFFFFF;
+}
+
+h6 {
+  font-family: Acumin Pro Wide;
+font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: normal;
+text-align: center;
+letter-spacing: 0.12em;
+margin-top: .7em;
+
+}
+
+div.slug {
+  padding-top: 4px;
+}
+
+section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+}
+
+section div.square {
+  width: 20px;
+  height: 20px;
+  background-color: #3e78ed;
+  display: inline-block;
+  transition: background-color 0.5s;
+}
+
+section a {
+  color: #000000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
