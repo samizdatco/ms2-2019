@@ -16,7 +16,7 @@ This visualization explores redlining and discriminatory federal New Deal housin
 
 ## Code:
 * [Final Project Page](https://www.ryanabest.com/ms2-2019/thesis/)
-* [GitHub Repository](https://github.com/ryanabest/ms2-2019)
+* [GitHub Repository](https://github.com/ryanabest/ms2-2019/tree/master/thesis)
 * [Zip with all files linked locally](https://github.com/samizdatco/ms2-2019/raw/master/students/ryan/final_thesis/thesis/codezip/RyanBestThesisFinalCode.zip)
 
 ## Images:
