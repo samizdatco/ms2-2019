@@ -1,0 +1,35 @@
+
+<svg width="1140px" height="1148px" viewBox="0 0 1140 1148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-86.000000, -112.000000)">
+            <polyline id="Path" stroke="#404651" stroke-width="3" points="1226 1230 115 1230 115 112 115 112"></polyline>
+            <text id="Pct-White" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400" line-spacing="36" letter-spacing="0.665000021" fill="#A1A8A7">
+                <tspan x="1151" y="1251">Pct White</tspan>
+            </text>
+            <text id="1950" font-family="Roboto-Medium, Roboto" font-size="100" font-weight="400" letter-spacing="4.15625334" fill="#A1A8A7" fill-opacity="0.2">
+                <tspan x="921" y="1167">1950</tspan>
+            </text>
+            <text id="Pct-Homeowners" transform="translate(92.500000, 178.500000) rotate(-90.000000) translate(-92.500000, -178.500000) " font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold" letter-spacing="0.665000021" fill="#A1A8A7">
+                <tspan x="26" y="184">Pct Homeowners</tspan>
+            </text>
+            <circle id="Oval" fill-opacity="0.8" fill="#8C9F5B" cx="942" cy="277" r="56"></circle>
+            <circle id="Oval-Copy-7" fill-opacity="0.8" fill="#8C9F5B" cx="706" cy="196" r="25"></circle>
+            <circle id="Oval-Copy-8" fill-opacity="0.8" fill="#8C9F5B" cx="797.5" cy="236.5" r="29.5"></circle>
+            <circle id="Oval-Copy-9" fill-opacity="0.8" fill="#8C9F5B" cx="463" cy="494" r="18"></circle>
+            <circle id="Oval-Copy" fill-opacity="0.8" fill="#8AA1AB" cx="936.5" cy="331.5" r="37.5"></circle>
+            <circle id="Oval-Copy-4" fill-opacity="0.8" fill="#8AA1AB" cx="962" cy="413" r="25"></circle>
+            <circle id="Oval-Copy-5" fill-opacity="0.8" fill="#8AA1AB" cx="818" cy="476" r="25"></circle>
+            <circle id="Oval-Copy-6" fill-opacity="0.8" fill="#8AA1AB" cx="818" cy="308" r="25"></circle>
+            <circle id="Oval-Copy-2" fill-opacity="0.8" fill="#D6B64C" cx="755.5" cy="387.5" r="37.5"></circle>
+            <circle id="Oval-Copy-10" fill-opacity="0.8" fill="#D6B64C" cx="868" cy="432" r="19"></circle>
+            <circle id="Oval-Copy-3" fill="#CC6D7B" cx="231" cy="512" r="18"></circle>
+            <circle id="Oval-Copy-11" fill="#CC6D7B" cx="463" cy="707" r="18"></circle>
+            <circle id="Oval-Copy-12" fill="#CC6D7B" cx="427" cy="1056" r="18"></circle>
+            <circle id="Oval-Copy-13" fill="#CC6D7B" cx="1047" cy="568" r="18"></circle>
+            <circle id="Oval-Copy-14" fill="#CC6D7B" cx="1079" cy="1010" r="18"></circle>
+            <circle id="Oval-Copy-15" fill="#CC6D7B" cx="832" cy="747" r="25"></circle>
+            <circle id="Oval-Copy-16" fill="#CC6D7B" cx="881" cy="974" r="18"></circle>
+            <circle id="Oval-Copy-17" fill="#CC6D7B" cx="962" cy="689" r="18"></circle>
+        </g>
+    </g>
+</svg>

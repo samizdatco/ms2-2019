@@ -1,0 +1,273 @@
+/* look around on https://fonts.google.com to find other typefaces… */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900|Merriweather:400,700');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+/* end reset */
+
+
+
+/* use the sensible version of the box model */
+
+:root { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+/* typography */
+
+body {
+  font-family:"Roboto", serif;
+  font-size:.875rem;
+  font-weight: 400;
+  line-height:1.4em;
+  letter-spacing:.05rem;
+  color: #e8e8e8;
+}
+
+h1, h2, h3{
+  font-family:"Merriweather", serif;
+  font-weight:bold;
+  line-height:1.3em;
+}
+h1{ font-size:36px; }
+h2{ font-size:21px; }
+h3{ font-size:21px; }
+
+ul{ list-style:circle outside}
+
+::selection { background:#e8e8e8; color:#24272E; }
+
+/* title and intro paragraphs (each occuping the whole screen) */
+
+.title {
+  background: url(../img/placeholder.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.background {
+  height: 100%;
+}
+
+.title, .intro, .conclusion {
+  width:100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.title h1 {
+  font-size: 82px;
+  font-family:"Roboto Slab", serif;
+  font-weight: 900;
+}
+
+.title h2 {
+  color: #e8e8e8;
+  font-size: 24px;
+  font-family:"Roboto", serif;
+  font-weight: 400;
+}
+
+.title-text, .intro-text, .conclusion-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.intro p, .conclusion p, .conclusion ul {
+  line-height: 1.65rem;
+  font-size: 1.2rem;
+  /* letter-spacing: .09rem; */
+  font-weight: 500;
+  max-width: 660px;
+  margin: 20px auto;
+}
+
+.annotation {
+  position: absolute;
+  /* top: 0px; */
+  border: 3px dotted #8591ad;
+  padding: 15px 25px;
+  border-radius: 10px;
+  transform: scale(0.8);
+  /* color: */
+  opacity: 0.5;
+}
+
+
+/* spacing & borders at the top and bottom of the page */
+
+main{
+  max-width:1600px;
+  margin:0 auto;  /* this will horizontally center the content on the page */
+  padding:4em 1em;
+}
+
+article section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 3pt dotted white;
+}
+
+article .graphic {
+  width: 50%;
+}
+
+article .text {
+  width: 35%;
+  margin-left: 10%;
+  /* border: 1pt dashed white; */
+}
+
+
+
+.argument-content {
+  margin-bottom: 40px;
+  max-width: 80%;
+}
+
+/* simple two-column layout within each 'argument' subsection */
+
+article .argument{
+  display: flex;  /* delete this line to disable the multi-column layout (see also: https://yoksel.github.io/flex-cheatsheet) */
+}
+
+article .argument .graphic{
+  margin-right:2em;  /* add some horizontal breathing room b/t the image and the text */
+  margin-left: 2em;
+}
+
+article .argument .text{
+  /* font-style:italic;  /* customize the typography for the descriptive text */ */
+}
+
+
+article .callout {
+  position: absolute;
+  max-width: 30%;
+}
+
+article .eyebrow {
+  text-transform: uppercase;
+  margin: 10spx 0;
+  font-size: .7rem;
+  line-height: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #c6c6c6;
+}
+
+article p, h1, h2 {
+  margin-bottom: 10px;
+}
+
+article h1 {
+  margin: 5px 0 25px 0;
+}
+
+/* vertically center text within left-hand column */
+
+.text {
+  position: relative;
+}
+
+.child-text {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.graphic img {
+    max-height: 95vh;
+    max-width: 100%;
+}
+
+.map {
+  max-height: 95vh;
+  /* width: 100%; */
+}
+
+#slider {
+  margin-top: 50px;
+  width: 50%;
+  /* margin-left:25%; */
+}
+
+/* basic color scheme */
+
+body {
+  background:#24272E;
+}
+
+main{
+  /* background:#e9e9e9; */
+}
+
+article .argument{
+  /* color:#e8e8e8; */
+}
+
+article h3{
+  color:#c30;
+}
+
+
+/* turn off the flex layout when the viewport is narrower than the container */
+
+@media (max-width: 1000px) {
+  article .argument{
+    display:block;
+  }
+
+  h1{ font-size:24px; }
+  h2{ font-size:12px; }
+  h3{ font-size:10px; }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .intro-text, .conclusion-text, .child-text {
+    position: static;
+    transform: none;
+  }
+
+  .argument-content {
+    max-width: 100%;
+  }
+
+  article .text, article .graphic{
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .annotation {
+    position: static;
+  }
+
+  .intro p, .conclusion p, .conclusion ul {
+    line-height: 1.35rem;
+    font-size: 0.9rem;
+    /* letter-spacing: .09rem; */
+    font-weight: 500;
+    max-width: 75%;
+    margin: 40px 10%;
+  }
+
+
+}

@@ -1,0 +1,26 @@
+
+<svg width="1325px" height="1325px" viewBox="0 0 1325 1325" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zone-Profile-Graphics-Copy-2">
+            <rect fill="#24272E" x="0" y="0" width="1325" height="1325"></rect>
+            <circle id="Oval" stroke="#979797" stroke-width="6" fill="#191B20" cx="489" cy="376" r="150"></circle>
+            <circle id="Oval-Copy" stroke="#979797" stroke-width="6" fill="#191B20" cx="867" cy="454" r="228"></circle>
+            <circle id="Oval-Copy-2" stroke="#979797" stroke-width="6" fill="#191B20" cx="371" cy="754" r="228"></circle>
+            <circle id="Oval-Copy-3" stroke="#979797" stroke-width="6" fill="#191B20" cx="717" cy="942" r="150"></circle>
+            <circle id="Oval-Copy-4" stroke="#979797" stroke-width="6" fill="#191B20" cx="948" cy="792" r="110"></circle>
+            <path d="M710.5,291.5 L1028.5,615.5" id="Line-4" stroke="#979797" stroke-width="5" stroke-linecap="square"></path>
+            <path d="M717,626.5 L1013.5,291" id="Line" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M385,271 L593,482" id="Line-5" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M384,483 L594,271" id="Line-2" stroke="#979797" stroke-width="5" stroke-linecap="square"></path>
+            <path d="M216.5,592.5 L514.5,927.5" id="Line-6" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M216,916.5 L525.5,592" id="Line-3" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M620.5,832.5 L822.5,1050.5" id="Line-7" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M620,1051 L809,832" id="Line-8" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M865.5,723.5 L1029,861.5" id="Line-9" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <path d="M869.5,862 L1019,712" id="Line-10" stroke="#979797" stroke-width="6" stroke-linecap="square"></path>
+            <text id="Comparison-of-select" font-family="AndaleMono, Andale Mono" font-size="36" font-weight="normal" fill="#979797">
+                <tspan x="166.317383" y="1200">Comparison of selected handful of neighborhoods</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

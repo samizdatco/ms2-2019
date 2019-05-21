@@ -1,0 +1,507 @@
+/* look around on https://fonts.google.com to find other typefaces… */
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+/*bebas neue, aktiv-grotesk, aktiv-grotesk-thin */
+@import url("https://use.typekit.net/dsl0cau.css");
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+/* end reset */
+
+
+/* use the sensible version of the box model */
+
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+
+/* set default font for body text */
+
+body {
+  font-family: aktiv-grotesk-thin, sans-serif, "Helvetica", 'Saira', sans-serif;
+  font-size:18px;
+  line-height:1.3em;
+  /*background:#e9e9e9;*/
+  background:#877c74;
+  background-image:
+    linear-gradient(
+      #877c74, #8e6f5a
+    );
+}
+
+
+/* headline typography */
+
+h1, #header{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height:1.5em;
+  font-size: 500%;
+  text-align: left;
+  color: white; 
+   background: url(images/met_outsidel2.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px #9fbfcc;
+}
+
+#header1{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height:1.5em;
+  font-size: 330%;
+  color: #e9e9e9;
+  text-align: left;
+   /*-webkit-text-stroke: 1.5px black;*/
+}
+
+
+.title1{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height:1.4em;
+  font-size: 900%;
+}
+
+.title2{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height:1.4em;
+  font-size: 300%;
+  text-align: left;
+  color: white;  /* Fallback: assume this color ON TOP of image */
+   background: url(images/met_outsidel2.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px #9fbfcc;
+}
+
+#header2{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height:1.5em;
+  font-size: 200%;
+  /*brown*/
+  color: #4c4037;
+  text-align: center;
+   /*-webkit-text-stroke: 1.5px black;*/
+}
+
+.subhead{
+  padding-top: 0.5em;
+  font-size: 60%;
+  /*brown*/
+  color: #4c4037;
+}
+
+#intro{
+   /*max-width:900px;*/
+   margin: 4.5em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+h3 #aktiv{
+font-family: aktiv-grotesk-thin, sans-serif;
+font-style: normal;
+font-weight: 200;
+}
+
+h2, h3{
+  font-family: aktiv-grotesk, sans-serif, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight:bold;
+  line-height:1.3em;
+  /*brown*/
+  color: #4c4037;
+}
+
+h1{ font-size:36px; }
+h2{ font-size:24px; }
+h3{ font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height:1.38em;
+    font-size: 200%;
+    /*font-size:21px; */
+    /*color:#c30;*/
+    /*green*/
+    color:#168a06; 
+}
+
+/* spacing & borders at the top and bottom of the page */
+
+main{
+  /*max-width:1000px;*/
+  max-width:1300px;
+  /*margin:4em auto;*/
+  margin:3em auto;
+  
+}
+
+/*.mainsmall{*/
+/*  max-width:1000px;*/
+  /*max-width:1300px;*/
+  /*margin:4em auto;*/
+/*  margin:3em auto;*/
+/*  background:#e9e9e9;*/
+/*}*/
+
+#mainfull{
+    max-width:1300px;
+    margin:3em auto;
+    background:#877c74;
+    margin-top: -10px;
+}
+
+#mainshort{
+    max-width:900px;
+    margin: 4.5em;
+    margin-top: 0px;
+    /*background:#e9e9e9;*/
+    background: #edf9f4;
+}
+
+
+container #mainhuge{
+  background: url(images/DP319028_met3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+header{
+  padding-bottom:2em;
+}
+
+/*header .intro{*/
+/*  margin-top:2em;*/
+/*}*/
+
+article{
+  /*border-bottom:2px solid black;*/
+  border-style: groove;
+  /*border-bottom: 1.5px dashed #9fbfcc;*/
+  border-bottom: 1px dashed #f4c6bd;
+  padding-bottom:1em;
+}
+
+#header {
+  /*border-top:2px solid black;*/
+  border-style: groove;
+  /*border-bottom: 1.5px dashed #9fbfcc;*/
+  border-bottom: 1px dashed #f4c6bd;
+}
+
+hr, .dashline {
+    border: 0;
+    border-bottom: 1px dashed #f4c6bd;
+    /*border-bottom: 1.5px dashed #9fbfcc;*/
+}
+
+p{
+  margin-bottom:1em;
+  /*max-width:660px;*/
+  /*max-width: 1000px;*/
+  /*color: #4c4037;*/
+  color: #f5fcf7;
+  line-height: 1.4em;
+  font-size:17px;
+}
+
+.starter{
+  margin-top: 0.2em;
+  color: #f5fcf7;
+  line-height: 1.4em;
+  font-style:italic;
+}
+
+div .imghuge{
+  background: url(images/DP319028_met3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* simple two-column layout within each 'argument' subsection */
+
+article section.argument{
+  display: flex;  /* delete this line to disable the multi-column layout */
+  margin-top:1em;
+  margin-bottom:2em;
+}
+
+
+.who{
+  font-family: bebas-neue, sans-serif;
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  line-height:1.5em;
+  font-size: 330%;
+  /*color: #e9e9e9;*/
+  color: #877c74;
+  text-align: left;
+   -webkit-text-stroke: 1px #f5fcf7;
+   paint-order: stroke fill;
+}
+
+
+article .argument .graphic{
+  margin-right:1em;  /* add some horizontal breathing room b/t the image and the text */
+}
+
+article .argument .text{
+  color:#444;  /* customize the typography for the descriptive text */
+  /*font-style:italic;*/
+}
+
+.graphic{
+  margin-bottom: 40px;
+  /*border: 2px solid white;*/
+}
+
+
+#conclusion{
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height:1.5em;
+  font-size: 330%;
+  /*color: #e9e9e9;*/
+  color: #9fbfcc;
+  text-align: left;
+   /*-webkit-text-stroke: 1px #f5fcf7;*/
+}
+.endnotes{
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+
+/* 
+  media queries
+  ##Device = Desktops
+  ##Large desktop screen
+ */ 
+@media all and (max-width: 1500px) {
+  main{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+  
+/*   
+  ##Screen = 1281px to higher resolution desktops
+ */ 
+
+
+@media all and (min-width: 1281px) and (max-width: 1499px) {
+  
+    main{
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  
+  main{
+    margin-right: 55px;
+    margin-left: 55px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  
+    #mainshort{
+    margin: 1.8em;
+} 
+
+#intro{
+    margin: 1.8em;
+}
+
+ #mainfull{
+   font-size: 75%;
+   line-height: 75%;
+ }
+ 
+ main{
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  
+   article section.argument{
+    display: inline;
+  }
+  
+  section.argument{
+    display: inline;
+  }
+  
+  .graphic{
+    display: inline;
+  }
+  
+  .who{
+    color: #877c74;
+    -webkit-text-fill-color: white;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    #mainshort{
+    margin: 1.6em;
+}
+  #intro{
+    margin: 1.6em;
+}
+   #mainfull{
+  font-size: 75%;
+  line-height: 75%;
+   }
+   
+  article section.argument{
+    display: inline;
+    font-size: 75%;
+  }
+  
+  section.argument{
+    display: inline;
+  }
+  
+  .graphic{
+    display: inline;
+  }
+  .who{
+    color: #877c74;
+    -webkit-text-fill-color: white;
+  }
+ 
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+main{
+    margin: 1.5em;
+  }
+  
+  #mainshort{
+    margin: 1.5em;
+}
+
+#intro{
+    margin: 1.5em;
+}
+  #mainfull{
+  font-size: 60%;
+  line-height: 45%;
+   /*display: inline;*/
+  }
+  
+  article section.argument{
+    display: inline;
+    font-size: 75%;
+  }
+  
+  section.argument {
+    display: inline;
+  }
+  
+  .graphic{
+    display: inline;
+  }
+  
+  .who{
+    color: #877c74;
+    -webkit-text-fill-color: white;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  
+  main{
+    display: inline;
+    margin: 1.4em;
+  }
+  
+  #mainshort{
+    margin: 1.4em;
+}
+#intro{
+    margin: 1.4em;
+}
+
+  #mainfull{
+  font-size: 50%;
+  line-height: 35%;
+  }
+  
+  p{
+    font-size: 75%;
+  }
+ 
+   article section.argument{
+    display: inline;
+  }
+  
+   article section.argument{
+    display: inline;
+  }
+  
+ section.argument{
+    display: inline;
+  }
+  
+  .graphic{
+    display: inline-block;
+  }
+  
+  .who{
+    color: #877c74;
+    -webkit-text-fill-color: white;
+  }
+}
