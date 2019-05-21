@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="lib/d3.layout.cloud.js"></script>
+<head>
+    <title>ePHI Word Cloud</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+        background-color: #c23;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+        background-color: #c23;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+<input type="text" id="myText" value="">
+<input type="text" id="myText2" value="">
+ 
+ 
+<button onclick="myFunction()">Try it</button>
+ 
+<table>
+ 
+ 
+  <tr>
+      <td id="td11"></td><td id="td12"></td>
+  </tr>
+ 
+<tr>
+      <td id="td21"></td><td id="td22"></td>
+  </tr>
+ 
+ 
+</table>
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    var y = document.getElementById("myText2").value;
+   
+    document.getElementById("td11").innerHTML = x;
+    document.getElementById("td12").innerHTML = y;
+ 
+    var x2 = document.getElementById("myText").value;
+    var y2 = document.getElementById("myText2").value;
+ 
+ 
+    document.getElementById("td21").innerHTML = x2;
+    document.getElementById("td22").innerHTML = y2;
+ 
+ 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+	<div class="composition" style="background-color: #c1605c">
+    <span class="composition-hint">
+    <img class="composition-hint-arrows" src="/images/source.svg" width="18" height="13">
+    Source</span>
+    <pre class="hidden"><code class="composition-static-html">&lt;h1 class=&quot;ml15&quot;&gt;
+  &lt;span class=&quot;word&quot;&gt;Out&lt;/span&gt;
+  &lt;span class=&quot;word&quot;&gt;now&lt;/span&gt;
+&lt;/h1&gt;
+
+</code></pre>
+    <div class="composition-wrapper" data-color="c1605c">
+      <h1 class="ml15">
+  <span class="word">Out</span>
+  <span class="word">now</span>
+</h1>
+
+<!--more-->
+
+<script>
+ml.timelines["ml15"] = anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: function(el, i) {
+      return 800 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+<style>
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+
+
+    </div>
+	</div>

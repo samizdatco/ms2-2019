@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+   <style type="text/css">
+                body {
+                        background-color: #c23;
+                }
+                canvas{
+  			width:1000px !important;
+  			height:400px !important;
+		}
+</style>
+</head>
+<body >
+
+<h1>Data Breaches By State</h1>
+
+<p>See OCR data by state based on Business Associate Agreements</p>
+
+<button id="alapha" onclick="alpha()">Alphabetical</button>
+<button id="sorted" onclick="sort()">Sorted</button>
+
+<p id="demo"></p>
+
+<canvas id="myChart"></canvas>
+
+
+<script>
+
+function alpha() {
+  //document.getElementById("demo").innerHTML = "Alphabetical";
+var ctx = document.getElementById('myChart').getContext('2d');
+//https://www.w3schools.com/colors/colors_shades.asp
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+    scaleFontColor: 'rgb(0,0,0)',
+data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+
+            {
+            label: 'Yes - BAA',
+            backgroundColor: 'rgb(0,0,0)',
+            borderColor: 'rgb(0,0,0)',
+            hoverBackgroundColor: 'rgb(40,40,40)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+            },{
+            label: 'No - BAA',
+            backgroundColor: 'rgb(255,255,255)',
+            borderColor: 'rgb(255,255,255)',
+            hoverBackgroundColor: 'rgb(248,248,248)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+            }
+
+        ]
+    },
+
+
+    // Configuration options go here
+ options: {
+					title: {
+						display: false,
+						text: 'Business Associate Agreement - Stacked',
+                                                fontColor: 'white'
+					},
+                                        legend: {
+            					display: true,
+            					labels: {
+                					fontColor: 'white'
+            					}
+        				},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+                                                        gridLines: {
+                  					  display: false,
+                					},
+                					ticks: {
+                  						fontColor: 'rgb(255,255,255)', // this here
+                					},
+						}],
+						yAxes: [{
+							stacked: true,
+                                                         ticks: {
+                    						suggestedMin: 0,
+                    						suggestedMax: 100,
+                    						fontColor: 'rgb(255,255,255)'
+                					},
+            						override: {
+                    						stepWidth: 10,
+                    						start: 0,
+                    						steps: 10
+                					}
+						}]
+					}
+				}
+
+});
+
+}
+
+
+function sort() {
+  document.getElementById("demo").innerHTML = "Sorted";
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+//https://www.w3schools.com/colors/colors_shades.asp
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+    scaleFontColor: 'rgb(0,0,0)',
+data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [
+
+            {
+            label: 'Yes - BAA',
+            backgroundColor: 'rgb(0,0,0)',
+            borderColor: 'rgb(0,0,0)',
+            hoverBackgroundColor: 'rgb(40,40,40)',
+            data: [45, 30, 20, 10, 5, 2, 0]
+            },{
+            label: 'No - BAA',
+            backgroundColor: 'rgb(255,255,255)',
+            borderColor: 'rgb(255,255,255)',
+            hoverBackgroundColor: 'rgb(248,248,248)',
+            data: [45, 30, 20, 10, 5, 2, 0]
+            }
+
+        ]
+    },
+  // Configuration options go here
+ options: {
+                                        title: {
+                                                display: false,
+                                                text: 'Business Associate Agreement - Stacked',
+                                                fontColor: 'white'
+                                        },
+                                        legend: {
+                                                display: true,
+                                                labels: {
+                                                        fontColor: 'white'
+                                                }
+                                        },
+                                        tooltips: {
+                                                mode: 'index',
+                                                intersect: false
+                                        },
+                                        responsive: true,
+                                        scales: {
+                                                xAxes: [{
+                                                        stacked: true,
+                                                        gridLines: {
+                                                          display: false,
+                                                        },
+                                                        ticks: {
+                                                                fontColor: 'rgb(255,255,255)', // this here
+                                                        },
+                                                }],
+ yAxes: [{
+                                                        stacked: true,
+                                                         ticks: {
+                                                                suggestedMin: 0,
+                                                                suggestedMax: 100,
+                                                                fontColor: 'rgb(255,255,255)'
+                                                        },
+                                                        override: {
+                                                                stepWidth: 10,
+                                                                start: 0,
+                                                                steps: 10
+                                                        }
+                                                }]
+                                        }
+                                }
+
+});
+
+}
+</script>
+
+</body>
+</html>
+

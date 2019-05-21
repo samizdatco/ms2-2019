@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css" /> 
+  <style>
+
+       body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+    }
+    .bld {
+        font-weight: bold;
+    }
+
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+
+
+  #defaultCanvas0{
+    position:absolute;
+    top:0;
+    left:0;
+  }
+
+    /* default dimensions for the leaflet map */
+    #breach-map{
+      width: 800px;
+      height: 900px;
+      transition: height 0.5s ease-in-out;
+      position: sticky;
+    }
+  </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Databreaches in Healthcare</title>
+    <meta name="description" content="Identity Theft.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <!-- EDIT -->
+    <meta property="og:url" content="http://your-url.com/permalink">
+
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides: Healthcare Databreach's Culture" />
+    <meta property="og:description" content="Identity Theft.">
+
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-04-16T16:24:56">
+    <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg" >
+    <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides">
+
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@suzannaschmeelk">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides: Healthcare Databreach's Culture">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="Identity Theft.">
+    <!-- EDIT -->
+    <meta name="twitter:image" content="./static/images/share-webslides.jpg">
+
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="./index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+           <div id="container"> 
+        </section>
+
+
+        <section class="bg-red">
+          <span class="background dark"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>
+              <strong>Identity Theft </strong> <br> How <i> safe </i> is my <i> personal </i> information?  <br>  <i> Databreaches </i> in <i> Healthcare </i>
+            </h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+<section class="bg-red">
+          <span class="background dark"></span>
+          <div class="wrap aligncenter">
+            <h2>
+              <strong>What is HIPAA/HITECH?</strong>
+            </h2>
+            <hr>
+            <h2>HIPAA/HITECH are two federal laws aimed a protecting the privacy and security of electronic health information.</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+ <section class="bg-black">
+          <div class="wrap aligncenter">
+            <h2>
+              <strong>What is <i>e</i>lectronic <i>P</i>atient <i>H</i>ealth <i>I</i>nformation?</strong>
+            </h2>
+          </div>
+          <!-- .end .wrap -->        </section>
+
+         <section class="bg-black">
+          <span class="background" style="background-image:url('http://ec2-18-218-31-2.us-east-2.compute.amazonaws.com/Class04302019/static/images/ephi_WordCloud3.jpg')"></span>
+          <!-- .end .wrap -->        
+         </section>
+
+
+ <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h2> 18 <i> ePHI </i> Identifiers</h2>
+            <hr>
+            <div class="grid">
+              <div class="column">
+              <li>Names </li>
+              <li>All geographical subdivisions smaller than a State</li>
+              <li>All elements of dates (except year) for dates directly related to an (under 90) individual</li>
+              <li>Phone numbers</li>
+              <li>Fax numbers</li>
+              <li>Electronic mail addresses</li>
+              </div>
+              <div class="column">
+              <li>Social Security numbers</li>
+              <li>Medical record numbers</li>
+              <li>Health plan beneficiary numbers</li>
+              <li>Account numbers</li>
+              <li>Certificate/license numbers</li>
+              <li>Vehicle identifiers and serial numbers</li>
+              </div>
+              <div class="column">
+              <li>Device identifiers and serial numbers</li>
+              <li>Web Universal Resource Locators (URLs)</li>
+              <li>Internet Protocol (IP) address numbers</li>
+              <li>Biometric identifiers</li>
+              <li>Full photographic images</li>
+              <li>Any <strong> other </strong> unique identifying number, characteristic, or code</li>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+<section>
+          <div class="wrap aligncenter">
+            <h3>Databreaches can lead to <strong> identity theft </strong></h3>
+            <ul class="flexblock border">
+            <li>
+              Buy property in your name.
+            </li>
+            <li>
+              Open accounts in your name.
+            </li>
+            <li>
+              Not easy to fix.
+            </li>
+            <li>
+              Can plague victim for years.
+            </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-red">
+          <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+             <h2>
+              <strong>Who is leaking ePHI data?</strong>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+<section>
+          <div class="wrap">
+            <div class="grid">
+              <div class="column">
+                <p class="text-context">
+                  Case study.
+                </p>
+                <p class="text-intro"><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf">The US Health and Human Services (HHS) Office of Civil Rights (OCR)</a> investigates reported ePHI databreach cases.  Anthem, a health plan, is still under investigation by the OCR for a 2017 data breach of 18,580 individuals.</p>
+              </div>
+               <!-- end .embed -->
+              </div>
+              <!-- end .column -->
+            </div>
+            <!-- end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+ <section class="bg-black">
+          <div class="wrap">
+            <h3><strong>Who must follow HIPAA/HITECH?</strong></h3>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-users">
+                      <use xlink:href="#fa-users"></use>
+                    </svg>
+                   Business Associate 
+                  </h2>
+                  A person or entity that performs activities involving ePHI on behalf of, or provides services to, a covered entity.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-trophy">
+                      <use xlink:href="#fa-trophy"></use>
+                    </svg>
+                    Health Plan 
+                  </h2>
+                   Health insurance companies, HMOs, company health plans, and certain government programs that pay for health care, such as Medicare and Medicaid. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-star">
+                      <use xlink:href="#fa-star"></use>
+                    </svg>
+                    Healthcare Provider 
+                  </h2>
+                    Those that conduct certain business electronically—including most doctors, clinics, hospitals, psychologists, chiropractors, nursing homes, pharmacies, and dentists.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+<section class="bg-red">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h2>
+              <strong>How is the sensitive <i> ePHI </i> data being leaked?</strong>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+ <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>Breaches Reported <br> by Covered Entities</strong></h3>
+              </div>
+              <div class="column">
+        <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/breach-report-by-covered-entities-legend-horz.jpg" width="700" height="540" alt="Healthcare Databreach"></a>
+            <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/breach-report-by-covered-entities.jpg" width="700" height="540" alt="Healthcare Databreach"></a>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+ <section>
+          <!--.wrap = container (width: 90%) -->
+           <div class="wrap">
+            <h3><strong>Managing Risk</strong></h3>
+           </div>
+          <div class="wrap aligncenter">
+            <div class="grid vertical-align aligncenter">
+              <div class="column">
+            <p> <strong> Healthcare Provider Breach Sources </strong> </p>
+            <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/HealthcareProvider_Source.jpg" width="700" height="540" alt="Healthcare Databreach"></a>
+            </div>
+             <div class="column">
+            <p> <strong> Health Plan Breach Sources </strong> </p>
+            <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/HealthPlan_Source.jpg" width="700" height="540" alt="Healthcare Databreach"></a>
+            </div>
+            <div class="column">
+            <p> <strong> Business Associate Breach Sources </strong> </p>
+            <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/BusinessAssociate_Source.jpg" width="700" height="540" alt="Healthcare Databreach"></a>
+            </div>
+              
+          <div class="aligncenter">
+            <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/Entity_Breach_Sources_Legend.jpg" width="900" height="540" alt="Healthcare Databreach"></a>
+          </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+
+<section class="bg-black">
+          <span class="background dark"></span>
+          <div class="wrap aligncenter">
+            <h2>
+              <strong>Business Associate Agreements (BAA)</strong>
+            </h2>
+            <hr>
+            <h3>
+            A provider enters into a BAA with an outside party that receive access to Protected Health Information (PHI) which orignates with the provider.  In the case of a data breach via the outside party of the providers ePHI, then both the provider and outside party may find themselves at fault with federal regulations.
+            </h3>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+ <section class="bg-red">
+          <span class="background" style="background-image:url('http://ec2-18-218-31-2.us-east-2.compute.amazonaws.com/Class04302019/static/images/Chart1.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-30 bg-white">
+            <h2>
+              <strong>BAA by State</strong>
+            </h2>
+          </div>
+            <h2>
+            </h2>
+          </div>
+            <h2>
+            </h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section class="bg-red">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h2>
+              <strong>In what states are these covered entities located?</strong>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section>
+          <span class="background" style="background-image:url('http://ec2-18-218-31-2.us-east-2.compute.amazonaws.com/Class04302019/static/images/FinalProjectFall2018.png')"></span>
+           <!-- <div id="sketch-holder"> -->
+           <!--- <div id="breach-map"> --> 
+
+            <div class="wrap size-20 bg-white">
+            <h2>
+            <a href="http://ec2-18-218-31-2.us-east-2.compute.amazonaws.com/Class04302019/GeoLocation/">Link</a> 
+            </h2>
+          </div>
+        </section>
+
+
+
+
+        <section>
+          <div class="wrap size-70 aligncenter">
+            <h3><strong>Anatomy of a Breach</strong></h3>
+            <hr>
+            <p class="text-intro">Let us explore commonalities between different breach sources.</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section>
+               
+             <object type="image/svg+xml" data="Schmeelk_NS_Qual_Mockup_Thesis_Page.svg">
+  Your browser does not support SVG
+</object>
+             
+        </section>
+
+
+
+      </article>
+    </main>
+    <!--main-->
+
+    <footer>
+      <div class="wrap">
+        <p>
+          <span class="alignright"><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf" title="Healthcare Databreach"><img src="./static/images/logos/netflix.svg" alt="Healthcare Databreach"></a></span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Required -->
+    <script src="./static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+     <script defer src="./static/js/svg-icons.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+     <script src="lib/leaflet/leaflet.js"></script>
+     <script src="lib/p5.min.js"></script>
+     <script src="lib/lodash.min.js"></script>
+     <script src="lib/brewer.js"></script>
+     <script src="sketch2.js"></script> 
+     <script src="sketch.js"></script> 
+     <script src="browserify.js"></script> 
+     <script src="lib/d3/d3.js"></script>
+     <script src="lib/d3/d3.layout.cloud.js"></script>
+     <script src="d3.wordcloud.js"></script>
+     <script src="http://d3js.org/d3.v3.min.js"></script>
+     <script src="lib/d3.layout.cloud.js"></script>
+     <script src="lib/wordcloud2.js"></script>
+
+  </body>
+</html>

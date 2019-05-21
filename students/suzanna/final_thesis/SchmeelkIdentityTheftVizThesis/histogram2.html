@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.bar rect {
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #999999;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+chart = {
+  const svg = d3.select(DOM.svg(width, height));
+  
+  const bar = svg.append("g")
+      .attr("fill", "steelblue")
+    .selectAll("rect")
+    .data(bins)
+    .join("rect")
+      .attr("x", d => x(d.x0) + 1)
+      .attr("width", d => Math.max(0, x(d.x1) - x(d.x0) - 1))
+      .attr("y", d => y(d.length))
+      .attr("height", d => y(0) - y(d.length));
+
+  svg.append("g")
+      .call(xAxis);
+  
+  svg.append("g")
+      .call(yAxis);
+  
+  return svg.node();
+}
+
+data = Object.assign(await d3.csv("https://gist.githubusercontent.com/mbostock/682b782da9e1448e6eaac00bb3d3cd9d/raw/0e0a145ded8b1672701dc8b2a702e51c648312d4/unemployment.csv", ({rate}) => +rate), {x: "Unemployment (%)", y: "Counties"})
+
+bins = d3.histogram()
+    .domain(x.domain())
+    .thresholds(x.ticks(40))
+  (data);
+
+x = d3.scaleLinear()
+    .domain(d3.extent(data)).nice()
+    .range([margin.left, width - margin.right])
+
+
+
+
+
+</script>

@@ -1,0 +1,19 @@
+Names
+All geographical subdivisions smaller than a State
+All elements of dates (except year) for dates directly related to an individual
+Phone numbers
+Fax numbers
+Electronic mail addresses
+Social Security numbers
+Medical record numbers
+Health plan beneficiary numbers
+Account numbers
+Certificate/license numbers
+Vehicle identifiers and serial numbers, including license plate numbers
+Device identifiers and serial numbers
+Web Universal Resource Locators (URLs)
+Internet Protocol (IP) address numbers
+Biometric identifiers
+Full images
+Any other unique identifying number, characteristic, or code 
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  body {
+           background-color: #c23;
+           text-align: center; 
+  }
+  ul {
+          text-align: left; 
+          color: white; 
+  } 
+ 
+  .hidetable {
+         display: none;
+  }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
+   
+</script>
+<table cellpadding="1" style="width:80%;margin-left:75px;margin:45px;" align:"center" >
+  <tr>
+     <th></th>
+     <th></th>
+    <th>
+        <table class='hidetable names' style="width:100%;border:1px solid black;" >
+        <tr>
+            <th> 
+              <img src="./ephi/names.png" alt="Names" style="width:100px;">
+            </th>
+        <th>
+          <ul>
+            <li>Names</li>
+            <li>Electronic mail addresses</li>
+            <li>Web Universal Resource Locators (URLs)</li>
+          </ul>
+         </th>
+        </tr>
+        </table> 
+     </th>
+     <th></th>
+     <th></th>
+     <th></th>
+     <th></th>
+     <th>
+        <table class='hidetable biometrics' style="width:100%;border:1px solid black;" >
+        <tr>
+            <th> 
+              <img src="./ephi/biometrics.png" alt="Names" style="width:100px;">
+            </th>
+        <th>
+           <ul>
+               <li>Biometric identifiers</li>
+              <li>Full photographic images</li>
+           </ul>
+         </th>
+        </tr>
+        </table> 
+     </th>
+  </tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+<tr>
+     <th></th>
+     <th></th>
+     <th>
+        <table class='hidetable time' style="width:100%;border:1px solid black;" >
+        <tr>
+            <th>
+              <img src="./ephi/time.png" alt="Names" style="width:100px;">
+            </th>
+        <th>
+          <ul>
+             <li>All elements of dates (except year) for dates directly related to an (under 90) individual</li>
+          </ul>
+         </th>
+        </tr>
+        </table>
+     </th>
+
+     <th></th>
+     <th></th>
+     <th></th>
+    <th> </th> 
+     <th>
+        <table class='hidetable geo' style="width:100%;border:1px solid black;" >
+        <tr>
+            <th>
+             <img src="./ephi/geo.png" alt="Names" style="width:100px;">
+            </th>
+        <th>
+          <ul>
+              <li>All geographical subdivisions smaller than a State</li>
+          </ul>
+         </th>
+        </tr>
+        </table>
+     </th>
+  </tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr>
+    <th> </th>
+    <th> </th>
+    <th>
+        <table class='hidetable numbers' style="width:100%;border:1px solid black;" >
+        <tr>
+            <th>
+              <img src="./ephi/numbers.png" alt="Names" style="width:100px;">
+            </th>
+        <th>
+          <ul>
+           <li>Phone numbers</li>
+              <li>Fax numbers</li>
+              <li>Social Security numbers</li>
+              <li>Medical record numbers</li>
+              <li>Health plan beneficiary numbers</li>
+            </ul>
+         </th>
+
+         <th>
+          <ul>
+              <li>Account numbers</li>
+              <li>Certificate/license numbers</li>
+              <li>Vehicle identifiers and serial numbers</li>
+              <li>Device identifiers and serial numbers</li>
+              <li>Internet Protocol (IP) address numbers</li>
+           </ul>
+         </th>
+        </table>
+     <th></th>
+     <th></th>
+     <th></th>
+         <th></th>
+         <th>
+          <table class='hidetable unknown' style="width:100%;border:1px solid black;" >
+          <tr>
+          <th>
+              <img src="./ephi/unknown.png" alt="Names" style="width:100px;">
+          </th>
+          <th> 
+		<ul>
+                <li> Any <strong> other </strong> unique identifying number, characteristic, or code</li>
+		</ul>
+          </th></tr></table>
+         </th>
+        </tr>
+     </th>
+  </tr>
+</table>
+<script>
+setTimeout(function(){
+  $('.names').show();
+}, 50);
+setTimeout(function(){
+  $('.biometrics').show();
+}, 1000);
+setTimeout(function(){
+  $('.time').show();
+}, 3000);
+setTimeout(function(){
+  $('.geo').show();
+}, 4000);
+setTimeout(function(){
+  $('.numbers').show();
+}, 5000);
+setTimeout(function(){
+  $('.unknown').show();
+}, 6000);
+</script>
+</body>
+</html>
+

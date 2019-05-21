@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css" /> <!-- default styles -->
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+
+
+  #defaultCanvas0{
+    position:absolute;
+    top:0;
+    left:0;
+  }
+
+    /* default dimensions for the leaflet map */
+    #breach-map{
+      width: 800px;
+      height: 900px;
+      transition: height 0.5s ease-in-out;
+      position: sticky;
+    }
+  </style>
+</head>
+<body>
+  <!-- The container div for our leaflet map -->
+  <div id="breach-map"></div>
+
+  <!-- load our dependencies and sketch file -->
+  <script src="sketch2.js"></script>
+
+  <!-- p5.js will create a canvas element here at runtime -->
+</body>
+</html>

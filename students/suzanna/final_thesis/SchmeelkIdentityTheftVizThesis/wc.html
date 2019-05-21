@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="lib/d3.layout.cloud.js"></script>
+<head>
+    <title>ePHI Word Cloud</title>
+</head>
+<style>
+    body {
+        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+        background-color: #c23;
+    }
+    .legend {
+        border: 1px solid #555555;
+        border-radius: 5px 5px 5px 5px;
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 8px;
+        background-color: #c23;
+    }
+    .bld {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+</body>
+<script>
+
+    var frequency_list = [{"text":"numbers","size":11},{"text":"identifiers","size":3},{"text":"serial","size":2},{"text":"license","size":2},{"text":"dates","size":2},{"text":"year","size":1},{"text":"urls","size":1},{"text":"web","size":1},{"text":"universal","size":1},{"text":"unique","size":1},{"text":"subdivisions","size":1},{"text":"state","size":1},{"text":"social","size":1},{"text":"smaller","size":1},{"text":"security","size":1},{"text":"resource","size":1},{"text":"record","size":1},{"text":"protocol","size":1},{"text":"plate","size":1},{"text":"plan","size":1},{"text":"phone","size":1},{"text":"other","size":1},{"text":"number","size":1},{"text":"names","size":1},{"text":"medical","size":1},{"text":"locators","size":1},{"text":"ip","size":1},{"text":"internet","size":1},{"text":"individual","size":1},{"text":"including","size":1},{"text":"images","size":1},{"text":"identifying","size":1},{"text":"health","size":1},{"text":"geographical","size":1},{"text":"fax","size":1},{"text":"device","size":1},{"text":"code","size":1},{"text":"characteristic","size":1},{"text":"certificate","size":1},{"text":"biometric","size":1},{"text":"beneficiary","size":1},{"text":"addresses","size":1},{"text":"address","size":1},{"text":"account","size":1}];
+
+
+    var color = d3.scale.linear()
+            .domain([1,2,3,11])
+            .range(["#808080", "#DCDCDC","#FFFFFF", "#000000"]);
+
+    d3.layout.cloud().size([1200, 600])
+            .words(frequency_list)
+            .rotate(0)
+            .fontSize(function(d) { return d.size * 25; })
+            .on("end", draw)
+            .start();
+
+    function draw(words) {
+        d3.select("body").append("svg")
+                .attr("width", 1250)
+                .attr("height", 650)
+                .attr("class", "wordcloud")
+                .append("g")
+                // without the transform, words words would get cutoff to the left and top, they would
+                // appear outside of the SVG area
+                .attr("transform", "translate(320,200)")
+                .selectAll("text")
+                .data(words)
+                .enter().append("text")
+                .style("font-size", function(d) { return d.size + "px"; })
+                .style("fill", function(d, i) { console.log(d.text + " " + color(i)); return color(i); })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+    }
+</script>
+
+
+</html>
