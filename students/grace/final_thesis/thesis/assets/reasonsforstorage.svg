@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 908.9 764" style="enable-background:new 0 0 908.9 764;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_4_);fill:#231F20;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'AcuminPro-Bold';}
+	.st5{font-size:20px;}
+	.st6{letter-spacing:-1;}
+	.st7{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.3;}
+	.st8{clip-path:url(#SVGID_6_);}
+	.st9{font-family:'AcuminPro-Medium';}
+	.st10{font-size:16px;}
+	.st11{letter-spacing:1;}
+	.st12{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;}
+	.st13{clip-path:url(#SVGID_8_);fill:#FF00FF;}
+	.st14{clip-path:url(#SVGID_8_);fill:#FFD600;}
+	.st15{clip-path:url(#SVGID_8_);fill:#F98675;}
+	.st16{clip-path:url(#SVGID_8_);fill:#00FFFF;}
+	.st17{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
+	.st18{clip-path:url(#SVGID_8_);fill:#0664FF;}
+	.st19{opacity:0.8;clip-path:url(#SVGID_8_);}
+	.st20{clip-path:url(#SVGID_10_);fill:#FFFFFF;}
+	.st21{fill:#231F20;}
+	.st22{font-size:22px;}
+	.st23{clip-path:url(#SVGID_2_);fill:none;stroke:#231F20;stroke-width:0.5;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="908.9" height="764"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="9" y="56.1" class="st0" width="32" height="666.1"/>
+	<g class="st1">
+		<defs>
+			<rect id="SVGID_3_" width="908.9" height="764"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st2" d="M30.4,197.3v2.1c-0.3,0.1-0.7,0.2-1,0.2c0.8,0.6,1.2,1.7,1.2,3.1c0,3.3-2.5,5-5.5,5c-3.3,0-5.7-1.9-5.7-5.5
+			c0-3.2,1.9-4.7,3.5-4.9v3.1c-0.6,0.2-1.3,0.5-1.3,1.8c0,1.8,1.6,2.2,3.4,2.2c1.7,0,3.3-0.5,3.3-2.3c0-1.6-1.2-1.9-1.9-1.9h-0.1v2
+			h-2.2v-5H30.4z M25,232.7c3,0,5.6,1.8,5.6,5.5c0,3.6-2.5,5.4-5.6,5.4c-3.1,0-5.6-1.9-5.6-5.5C19.4,234.7,21.8,232.7,25,232.7z
+			 M27.1,261.9c0.9-0.2,1.3-0.8,1.3-1.9c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3
+			c0-3.1,1.6-4.4,3.3-4.5v3c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4
+			c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8V261.9z M27.1,311.3c0.9-0.2,1.3-0.8,1.3-1.9c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2
+			c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3c0-3.1,1.6-4.4,3.3-4.5v3c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2
+			c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8V311.3z M27.1,337c0.9-0.2,1.3-0.8,1.3-1.9
+			c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3c0-3.1,1.6-4.4,3.3-4.5v3
+			c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8
+			V337z M27.1,364.5c0.9-0.2,1.3-0.8,1.3-1.9c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8
+			c-1.8,0-3.3-1.3-3.3-4.3c0-3.1,1.6-4.4,3.3-4.5v3c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2
+			c0.8-3.3,2-4,3.6-4c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8V364.5z M25,406.5c3,0,5.6,1.8,5.6,5.5c0,3.6-2.5,5.4-5.6,5.4
+			c-3.1,0-5.6-1.9-5.6-5.5C19.4,408.5,21.8,406.5,25,406.5z M27.1,435.7c0.9-0.2,1.3-0.8,1.3-1.9c0-1-0.3-1.4-1-1.4
+			c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3c0-3.1,1.6-4.4,3.3-4.5v3c-0.6,0.1-1.2,0.4-1.2,1.5
+			c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8V435.7z M26.8,452.6
+			c2.2,0.4,3.7,2,3.7,5c0,3.5-2.4,5.2-5.5,5.2c-3,0-5.7-1.7-5.7-5.4c0-3.2,1.8-4.6,3.7-4.8v3.1c-0.8,0.2-1.5,0.6-1.5,1.8
+			c0,1.5,1.5,2.1,3.3,2.1c1.7,0,3.4-0.4,3.4-2.1c0-1.3-0.9-1.6-1.5-1.7V452.6z M27.1,518.5c0.9-0.2,1.3-0.8,1.3-1.9
+			c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3c0-3.1,1.6-4.4,3.3-4.5v3
+			c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8
+			V518.5z M25,535.9c3,0,5.6,1.8,5.6,5.5c0,3.6-2.5,5.4-5.6,5.4c-3.1,0-5.6-1.9-5.6-5.5C19.4,537.9,21.8,535.9,25,535.9z M27.1,555
+			c0.9-0.2,1.3-0.8,1.3-1.9c0-1-0.3-1.4-1-1.4c-0.7,0-1,0.5-1.4,2.2c-0.8,3.2-1.9,3.8-3.4,3.8c-1.8,0-3.3-1.3-3.3-4.3
+			c0-3.1,1.6-4.4,3.3-4.5v3c-0.6,0.1-1.2,0.4-1.2,1.5c0,0.7,0.3,1.2,0.8,1.2c0.6,0,0.8-0.4,1.2-2c0.8-3.3,2-4,3.6-4
+			c2,0,3.4,1.6,3.4,4.7c0,3-1.4,4.6-3.5,4.8V555z M26,186.6v4.9h2V186l2.3,0.4v8.1H19.6v-8.1H22v5.1h1.7v-4.9H26z M28.3,216l2.1,0.6
+			v3.1l-10.7-3.4v-4.1l10.7-3.5v3.3l-2.1,0.7V216z M26.3,227.2h4.1v3.1H19.6V225c0-2.5,1.4-3.8,3-3.8c1.5,0,2.2,0.9,2.5,1.6
+			c0.2-0.7,1-1.4,2.8-1.4h0.5c0.7,0,1.5,0,2-0.1v3c-0.5,0.2-1.2,0.2-2.3,0.2h-0.3c-0.9,0-1.4,0.2-1.4,1.6V227.2z M22,251v3.1h-2.3
+			v-9.3H22v3h8.4v3.2H22z M19.6,281.6v-8H22v4.9h2.1v-4.6h2.3v4.6h4v3.1H19.6z M19.6,291.7v-3.2H28v-5.1l2.3,0.3v7.9H19.6z
+			 M26,294.6v4.9h2V294l2.3,0.4v8.1H19.6v-8.1H22v5.1h1.7v-4.9H26z M26,320.4v4.9h2v-5.5l2.3,0.4v8.1H19.6v-8.1H22v5.1h1.7v-4.9H26z
+			 M19.6,348.7h6.6c1.5,0,2.1-0.8,2.1-1.7c0-1-0.6-1.6-2.1-1.6h-6.6v-3.2h6.3c3.6,0,4.7,2.1,4.7,4.8c0,2.8-1.2,4.8-4.6,4.8h-6.3
+			V348.7z M26.3,375.4h4.1v3.1H19.6v-5.3c0-2.5,1.4-3.8,3-3.8c1.5,0,2.2,0.9,2.5,1.6c0.2-0.7,1-1.4,2.8-1.4h0.5c0.7,0,1.5,0,2-0.1v3
+			c-0.5,0.2-1.2,0.2-2.3,0.2h-0.3c-0.9,0-1.4,0.2-1.4,1.6V375.4z M26,381.3v4.9h2v-5.5l2.3,0.4v8.1H19.6v-8.1H22v5.1h1.7v-4.9H26z
+			 M26.9,395.1c-1.7,0-3.8,0-5.1-0.1v0.1c2.3,0.4,5.5,1.2,8.6,1.9v2.5c-3,0.6-6.2,1.3-8.6,1.7v0.1c1.3-0.1,3.4-0.2,5.2-0.2h3.4v2.8
+			H19.6v-4.5c2.2-0.5,5.3-1.1,6.9-1.4v0c-1.7-0.3-4.6-1-6.9-1.6v-4.4h10.7v3H26.9z M22,424.9v3.1h-2.3v-9.3H22v3h8.4v3.2H22z
+			 M19.6,447.4h6.6c1.5,0,2.1-0.8,2.1-1.7c0-1-0.6-1.6-2.1-1.6h-6.6v-3.2h6.3c3.6,0,4.7,2.1,4.7,4.8c0,2.8-1.2,4.8-4.6,4.8h-6.3
+			V447.4z M30.4,474.9h-3.7c-0.1,0-0.2,0-0.4,0.1l-6.6,3.7v-3.6c1.5-0.7,3.3-1.5,4.5-1.9c-1.2-0.4-3.1-1.3-4.5-2V468l6.6,3.7
+			c0.1,0,0.2,0.1,0.4,0.1h3.7V474.9z M19.6,490v-3.2h4v-3.3h-4v-3.2h10.7v3.2H26v3.3h4.4v3.2H19.6z M30.4,504.1l-10.7,2.6v-3.3
+			c4.1-0.7,5.9-1,7.6-1.1v0c-2.3-0.4-5.1-1.1-7.6-1.6v-2.8c2.2-0.5,5.2-1.2,7.5-1.6v0c-2.2-0.3-5.8-1-7.5-1.2v-3l10.7,2.7v3.2
+			c-2.2,0.5-4.8,1.1-6.8,1.5v0c2,0.4,4.8,1,6.8,1.5V504.1z M30.4,533.5H19.6v-3.8c2.4-1.1,5.7-2.8,7-3.2v-0.1
+			c-1.1,0.1-3,0.2-4.7,0.2h-2.3v-2.9h10.7v3.6c-1.9,0.9-6,2.9-7.4,3.4v0c1-0.1,3.1-0.1,5-0.1h2.4V533.5z M28.3,566.4l2.1,0.6v3.1
+			l-10.7-3.4v-4.1l10.7-3.5v3.3l-2.1,0.7V566.4z M26,571.9v4.9h2v-5.5l2.3,0.4v8.1H19.6v-8.1H22v5.1h1.7v-4.9H26z M26.3,588.4h4.1
+			v3.1H19.6v-5.3c0-2.5,1.4-3.8,3-3.8c1.5,0,2.2,0.9,2.5,1.6c0.2-0.7,1-1.4,2.8-1.4h0.5c0.7,0,1.5,0,2-0.1v3
+			c-0.5,0.2-1.2,0.2-2.3,0.2h-0.3c-0.9,0-1.4,0.2-1.4,1.6V588.4z M25,240.3c2,0,3.3-0.7,3.3-2.2c0-1.6-1.5-2.2-3.3-2.2
+			c-2,0-3.3,0.6-3.3,2.2C21.7,239.7,23,240.3,25,240.3z M25,414.1c2,0,3.3-0.7,3.3-2.2c0-1.6-1.5-2.2-3.3-2.2c-2,0-3.3,0.6-3.3,2.2
+			C21.7,413.5,23,414.1,25,414.1z M25,543.6c2,0,3.3-0.7,3.3-2.2c0-1.6-1.5-2.2-3.3-2.2c-2,0-3.3,0.6-3.3,2.2
+			C21.7,542.9,23,543.6,25,543.6z M25.9,213.2c-1.7,0.5-3.2,0.9-4.2,1.2v0c1.2,0.2,2.7,0.7,4.2,1.1V213.2z M25.9,563.6
+			c-1.7,0.5-3.2,0.9-4.2,1.2v0c1.2,0.2,2.7,0.7,4.2,1.1V563.6z M24.1,227.2v-1.5c0-1-0.4-1.4-1.2-1.4s-1.1,0.5-1.1,1.4v1.5H24.1z
+			 M24.1,375.4v-1.5c0-1-0.4-1.4-1.2-1.4s-1.1,0.5-1.1,1.4v1.5H24.1z M24.1,588.4v-1.5c0-1-0.4-1.4-1.2-1.4s-1.1,0.5-1.1,1.4v1.5
+			H24.1z M23.7,266.9h2.4v4.6h-2.4V266.9z"/>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 83.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.3" y="0" class="st3 st4 st5">g </tspan><tspan x="75.9" y="0" class="st3 st4 st5">i</tspan><tspan x="81.6" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s </tspan><tspan x="134.2" y="0" class="st3 st4 st5">t</tspan><tspan x="141.7" y="0" class="st3 st4 st5">h</tspan><tspan x="153.9" y="0" class="st3 st4 st5">a</tspan><tspan x="165.3" y="0" class="st3 st4 st5">t </tspan><tspan x="178.2" y="0" class="st3 st4 st5">y</tspan><tspan x="188.6" y="0" class="st3 st4 st5">o</tspan><tspan x="200.5" y="0" class="st3 st4 st5">u </tspan><tspan x="217.8" y="0" class="st3 st4 st5">d</tspan><tspan x="230.2" y="0" class="st3 st4 st5">o</tspan><tspan x="242.1" y="0" class="st3 st4 st5">n</tspan><tspan x="254.2" y="0" class="st3 st4 st5">’</tspan><tspan x="260.2" y="0" class="st3 st4 st5">t </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 103.1585)"><tspan x="0" y="0" class="st3 st4 st5">h</tspan><tspan x="12.2" y="0" class="st3 st4 st5">a</tspan><tspan x="23.3" y="0" class="st3 st4 st5">v</tspan><tspan x="33.7" y="0" class="st3 st4 st5">e </tspan><tspan x="50.5" y="0" class="st3 st4 st5">r</tspan><tspan x="58.6" y="0" class="st3 st4 st5">oo</tspan><tspan x="82.5" y="0" class="st3 st4 st5">m </tspan><tspan x="105.6" y="0" class="st3 st4 st5">f</tspan><tspan x="112.4" y="0" class="st3 st4 st5">o</tspan><tspan x="124.3" y="0" class="st3 st4 st5">r </tspan><tspan x="137.9" y="0" class="st3 st4 st5">a</tspan><tspan x="149.2" y="0" class="st3 st4 st5">t </tspan><tspan x="162.1" y="0" class="st3 st4 st5">h</tspan><tspan x="174.3" y="0" class="st3 st4 st5">om</tspan><tspan x="204" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 185.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.4" y="0" class="st3 st4 st5">g </tspan><tspan x="76" y="0" class="st3 st4 st5">i</tspan><tspan x="81.7" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s </tspan><tspan x="134.2" y="0" class="st3 st4 st5">y</tspan><tspan x="144.6" y="0" class="st3 st4 st5">o</tspan><tspan x="156.5" y="0" class="st3 st4 st5">u</tspan><tspan x="168.6" y="0" class="st3 st4 st5"> </tspan><tspan x="173.8" y="0" class="st3 st4 st5">n</tspan><tspan x="186" y="0" class="st3 st4 st5">o </tspan><tspan x="203.2" y="0" class="st3 st4 st5">lo</tspan><tspan x="220.9" y="0" class="st3 st4 st5">n</tspan><tspan x="233.1" y="0" class="st3 st4 st5">ge</tspan><tspan x="256.8" y="0" class="st3 st4 st5">r </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 205.1585)"><tspan x="0" y="0" class="st3 st4 st5">n</tspan><tspan x="12.2" y="0" class="st3 st4 st5">e</tspan><tspan x="23.7" y="0" class="st3 st4 st5">e</tspan><tspan x="35.2" y="0" class="st3 st4 st5">d </tspan><tspan x="52.9" y="0" class="st3 st4 st5">b</tspan><tspan x="65.2" y="0" class="st3 st4 st5">u</tspan><tspan x="77.2" y="0" class="st3 st4 st5">t </tspan><tspan x="90.1" y="0" class="st3 st4 st5">w</tspan><tspan x="106.2" y="0" class="st3 st4 st5">a</tspan><tspan x="117.6" y="0" class="st3 st4 st5">n</tspan><tspan x="129.6" y="0" class="st3 st4 st5">t </tspan><tspan x="142.5" y="0" class="st3 st4 st5">t</tspan><tspan x="149.9" y="0" class="st3 st4 st5">o </tspan><tspan x="167.2" y="0" class="st3 st4 st5">h</tspan><tspan x="179.3" y="0" class="st3 st4 st5">ol</tspan><tspan x="197" y="0" class="st3 st4 st5">d</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 287.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.4" y="0" class="st3 st4 st5">g </tspan><tspan x="76" y="0" class="st3 st4 st5">i</tspan><tspan x="81.7" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s </tspan><tspan x="134.2" y="0" class="st3 st4 st5">y</tspan><tspan x="144.6" y="0" class="st3 st4 st5">o</tspan><tspan x="156.5" y="0" class="st3 st4 st5">u </tspan><tspan x="173.8" y="0" class="st3 st4 st5">in</tspan><tspan x="191.6" y="0" class="st3 st4 st5">h</tspan><tspan x="203.8" y="0" class="st3 st4 st5">e</tspan><tspan x="215.3" y="0" class="st3 st4 st5">r</tspan><tspan x="223.3" y="0" class="st3 st4 st5">i</tspan><tspan x="229" y="0" class="st3 st4 st5">t</tspan><tspan x="236.4" y="0" class="st3 st4 st5">e</tspan><tspan x="248" y="0" class="st3 st4 st5">d </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 307.1585)"><tspan x="0" y="0" class="st3 st4 st5">b</tspan><tspan x="12.4" y="0" class="st3 st4 st5">e</tspan><tspan x="23.9" y="0" class="st3 st4 st5">c</tspan><tspan x="35.1" y="0" class="st3 st4 st5">a</tspan><tspan x="46.5" y="0" class="st3 st4 st5">u</tspan><tspan x="58.5" y="0" class="st3 st4 st5">s</tspan><tspan x="69.1" y="0" class="st3 st4 st5">e </tspan><tspan x="85.9" y="0" class="st3 st4 st5">o</tspan><tspan x="97.8" y="0" class="st3 st4 st5">f</tspan><tspan x="104.7" y="0" class="st3 st4 st5"> a </tspan><tspan x="126.8" y="0" class="st3 st4 st5">d</tspan><tspan x="139.2" y="0" class="st3 st4 st5">e</tspan><tspan x="150.6" y="0" class="st3 st4 st5">a</tspan><tspan x="162" y="0" class="st3 st4 st5">t</tspan><tspan x="169.5" y="0" class="st3 st4 st5">h </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 389.1585)"><tspan x="0" y="0" class="st3 st4 st5 st6">T</tspan><tspan x="10.7" y="0" class="st3 st4 st5">e</tspan><tspan x="22.1" y="0" class="st3 st4 st5">m</tspan><tspan x="39.8" y="0" class="st3 st4 st5">p</tspan><tspan x="52.2" y="0" class="st3 st4 st5">o</tspan><tspan x="64.1" y="0" class="st3 st4 st5">r</tspan><tspan x="72.2" y="0" class="st3 st4 st5">a</tspan><tspan x="83.6" y="0" class="st3 st4 st5">r</tspan><tspan x="92.3" y="0" class="st3 st4 st5">y</tspan><tspan x="103" y="0" class="st3 st4 st5"> </tspan><tspan x="108.3" y="0" class="st3 st4 st5">s</tspan><tspan x="119" y="0" class="st3 st4 st5">t</tspan><tspan x="126.4" y="0" class="st3 st4 st5">o</tspan><tspan x="138.4" y="0" class="st3 st4 st5">ra</tspan><tspan x="157.9" y="0" class="st3 st4 st5">g</tspan><tspan x="170.2" y="0" class="st3 st4 st5">e </tspan><tspan x="186.9" y="0" class="st3 st4 st5">f</tspan><tspan x="193.7" y="0" class="st3 st4 st5">o</tspan><tspan x="205.7" y="0" class="st3 st4 st5">r </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 409.1585)"><tspan x="0" y="0" class="st3 st4 st5">p</tspan><tspan x="12.4" y="0" class="st3 st4 st5">ers</tspan><tspan x="42.7" y="0" class="st3 st4 st5">o</tspan><tspan x="54.6" y="0" class="st3 st4 st5">n</tspan><tspan x="66.8" y="0" class="st3 st4 st5">a</tspan><tspan x="78.2" y="0" class="st3 st4 st5">l </tspan><tspan x="89.3" y="0" class="st3 st4 st5">i</tspan><tspan x="95" y="0" class="st3 st4 st5">t</tspan><tspan x="102.4" y="0" class="st3 st4 st5">e</tspan><tspan x="113.9" y="0" class="st3 st4 st5">m</tspan><tspan x="131.6" y="0" class="st3 st4 st5">s </tspan><tspan x="147.5" y="0" class="st3 st4 st5">wh</tspan><tspan x="176" y="0" class="st3 st4 st5">i</tspan><tspan x="181.7" y="0" class="st3 st4 st5">l</tspan><tspan x="187.4" y="0" class="st3 st4 st5">e </tspan><tspan x="204.2" y="0" class="st3 st4 st5">a</tspan><tspan x="215.4" y="0" class="st3 st4 st5">w</tspan><tspan x="231.5" y="0" class="st3 st4 st5">a</tspan><tspan x="242.6" y="0" class="st3 st4 st5">y </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 501.1585)"><tspan x="0" y="0" class="st3 st4 st5">O</tspan><tspan x="15.8" y="0" class="st3 st4 st5">t</tspan><tspan x="23.4" y="0" class="st3 st4 st5">h</tspan><tspan x="35.6" y="0" class="st3 st4 st5">e</tspan><tspan x="47" y="0" class="st3 st4 st5">r</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 593.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.4" y="0" class="st3 st4 st5">g </tspan><tspan x="76" y="0" class="st3 st4 st5">i</tspan><tspan x="81.7" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s </tspan><tspan x="134.2" y="0" class="st3 st4 st5">us</tspan><tspan x="156.8" y="0" class="st3 st4 st5">u</tspan><tspan x="168.8" y="0" class="st3 st4 st5">al</tspan><tspan x="185.9" y="0" class="st3 st4 st5">l</tspan><tspan x="191.7" y="0" class="st3 st4 st5">y </tspan><tspan x="207.7" y="0" class="st3 st4 st5">k</tspan><tspan x="218.9" y="0" class="st3 st4 st5">e</tspan><tspan x="230.3" y="0" class="st3 st4 st5">p</tspan><tspan x="242.6" y="0" class="st3 st4 st5">t </tspan><tspan x="255.5" y="0" class="st3 st4 st5">i</tspan><tspan x="261.2" y="0" class="st3 st4 st5">n </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 613.1585)"><tspan x="0" y="0" class="st3 st4 st5">a </tspan><tspan x="16.8" y="0" class="st3 st4 st5">v</tspan><tspan x="27.2" y="0" class="st3 st4 st5">a</tspan><tspan x="38.7" y="0" class="st3 st4 st5">c</tspan><tspan x="49.9" y="0" class="st3 st4 st5">a</tspan><tspan x="61.3" y="0" class="st3 st4 st5">t</tspan><tspan x="68.9" y="0" class="st3 st4 st5">io</tspan><tspan x="86.5" y="0" class="st3 st4 st5">n </tspan><tspan x="104" y="0" class="st3 st4 st5">h</tspan><tspan x="116.2" y="0" class="st3 st4 st5">om</tspan><tspan x="145.9" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 695.1585)"><tspan x="0" y="0" class="st3 st4 st5 st6">T</tspan><tspan x="10.7" y="0" class="st3 st4 st5">e</tspan><tspan x="22.1" y="0" class="st3 st4 st5">m</tspan><tspan x="39.8" y="0" class="st3 st4 st5">p</tspan><tspan x="52.2" y="0" class="st3 st4 st5">o</tspan><tspan x="64.1" y="0" class="st3 st4 st5">r</tspan><tspan x="72.2" y="0" class="st3 st4 st5">a</tspan><tspan x="83.6" y="0" class="st3 st4 st5">r</tspan><tspan x="92.3" y="0" class="st3 st4 st5">y</tspan><tspan x="103" y="0" class="st3 st4 st5"> </tspan><tspan x="108.3" y="0" class="st3 st4 st5">s</tspan><tspan x="119" y="0" class="st3 st4 st5">t</tspan><tspan x="126.4" y="0" class="st3 st4 st5">o</tspan><tspan x="138.4" y="0" class="st3 st4 st5">ra</tspan><tspan x="157.9" y="0" class="st3 st4 st5">g</tspan><tspan x="170.2" y="0" class="st3 st4 st5">e </tspan><tspan x="186.9" y="0" class="st3 st4 st5">d</tspan><tspan x="199.2" y="0" class="st3 st4 st5">u</tspan><tspan x="211.2" y="0" class="st3 st4 st5">e</tspan><tspan x="222.7" y="0" class="st3 st4 st5"> </tspan><tspan x="228" y="0" class="st3 st4 st5">t</tspan><tspan x="235.4" y="0" class="st3 st4 st5">o </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 715.1585)"><tspan x="0" y="0" class="st3 st4 st5">n</tspan><tspan x="12.2" y="0" class="st3 st4 st5">a</tspan><tspan x="23.5" y="0" class="st3 st4 st5">tu</tspan><tspan x="43" y="0" class="st3 st4 st5">r</tspan><tspan x="51.1" y="0" class="st3 st4 st5">a</tspan><tspan x="62.5" y="0" class="st3 st4 st5">l </tspan><tspan x="73.6" y="0" class="st3 st4 st5">d</tspan><tspan x="85.9" y="0" class="st3 st4 st5">i</tspan><tspan x="91.7" y="0" class="st3 st4 st5">s</tspan><tspan x="102.4" y="0" class="st3 st4 st5">a</tspan><tspan x="113.8" y="0" class="st3 st4 st5">s</tspan><tspan x="124.6" y="0" class="st3 st4 st5">t</tspan><tspan x="132" y="0" class="st3 st4 st5">e</tspan><tspan x="143.4" y="0" class="st3 st4 st5">r</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 134.1585)"><tspan x="0" y="0" class="st3 st4 st5 st6">T</tspan><tspan x="10.7" y="0" class="st3 st4 st5">e</tspan><tspan x="22.2" y="0" class="st3 st4 st5">m</tspan><tspan x="39.8" y="0" class="st3 st4 st5">p</tspan><tspan x="52.2" y="0" class="st3 st4 st5">o</tspan><tspan x="64.1" y="0" class="st3 st4 st5">ra</tspan><tspan x="83.6" y="0" class="st3 st4 st5">r</tspan><tspan x="92.3" y="0" class="st3 st4 st5">y</tspan><tspan x="103" y="0" class="st3 st4 st5"> </tspan><tspan x="108.3" y="0" class="st3 st4 st5">s</tspan><tspan x="119" y="0" class="st3 st4 st5">t</tspan><tspan x="126.4" y="0" class="st3 st4 st5">o</tspan><tspan x="138.3" y="0" class="st3 st4 st5">r</tspan><tspan x="146.4" y="0" class="st3 st4 st5">a</tspan><tspan x="157.9" y="0" class="st3 st4 st5">g</tspan><tspan x="170.2" y="0" class="st3 st4 st5">e </tspan><tspan x="186.9" y="0" class="st3 st4 st5">w</tspan><tspan x="203.2" y="0" class="st3 st4 st5">h</tspan><tspan x="215.4" y="0" class="st3 st4 st5">i</tspan><tspan x="221" y="0" class="st3 st4 st5">l</tspan><tspan x="226.8" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 154.1585)"><tspan x="0" y="0" class="st3 st4 st5">c</tspan><tspan x="11.1" y="0" class="st3 st4 st5">h</tspan><tspan x="23.3" y="0" class="st3 st4 st5">a</tspan><tspan x="34.7" y="0" class="st3 st4 st5">ng</tspan><tspan x="59.1" y="0" class="st3 st4 st5">i</tspan><tspan x="64.8" y="0" class="st3 st4 st5">n</tspan><tspan x="76.9" y="0" class="st3 st4 st5">g </tspan><tspan x="94.5" y="0" class="st3 st4 st5">r</tspan><tspan x="102.6" y="0" class="st3 st4 st5">e</tspan><tspan x="114.1" y="0" class="st3 st4 st5">s</tspan><tspan x="124.8" y="0" class="st3 st4 st5">id</tspan><tspan x="142.9" y="0" class="st3 st4 st5">e</tspan><tspan x="154.4" y="0" class="st3 st4 st5">n</tspan><tspan x="166.5" y="0" class="st3 st4 st5">c</tspan><tspan x="177.6" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 236.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.3" y="0" class="st3 st4 st5">g a </tspan><tspan x="92.8" y="0" class="st3 st4 st5">r</tspan><tspan x="100.9" y="0" class="st3 st4 st5">e</tspan><tspan x="112.4" y="0" class="st3 st4 st5">l</tspan><tspan x="118.2" y="0" class="st3 st4 st5">a</tspan><tspan x="129.5" y="0" class="st3 st4 st5">t</tspan><tspan x="137.1" y="0" class="st3 st4 st5">i</tspan><tspan x="142.9" y="0" class="st3 st4 st5">v</tspan><tspan x="153.3" y="0" class="st3 st4 st5">e</tspan><tspan x="164.7" y="0" class="st3 st4 st5">’</tspan><tspan x="170" y="0" class="st3 st4 st5">s </tspan><tspan x="186" y="0" class="st3 st4 st5">i</tspan><tspan x="191.7" y="0" class="st3 st4 st5">t</tspan><tspan x="199.1" y="0" class="st3 st4 st5">e</tspan><tspan x="210.5" y="0" class="st3 st4 st5">m</tspan><tspan x="228.2" y="0" class="st3 st4 st5">s </tspan><tspan x="244.2" y="0" class="st3 st4 st5">d</tspan><tspan x="256.5" y="0" class="st3 st4 st5">u</tspan><tspan x="268.5" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 256.1585)"><tspan x="0" y="0" class="st3 st4 st5">t</tspan><tspan x="7.4" y="0" class="st3 st4 st5">o </tspan><tspan x="24.6" y="0" class="st3 st4 st5">c</tspan><tspan x="35.8" y="0" class="st3 st4 st5">h</tspan><tspan x="47.9" y="0" class="st3 st4 st5">a</tspan><tspan x="59.4" y="0" class="st3 st4 st5">n</tspan><tspan x="71.5" y="0" class="st3 st4 st5">ge</tspan><tspan x="95.2" y="0" class="st3 st4 st5">s </tspan><tspan x="111.2" y="0" class="st3 st4 st5">i</tspan><tspan x="116.9" y="0" class="st3 st4 st5">n </tspan><tspan x="134.4" y="0" class="st3 st4 st5">l</tspan><tspan x="140.1" y="0" class="st3 st4 st5">i</tspan><tspan x="145.8" y="0" class="st3 st4 st5">v</tspan><tspan x="156.6" y="0" class="st3 st4 st5">i</tspan><tspan x="162.3" y="0" class="st3 st4 st5">n</tspan><tspan x="174.4" y="0" class="st3 st4 st5">g</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 338.1585)"><tspan x="0" y="0" class="st3 st4 st5 st6">T</tspan><tspan x="10.7" y="0" class="st3 st4 st5">e</tspan><tspan x="22.2" y="0" class="st3 st4 st5">m</tspan><tspan x="39.8" y="0" class="st3 st4 st5">p</tspan><tspan x="52.2" y="0" class="st3 st4 st5">o</tspan><tspan x="64.1" y="0" class="st3 st4 st5">ra</tspan><tspan x="83.6" y="0" class="st3 st4 st5">r</tspan><tspan x="92.3" y="0" class="st3 st4 st5">y</tspan><tspan x="103" y="0" class="st3 st4 st5"> </tspan><tspan x="108.3" y="0" class="st3 st4 st5">s</tspan><tspan x="119" y="0" class="st3 st4 st5">t</tspan><tspan x="126.4" y="0" class="st3 st4 st5">o</tspan><tspan x="138.3" y="0" class="st3 st4 st5">r</tspan><tspan x="146.4" y="0" class="st3 st4 st5">a</tspan><tspan x="157.9" y="0" class="st3 st4 st5">g</tspan><tspan x="170.2" y="0" class="st3 st4 st5">e </tspan><tspan x="186.9" y="0" class="st3 st4 st5">w</tspan><tspan x="203.2" y="0" class="st3 st4 st5">h</tspan><tspan x="215.4" y="0" class="st3 st4 st5">i</tspan><tspan x="221" y="0" class="st3 st4 st5">l</tspan><tspan x="226.8" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 358.1585)"><tspan x="0" y="0" class="st3 st4 st5">r</tspan><tspan x="8.2" y="0" class="st3 st4 st5">e</tspan><tspan x="19.6" y="0" class="st3 st4 st5">m</tspan><tspan x="37.3" y="0" class="st3 st4 st5">o</tspan><tspan x="49.3" y="0" class="st3 st4 st5">d</tspan><tspan x="61.7" y="0" class="st3 st4 st5">e</tspan><tspan x="73.2" y="0" class="st3 st4 st5">li</tspan><tspan x="84.5" y="0" class="st3 st4 st5">n</tspan><tspan x="96.7" y="0" class="st3 st4 st5">g </tspan><tspan x="114.3" y="0" class="st3 st4 st5">h</tspan><tspan x="126.4" y="0" class="st3 st4 st5">om</tspan><tspan x="156.1" y="0" class="st3 st4 st5">e</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 440.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.4" y="0" class="st3 st4 st5">g </tspan><tspan x="76" y="0" class="st3 st4 st5">s</tspan><tspan x="86.7" y="0" class="st3 st4 st5">t</tspan><tspan x="94.2" y="0" class="st3 st4 st5">u</tspan><tspan x="106.2" y="0" class="st3 st4 st5">d</tspan><tspan x="118.6" y="0" class="st3 st4 st5">e</tspan><tspan x="130" y="0" class="st3 st4 st5">n</tspan><tspan x="142.1" y="0" class="st3 st4 st5">t</tspan><tspan x="150.3" y="0" class="st3 st4 st5">’</tspan><tspan x="155.6" y="0" class="st3 st4 st5">s </tspan><tspan x="171.5" y="0" class="st3 st4 st5">t</tspan><tspan x="179.1" y="0" class="st3 st4 st5">h</tspan><tspan x="191.2" y="0" class="st3 st4 st5">i</tspan><tspan x="196.9" y="0" class="st3 st4 st5">n</tspan><tspan x="209.1" y="0" class="st3 st4 st5">g</tspan><tspan x="221.3" y="0" class="st3 st4 st5">s </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 460.1585)"><tspan x="0" y="0" class="st3 st4 st5">b</tspan><tspan x="12.4" y="0" class="st3 st4 st5">e</tspan><tspan x="23.9" y="0" class="st3 st4 st5">t</tspan><tspan x="31.7" y="0" class="st3 st4 st5">w</tspan><tspan x="47.8" y="0" class="st3 st4 st5">e</tspan><tspan x="59.3" y="0" class="st3 st4 st5">e</tspan><tspan x="70.8" y="0" class="st3 st4 st5">n </tspan><tspan x="88.3" y="0" class="st3 st4 st5">seme</tspan><tspan x="139.6" y="0" class="st3 st4 st5">s</tspan><tspan x="150.3" y="0" class="st3 st4 st5">t</tspan><tspan x="157.7" y="0" class="st3 st4 st5">er</tspan><tspan x="177.3" y="0" class="st3 st4 st5">s</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 542.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.3" y="0" class="st3 st4 st5">g </tspan><tspan x="75.9" y="0" class="st3 st4 st5">i</tspan><tspan x="81.6" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s </tspan><tspan x="134.2" y="0" class="st3 st4 st5">t</tspan><tspan x="141.7" y="0" class="st3 st4 st5">h</tspan><tspan x="153.9" y="0" class="st3 st4 st5">a</tspan><tspan x="165.2" y="0" class="st3 st4 st5">t </tspan><tspan x="178.1" y="0" class="st3 st4 st5">r</tspan><tspan x="186.3" y="0" class="st3 st4 st5">e</tspan><tspan x="197.8" y="0" class="st3 st4 st5">q</tspan><tspan x="210.1" y="0" class="st3 st4 st5">uir</tspan><tspan x="235.9" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 301.7998 542.1585)" class="st3 st4 st5"> </text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 562.1585)"><tspan x="0" y="0" class="st3 st4 st5">a </tspan><tspan x="16.8" y="0" class="st3 st4 st5">c</tspan><tspan x="27.9" y="0" class="st3 st4 st5">o</tspan><tspan x="39.9" y="0" class="st3 st4 st5">n</tspan><tspan x="51.9" y="0" class="st3 st4 st5">t</tspan><tspan x="59.5" y="0" class="st3 st4 st5">r</tspan><tspan x="67.6" y="0" class="st3 st4 st5">o</tspan><tspan x="79.6" y="0" class="st3 st4 st5">l</tspan><tspan x="85.2" y="0" class="st3 st4 st5">l</tspan><tspan x="91" y="0" class="st3 st4 st5">e</tspan><tspan x="102.6" y="0" class="st3 st4 st5">d </tspan><tspan x="120.2" y="0" class="st3 st4 st5">e</tspan><tspan x="131.7" y="0" class="st3 st4 st5">n</tspan><tspan x="143.5" y="0" class="st3 st4 st5">v</tspan><tspan x="154.3" y="0" class="st3 st4 st5">ir</tspan><tspan x="168.1" y="0" class="st3 st4 st5">o</tspan><tspan x="180" y="0" class="st3 st4 st5">n</tspan><tspan x="192.1" y="0" class="st3 st4 st5">m</tspan><tspan x="209.9" y="0" class="st3 st4 st5">e</tspan><tspan x="221.3" y="0" class="st3 st4 st5">n</tspan><tspan x="233.4" y="0" class="st3 st4 st5">t </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 644.1585)"><tspan x="0" y="0" class="st3 st4 st5">S</tspan><tspan x="13.1" y="0" class="st3 st4 st5">t</tspan><tspan x="20.5" y="0" class="st3 st4 st5">o</tspan><tspan x="32.5" y="0" class="st3 st4 st5">r</tspan><tspan x="40.5" y="0" class="st3 st4 st5">i</tspan><tspan x="46.2" y="0" class="st3 st4 st5">n</tspan><tspan x="58.4" y="0" class="st3 st4 st5">g</tspan><tspan x="70.7" y="0" class="st3 st4 st5"> </tspan><tspan x="75.9" y="0" class="st3 st4 st5">i</tspan><tspan x="81.6" y="0" class="st3 st4 st5">t</tspan><tspan x="89.1" y="0" class="st3 st4 st5">e</tspan><tspan x="100.5" y="0" class="st3 st4 st5">m</tspan><tspan x="118.2" y="0" class="st3 st4 st5">s b</tspan><tspan x="146.6" y="0" class="st3 st4 st5">e</tspan><tspan x="158" y="0" class="st3 st4 st5">c</tspan><tspan x="169.2" y="0" class="st3 st4 st5">a</tspan><tspan x="180.6" y="0" class="st3 st4 st5">u</tspan><tspan x="192.6" y="0" class="st3 st4 st5">s</tspan><tspan x="203.3" y="0" class="st3 st4 st5">e </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 269.1401 644.1585)" class="st3 st4 st5"> </text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 49 664.1585)"><tspan x="0" y="0" class="st3 st4 st5">a</tspan><tspan x="11.4" y="0" class="st3 st4 st5">m</tspan><tspan x="29.1" y="0" class="st3 st4 st5">i</tspan><tspan x="34.8" y="0" class="st3 st4 st5">l</tspan><tspan x="40.6" y="0" class="st3 st4 st5">y</tspan><tspan x="51.4" y="0" class="st3 st4 st5"> </tspan><tspan x="56.6" y="0" class="st3 st4 st5">gr</tspan><tspan x="77" y="0" class="st3 st4 st5">e</tspan><tspan x="88.2" y="0" class="st3 st4 st5">w</tspan></text>
+	</g>
+	<line class="st7" x1="49" y1="112.3" x2="871" y2="112.3"/>
+	<line class="st7" x1="49" y1="163.3" x2="871" y2="163.3"/>
+	<line class="st7" x1="49" y1="214.3" x2="871" y2="214.3"/>
+	<line class="st7" x1="49" y1="265.3" x2="871" y2="265.3"/>
+	<line class="st7" x1="49" y1="316.3" x2="871" y2="316.3"/>
+	<line class="st7" x1="49" y1="367.3" x2="871" y2="367.3"/>
+	<line class="st7" x1="49" y1="418.3" x2="871" y2="418.3"/>
+	<line class="st7" x1="49" y1="469.3" x2="871" y2="469.3"/>
+	<line class="st7" x1="49" y1="520.3" x2="871" y2="520.3"/>
+	<line class="st7" x1="49" y1="571.3" x2="871" y2="571.3"/>
+	<line class="st7" x1="49" y1="622.3" x2="871" y2="622.3"/>
+	<line class="st7" x1="49" y1="673.3" x2="871" y2="673.3"/>
+	<line class="st7" x1="49" y1="724.3" x2="871" y2="724.3"/>
+	<g class="st1">
+		<defs>
+			<rect id="SVGID_5_" width="908.9" height="764"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st8">
+			<text transform="matrix(1 0 0 1 344.8716 758.8196)"><tspan x="0" y="0" class="st3 st9 st10 st11">0</tspan><tspan x="10" y="0" class="st3 st9 st10">%</tspan></text>
+		</g>
+		<g class="st8">
+			<text transform="matrix(1 0 0 1 511.5273 758.8196)"><tspan x="0" y="0" class="st3 st9 st10">2</tspan><tspan x="9.3" y="0" class="st3 st9 st10 st11">0</tspan><tspan x="19.4" y="0" class="st3 st9 st10">%</tspan></text>
+		</g>
+		<g class="st8">
+			<text transform="matrix(1 0 0 1 682.5996 758.8196)"><tspan x="0" y="0" class="st3 st9 st10 st11">4</tspan><tspan x="9.9" y="0" class="st3 st9 st10 st11">0</tspan><tspan x="19.9" y="0" class="st3 st9 st10">%</tspan></text>
+		</g>
+		<g class="st8">
+			<text transform="matrix(1 0 0 1 853.9277 758.8196)"><tspan x="0" y="0" class="st3 st9 st10 st11">5</tspan><tspan x="9.9" y="0" class="st3 st9 st10 st11">0</tspan><tspan x="19.9" y="0" class="st3 st9 st10">%</tspan></text>
+		</g>
+	</g>
+	<line class="st12" x1="357" y1="70.5" x2="357" y2="724.1"/>
+	<line class="st12" x1="528.1" y1="70.5" x2="528.1" y2="724.1"/>
+	<line class="st12" x1="699.2" y1="70.5" x2="699.2" y2="724.1"/>
+	<line class="st12" x1="871" y1="70.5" x2="871" y2="724.1"/>
+	<g class="st1">
+		<defs>
+			<rect id="SVGID_7_" width="908.9" height="764"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st13" d="M416.6,614.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C434.1,606.5,426.2,614.3,416.6,614.3"/>
+		<path class="st14" d="M431.4,614.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C448.9,606.5,441.1,614.3,431.4,614.3"/>
+		<path class="st15" d="M433.4,614.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C450.9,606.5,443,614.3,433.4,614.3"/>
+		<path class="st13" d="M412.6,664.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C430.1,656.5,422.3,664.3,412.6,664.3"/>
+		<path class="st14" d="M438.3,664.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C455.8,656.5,448,664.3,438.3,664.3"/>
+		<path class="st15" d="M427.4,664.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C444.9,656.5,437.1,664.3,427.4,664.3"/>
+		<path class="st13" d="M423.5,564.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C441,556.5,433.2,564.3,423.5,564.3"/>
+		<path class="st14" d="M413.6,564.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C431.1,556.5,423.3,564.3,413.6,564.3"/>
+		<path class="st15" d="M425.5,564.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C443,556.5,435.1,564.3,425.5,564.3"/>
+		<path class="st16" d="M426.5,564.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C444,556.5,436.1,564.3,426.5,564.3"/>
+		<path class="st13" d="M410.7,714.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C428.2,706.5,420.3,714.3,410.7,714.3"/>
+		<path class="st14" d="M430.4,714.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C447.9,706.5,440.1,714.3,430.4,714.3"/>
+		<path class="st15" d="M404.7,714.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C422.2,706.5,414.4,714.3,404.7,714.3"/>
+		<path class="st16" d="M405.7,714.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C423.2,706.5,415.4,714.3,405.7,714.3"/>
+		<path class="st17" d="M768.9,114.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C786.4,106.5,778.5,114.3,768.9,114.3"/>
+		<path class="st14" d="M738.3,114.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C755.8,106.5,747.9,114.3,738.3,114.3"/>
+		<path class="st15" d="M746.2,114.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C763.7,106.5,755.8,114.3,746.2,114.3"/>
+		<path class="st16" d="M800.4,114.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C817.9,106.5,810.1,114.3,800.4,114.3"/>
+		<path class="st18" d="M838.9,114.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C856.4,106.5,848.6,114.3,838.9,114.3"/>
+		<path class="st13" d="M762.9,164.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C780.4,156.5,772.6,164.3,762.9,164.3"/>
+		<path class="st14" d="M817.2,164.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C834.7,156.5,826.9,164.3,817.2,164.3"/>
+		<path class="st15" d="M734.3,164.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C751.8,156.5,744,164.3,734.3,164.3"/>
+		<path class="st16" d="M744.2,164.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C761.7,156.5,753.9,164.3,744.2,164.3"/>
+		<path class="st18" d="M763.9,164.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C781.4,156.5,773.6,164.3,763.9,164.3"/>
+		<path class="st13" d="M524.1,214.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C541.6,206.5,533.8,214.3,524.1,214.3"/>
+		<path class="st14" d="M470.9,214.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C488.4,206.5,480.5,214.3,470.9,214.3"/>
+		<path class="st15" d="M533,214.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C550.5,206.5,542.7,214.3,533,214.3"/>
+		<path class="st16" d="M530.1,214.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C547.6,206.5,539.7,214.3,530.1,214.3"/>
+		<path class="st18" d="M652.4,214.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C669.9,206.5,662.1,214.3,652.4,214.3"/>
+		<path class="st13" d="M490.6,264.3c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			S500.3,264.3,490.6,264.3"/>
+		<path class="st14" d="M488.6,264.3c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			S498.3,264.3,488.6,264.3"/>
+		<path class="st15" d="M452.1,264.3c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			S461.8,264.3,452.1,264.3"/>
+		<path class="st16" d="M523.2,264.3c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			S532.8,264.3,523.2,264.3"/>
+		<path class="st18" d="M521.2,264.3c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			S530.8,264.3,521.2,264.3"/>
+		<path class="st13" d="M466.9,314.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C484.4,306.5,476.6,314.3,466.9,314.3"/>
+		<path class="st14" d="M442.2,314.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C459.7,306.5,451.9,314.3,442.2,314.3"/>
+		<path class="st15" d="M425.5,314.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C443,306.5,435.1,314.3,425.5,314.3"/>
+		<path class="st16" d="M507.4,314.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C524.9,306.5,517,314.3,507.4,314.3"/>
+		<path class="st18" d="M551.8,314.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C569.3,306.5,561.4,314.3,551.8,314.3"/>
+		<path class="st13" d="M450.1,364.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C467.6,356.5,459.8,364.3,450.1,364.3"/>
+		<path class="st14" d="M454.1,364.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C471.6,356.5,463.7,364.3,454.1,364.3"/>
+		<path class="st15" d="M463,364.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C480.5,356.5,472.6,364.3,463,364.3"/>
+		<path class="st16" d="M435.3,364.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C452.8,356.5,445,364.3,435.3,364.3"/>
+		<path class="st18" d="M448.2,364.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C465.7,356.5,457.8,364.3,448.2,364.3"/>
+		<path class="st13" d="M436.3,414.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C453.8,406.5,446,414.3,436.3,414.3"/>
+		<path class="st14" d="M456.1,414.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C473.6,406.5,465.7,414.3,456.1,414.3"/>
+		<path class="st15" d="M442.2,414.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C459.7,406.5,451.9,414.3,442.2,414.3"/>
+		<path class="st16" d="M421.5,414.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C439,406.5,431.2,414.3,421.5,414.3"/>
+		<path class="st18" d="M392.9,414.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C410.4,406.5,402.6,414.3,392.9,414.3"/>
+		<path class="st13" d="M432.4,464.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C449.9,456.5,442,464.3,432.4,464.3"/>
+		<path class="st14" d="M457,464.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C474.5,456.5,466.7,464.3,457,464.3"/>
+		<path class="st15" d="M435.3,464.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C452.8,456.5,445,464.3,435.3,464.3"/>
+		<path class="st16" d="M412.6,464.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C430.1,456.5,422.3,464.3,412.6,464.3"/>
+		<path class="st18" d="M416.6,464.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C434.1,456.5,426.2,464.3,416.6,464.3"/>
+		<path class="st13" d="M428.4,514.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C445.9,506.5,438.1,514.3,428.4,514.3"/>
+		<path class="st14" d="M403.8,514.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C421.3,506.5,413.4,514.3,403.8,514.3"/>
+		<path class="st15" d="M437.3,514.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C454.8,506.5,447,514.3,437.3,514.3"/>
+		<path class="st16" d="M435.3,514.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C452.8,506.5,445,514.3,435.3,514.3"/>
+		<path class="st18" d="M459,514.3c-9.7,0-17.5-7.8-17.5-17.5c0-9.7,7.8-17.5,17.5-17.5c9.7,0,17.5,7.8,17.5,17.5
+			C476.5,506.5,468.7,514.3,459,514.3"/>
+		<g class="st19">
+			<g>
+				<defs>
+					<rect id="SVGID_9_" x="334" width="133.2" height="158.2"/>
+				</defs>
+				<clipPath id="SVGID_10_">
+					<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+				</clipPath>
+				<polyline class="st20" points="343,78.1 458.2,7 458.2,157.2 				"/>
+			</g>
+		</g>
+	</g>
+	<rect x="458.5" y="7.2" class="st0" width="241.5" height="149.7"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 34.658)"><tspan x="0" y="0" class="st21 st4 st22">T</tspan><tspan x="13.6" y="0" class="st21 st4 st22">h</tspan><tspan x="27.2" y="0" class="st21 st4 st22">e </tspan><tspan x="46.1" y="0" class="st21 st4 st22">t</tspan><tspan x="54.4" y="0" class="st21 st4 st22">o</tspan><tspan x="67.7" y="0" class="st21 st4 st22">p </tspan><tspan x="87.5" y="0" class="st21 st4 st22">r</tspan><tspan x="96.7" y="0" class="st21 st4 st22">e</tspan><tspan x="109.4" y="0" class="st21 st4 st22">a</tspan><tspan x="122.2" y="0" class="st21 st4 st22">s</tspan><tspan x="134.2" y="0" class="st21 st4 st22">o</tspan><tspan x="147.5" y="0" class="st21 st4 st22">n </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 56.658)"><tspan x="0" y="0" class="st21 st4 st22">p</tspan><tspan x="13.8" y="0" class="st21 st4 st22">e</tspan><tspan x="26.7" y="0" class="st21 st4 st22">o</tspan><tspan x="40" y="0" class="st21 st4 st22">pl</tspan><tspan x="60.4" y="0" class="st21 st4 st22">e </tspan><tspan x="79.2" y="0" class="st21 st4 st22">u</tspan><tspan x="92.6" y="0" class="st21 st4 st22">s</tspan><tspan x="104.5" y="0" class="st21 st4 st22">e</tspan><tspan x="117.4" y="0" class="st21 st4 st22"> </tspan><tspan x="123.4" y="0" class="st21 st4 st22">s</tspan><tspan x="135.3" y="0" class="st21 st4 st22">e</tspan><tspan x="148.1" y="0" class="st21 st4 st22">l</tspan><tspan x="154.8" y="0" class="st21 st4 st22">f</tspan><tspan x="162.3" y="0" class="st21 st4 st22">-</tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 78.658)"><tspan x="0" y="0" class="st21 st4 st22">s</tspan><tspan x="12" y="0" class="st21 st4 st22">t</tspan><tspan x="20.3" y="0" class="st21 st4 st22">o</tspan><tspan x="33.7" y="0" class="st21 st4 st22">r</tspan><tspan x="42.8" y="0" class="st21 st4 st22">a</tspan><tspan x="55.5" y="0" class="st21 st4 st22">g</tspan><tspan x="69.3" y="0" class="st21 st4 st22">e</tspan><tspan x="82.1" y="0" class="st21 st4 st22"> </tspan><tspan x="88.1" y="0" class="st21 st4 st22">i</tspan><tspan x="94.6" y="0" class="st21 st4 st22">s </tspan><tspan x="112.6" y="0" class="st21 st4 st22">s</tspan><tspan x="124.6" y="0" class="st21 st4 st22">i</tspan><tspan x="131.1" y="0" class="st21 st4 st22">m</tspan><tspan x="150.8" y="0" class="st21 st4 st22">p</tspan><tspan x="164.5" y="0" class="st21 st4 st22">l</tspan><tspan x="171" y="0" class="st21 st4 st22">y </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 100.658)"><tspan x="0" y="0" class="st21 st4 st22">b</tspan><tspan x="13.9" y="0" class="st21 st4 st22">e</tspan><tspan x="26.7" y="0" class="st21 st4 st22">c</tspan><tspan x="39.2" y="0" class="st21 st4 st22">a</tspan><tspan x="52" y="0" class="st21 st4 st22">u</tspan><tspan x="65.4" y="0" class="st21 st4 st22">s</tspan><tspan x="77.3" y="0" class="st21 st4 st22">e</tspan><tspan x="90.2" y="0" class="st21 st4 st22"> </tspan><tspan x="96.1" y="0" class="st21 st4 st22">t</tspan><tspan x="104.7" y="0" class="st21 st4 st22">h</tspan><tspan x="118.3" y="0" class="st21 st4 st22">e</tspan><tspan x="130.8" y="0" class="st21 st4 st22">y </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 619.6255 100.658)" class="st21 st4 st22"> </text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 122.658)"><tspan x="0" y="0" class="st21 st4 st22">d</tspan><tspan x="13.8" y="0" class="st21 st4 st22">o</tspan><tspan x="27.1" y="0" class="st21 st4 st22">n</tspan><tspan x="40.7" y="0" class="st21 st4 st22">’</tspan><tspan x="47.5" y="0" class="st21 st4 st22">t </tspan><tspan x="62.1" y="0" class="st21 st4 st22">h</tspan><tspan x="75.7" y="0" class="st21 st4 st22">a</tspan><tspan x="88.2" y="0" class="st21 st4 st22">v</tspan><tspan x="99.8" y="0" class="st21 st4 st22">e </tspan><tspan x="118.7" y="0" class="st21 st4 st22">e</tspan><tspan x="131.4" y="0" class="st21 st4 st22">nou</tspan><tspan x="171.8" y="0" class="st21 st4 st22">g</tspan><tspan x="185.5" y="0" class="st21 st4 st22">h </tspan></text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 470.7075 144.658)"><tspan x="0" y="0" class="st21 st4 st22">r</tspan><tspan x="9.2" y="0" class="st21 st4 st22">o</tspan><tspan x="22.5" y="0" class="st21 st4 st22">o</tspan><tspan x="35.9" y="0" class="st21 st4 st22">m </tspan><tspan x="61.7" y="0" class="st21 st4 st22">a</tspan><tspan x="74.4" y="0" class="st21 st4 st22">t </tspan><tspan x="89" y="0" class="st21 st4 st22">h</tspan><tspan x="102.6" y="0" class="st21 st4 st22">om</tspan><tspan x="135.6" y="0" class="st21 st4 st22">e</tspan><tspan x="148.6" y="0" class="st21 st4 st22">. </tspan></text>
+	</g>
+	<rect x="458.5" y="7.2" class="st23" width="241.5" height="149.7"/>
+</g>
+</svg>

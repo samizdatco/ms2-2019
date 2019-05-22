@@ -1,0 +1,130 @@
+<html>
+
+    <head>
+        <title>Self-Storage Nation</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/transitions.css" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <main id="swup" class="transition-fade pageblack">
+            <!--where the cube menu lives-->
+            <div class="menu-icon-container"> <img src="assets/whitecube.svg" class="menu">
+            </div>
+
+
+
+            <div class="verticalcenter">
+                <div class="two-column" style="width:54%;padding-top:6%">
+                    <!--<svg width="80px" height="80px"> <img src="assets/storage_contents.svg"></svg>-->
+                    <!--<svg id="contents" width="200" height="200">-->
+                    <img class="imgsvg" src="assets/storagecontents.svg" id="svg-contents">
+                    <!--<img src="assets/storage_contents_millennials.svg" id="svg-millennials">-->
+                    <!--<img src="assets/storage_contents_genx.svg" id="svg-genx">-->
+                    <!--</svg>-->
+                </div>
+                <div class="two-column" style="width:32%;padding-top:6%;margin-top: 8%;">
+                    <h3>
+
+                        <p align="left">What are Americans storing in their units? </p>
+
+                    </h3>
+                    <h5 class="white">A lot of the same things Americans already keep at home, suggesting that Americans either have too much stuff or not enough room.
+                    </h5>
+
+                    <p class="small">Click through for each generation.<br></p>
+                    <p class="small">
+                        <button class="selected btn" id="btn-average">AVERAGE</button> Total average of all generations.</p>
+                    <p class="small">
+                        <button class="btn" id="btn-millennials"> MILLENNIALS </button> Born between 1980 and 2000.</p>
+
+                    <p class="small ">
+                        <button class=" btn" id="btn-genx"> GEN-X </button> Born between 1965 - 1979 </p>
+                    <p class="small ">
+                        <button class="btn" id="btn-boomers">BOOMERS </button> Born between 1946 and 1964</p>
+                    <p class="small "><button class="btn" id="btn-greatest">GREATEST</button> Born between 1890 and 1945
+                    </p>
+
+                </div>
+
+
+
+            </div>
+            <div class="credit">source: 2017 Self-Storage Demand Study</div>
+
+            <div class=" bottomarrow ">
+                <a href="https://graceiseverywhere.github.io/thesis/page6.html">
+                    <img src="assets/whiteprev.svg " class="prev "></a>
+                <a href="https://graceiseverywhere.github.io/thesis/page8.html">
+                    <img src="assets/whitenext.svg " class="next "></a>
+            </div>
+
+
+            <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+            <script type="text/javascript" src="scripts/swup.js "></script>
+            <script>
+                $(document).ready(function() {
+
+                    click();
+
+                });
+
+
+                function selectButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#00FFFF");
+                    $('#' + event.target.id).css("color", "black");
+                }
+
+                function click() {
+                    $('#btn-average').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/storagecontents.svg");
+                        selectButton(event);
+
+                    });
+
+                    $('#btn-millennials').click(function(event) {
+                        $('#svg-contents').attr("src", "assets/storage_contents_millennials.svg");
+
+                        selectButton(event);
+
+                    });
+
+                    $('#btn-genx').click(function(event) {
+
+                        $('#svg-contents').attr("src", "assets/storage_contents_genx.svg");
+                        selectButton(event);
+
+
+                    });
+
+                    $('#btn-boomers').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/storage_contents_boomers.svg");
+                        selectButton(event);
+
+
+                    });
+
+                    $('#btn-greatest').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/storage_contents_greatest.svg");
+                        selectButton(event);
+
+
+                    });
+
+                }
+            </script>
+
+        </main>
+
+    </body>
+
+</html>

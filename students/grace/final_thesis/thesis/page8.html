@@ -1,0 +1,158 @@
+<html>
+
+    <head>
+        <title>Self-Storage Nation</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="css/transitions.css" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <main id="swup" class="transition-fade pageblack">
+            <!--where the cube menu lives-->
+            <div class="menu-icon-container"> <a href="https://graceiseverywhere.github.io/thesis/methodology.html">
+ <img src="assets/whitecube.svg" class="menu"></a>
+            </div>
+
+
+            <div class="verticalcenterwide">
+                <div class="two-column" style="width:54%; padding-top:6%">
+
+                    <img class="imgsvg" src="assets/reasonsforstorage_average.svg" id="svg-contents">
+
+                </div>
+                <div class="two-column" style="width:34%;padding-top:3%;margin-top: 8%;">
+                    <h3>
+
+                        <p align="left">And why are we storing our stuff away?</p>
+
+                    </h3>
+                    <h5 class="white">The range of reasons why people use self-storage correlate to meaningful parts of everyone&rsquo;s life: family death to a growing family. The top reason being that people don&rsquo;t have enough space at home. This suggests that Americans
+                        are consuming more stuff than they have space for and/or our living spaces have shrunken.
+                    </h5>
+
+                    <p class="small">Click through for each generation.<br></p>
+                    <p class="small">
+                        <button class="selectedwhite btn" id="btn-average">AVERAGE</button> Total average of all generations.</p>
+                    <p class="small">
+                        <button class="btn" id="btn-millennials"> MILLENNIALS </button> Born between 1980 and 2000.</p>
+
+                    <p class="small ">
+                        <button class=" btn" id="btn-genx"> GEN-X </button> Born between 1965 - 1979 </p>
+                    <p class="small ">
+                        <button class="btn" id="btn-boomers">BOOMERS </button> Born between 1946 and 1964</p>
+                    <p class="small "><button class="btn" id="btn-greatest">GREATEST</button> Born between 1890 and 1945
+                    </p>
+
+                </div>
+
+
+
+            </div>
+            <div class="credit">source: 2017 Self-Storage Demand Study</div>
+            <div class=" bottomarrow ">
+                <a href="https://graceiseverywhere.github.io/thesis/page7.html">
+                    <img src="assets/whiteprev.svg " class="prev "></a>
+                <a href="https://graceiseverywhere.github.io/thesis/page9.html">
+                    <img src="assets/whitenext.svg " class="next "></a>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.js " integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin=" anonymous "></script>
+            <script type="text/javascript" src="scripts/swup.js "></script>
+            <script>
+                $(document).ready(function() {
+
+                    click();
+
+                });
+                //to make the buttons change color when clicked 
+                function selectAvgButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#FFFFFF");
+                    $('#' + event.target.id).css("color", "black");
+                }
+
+
+                function selectMillButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#ffd700");
+                    $('#' + event.target.id).css("color", "black");
+                }
+
+                function selectGenxButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#f98775");
+                    $('#' + event.target.id).css("color", "black");
+                }
+
+                function selectBooButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#00ffff");
+                    $('#' + event.target.id).css("color", "black");
+                }
+
+                function selectGreButton(event) {
+                    $('.btn').css("background-color", "black");
+                    $('.btn').css("color", "white");
+
+                    $('#' + event.target.id).css("background-color", "#0563ff");
+                    $('#' + event.target.id).css("color", "white");
+                }
+
+
+
+                function click() {
+                    $('#btn-average').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/reasonsforstorage_average.svg");
+                        selectAvgButton(event);
+
+                    });
+
+                    $('#btn-millennials').click(function(event) {
+                        $('#svg-contents').attr("src", "assets/reasonsforstorage_millennial.svg");
+
+                        selectMillButton(event);
+
+                    });
+
+                    $('#btn-genx').click(function(event) {
+
+                        $('#svg-contents').attr("src", "assets/reasonsforstorage_genx.svg");
+                        selectGenxButton(event);
+
+                    });
+
+                    $('#btn-boomers').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/reasonsforstorage_boomers.svg");
+                        selectBooButton(event);
+
+                    });
+
+                    $('#btn-greatest').click(function() {
+
+                        $('#svg-contents').attr("src", "assets/reasonsforstorage_greatest.svg");
+                        selectGreButton(event);
+
+                    });
+
+                }
+            </script>
+        </main>
+
+
+
+
+    </body>
+
+</html>
