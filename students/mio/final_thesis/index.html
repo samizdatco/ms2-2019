@@ -1,0 +1,274 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MS1 Project - Mio Akasako</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" href="img/dna.svg">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/bvy0sju.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+</head>
+
+<body>
+  <header class="masthead" style= "background:url('img/ms1-project_cover_v2.png'); height: 100vh; min-height: 500px; background-size: cover; background-position: center; background-repeat: no-repeat">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 id="heading">Cutting Edge? Not So Much.</h1>
+        <h2 id="lead">Sexual misconduct, harassment, and discrimination:</h2>
+        <h2 id = "lead2">tackling the outdated treatment of women in STEM Academia</h2>
+        <p style = "font-family: futura-pt"><b>by Mio Akasako</b><p>
+      </div>
+    </div>
+  </div>
+  </header>
+  <div id = "container-0" class = "container">
+    <div class = "row">
+      <div class = "col">
+      </div>
+      <div class = "col-7">
+          <h4 style = "text-align: center; margin-top:5vh;">Introduction</h4>
+          <hr style = "margin-bottom: 5vh">
+          <p><span style = "font-family: futura-pt; text-transform: uppercase; font-size: 20px;"><b>Gender inequality</b></span>, sexual harassment, sexual assault--in recent years, these terms have been so commonplace in the collective colloquial verbatim that it does not strike as odd to hear a casual conversation about street harassment, or get caught up in a wave of public outrage over the latest figure convicted of sexual assault. Since the advent of the #MeToo movement in the fall of 2017, there has been a spike in activism, calling for visibility of these issues and, more importantly, accountability of the perpetrators. And yet, this is but a contemporary phenomenon. Such a visible approach to matters of sexual harassment would have been unthinkable in the past; far from being the potentially empowering and validating act that it is now, to participate in public allegation meant a near complete emotional, social, and career suicide. 
+          <p>In the field of STEM (science, technology, engineering, and mathematics), this is still very much the case. The National Academy of Sciences, Engineering, and Medicine (NASEM) published a report in 2018 that states that the harassment of women in STEM is the worst outside of any sector besides the military.[source] With its historical male dominance and organizational tolerance of sexism and sexual harassment, STEM academia fosters an especially harsh environment for women. The consequences of this have been well documented by recent reports all over the board, from individual to national institutions. The aim of this project is not to reiterate the points made, but to break down the perpetual problem of sexism and sexual harassment in STEM academia into smaller issues that can be understood by data.</p>
+          <h4 style = "text-align: center; margin-top:5vh;">Part One</h4>
+          <hr style = "margin-bottom:5vh;">
+          <p>Let’s start by looking at data with the most apparent link to sexual harassment. Julie Libarkin, a professor at Michigan State University helming the Geocognition Research Laboratory, created a database of publicly available reports of sexual misconduct and violation of relationship policies at US institutions, dating as far back as 1978 [source]. The entire database consists of well over 700 cases. From this, the 189 cases that were tied to perpetrators in STEM disciplines were examined. It is important to note that this is a database solely of cases that have been publicly recorded. Though there seems to be an increased prevalence of misconduct cases in recent years, this does not necessarily mean the rate of misconduct was low in the past; more likely, people have started to feel more comfortable in coming forward with their experiences as public scrutiny of sexual harassment issues have become commonplace.</p>
+      </div>
+      <div class = "col">
+        <h5 style = "margin-top: 250px">The National Academy of Sciences, Engineering, and Medicine (NASEM) published a report in 2018 that states that the harassment of women in STEM is the worst outside of any sector besides the military.</h5>
+      </div>
+    </div>
+  </div>
+  <div id = "container-0" class = "container-fluid">
+    <div class = "row">
+      <div id ="scrolly" class = "col">
+        <figure>
+          <h2 style = "margin:2vh">Public Cases of Sexual Misconduct and Violation of Relationship Policies by STEM Academics</h2>
+          <div id = "legend" div class = col></div>
+          <div id="chart" class = "chart"></div>
+        </figure>
+          <article>
+            <div class='step' data-step='1'>
+              <h4>Explore the cases: 1980 - 2018</h4>
+              <ul>
+                <li>Each dot is an individual case</li>
+                <li>The outcome is represented by the color of the dot</li>
+                <li>Hover over a dot to get an overview of the case</li>
+                <li>Click on the dot to view a news article that covered the case</li>
+                <li>Click on the buttons on top to isolate cases of specific outcomes</li>
+                <li>Double click on any button to see all cases</li>
+              </ul>
+            </div>
+            <div class='step' data-step='2'>
+               <p><span style = "color: #f7931e"><b>45% of the outcomes ended in no significant action by the institutions, or in retirement or resignation by the perpetrators themselves</b></span> (shown as gray dots). Even in cases where the perpetrators were suspended, some institutions granted paid leave during that time period.</p>
+            </div>
+            <div class='step' data-step='3'>
+              <p>The institutions involved often times did not mandate proper consequences to the perpetrators, and even when they did, the perpetrators still enjoyed monetary compensation and membership to powerful national STEM organizations that have influence on grant money, career trajectory, and future memberships of young scientists.</p>
+            </div>
+          </article>
+      </div>
+  </div>
+</div>
+  <div id = "container-2" class = "container">
+    <div class = "row">
+      <div class = "col">
+      </div>
+      <div class = "col-7">
+        <h4 style = "text-align: center; margin-top:5vh;">Part Two</h4>
+        <hr style = "margin-bottom:5vh;">
+        <p style = "margin-bottom: 5vh;"><span style = "font-family: futura-pt; text-transform: uppercase; font-size: 20px"><b>Examining some</b></span> of the individual cases in detail will give more insight into patterns involved in the treatment of sexual misconduct cases by universities. Behind every case are multiple allegations and incidents of sexual misconduct that have spanned in some cases, decades. Below are case studies of three acclaimed scientists and their path towards career stardom, and parallel paths of sexual misconduct throughout the years that they have been appointed as faculty at universities.</p>
+      </div>
+      <div class = "col">
+      </div>
+    </div>
+  </div>
+  <div id = "container-3" class = "container-fluid">
+    <div id = "scrolly-2" class = "row">
+      <figure>
+        <div id = "verma-img" div class = "col" style="background:url('img/inder_verma.jpg') no-repeat center center /cover">
+          <h1 style>Inder Verma</h1>
+          <h2>Renowned cancer biologist at the Salk Institute</h2>
+          <div id="chart1" class = "chart"></div>
+        </div>
+      </figure>
+      <article>
+        <div id = "step2" class='step' data-step='1'>
+          <h4>Explore the timelines</h4>
+          <ul>
+                <li>Each colored line represents an incident during the academic's career</li>
+                <li><b>White</b>: Career achievement |<span style = "color: red"><b>Red</b></span>: Incident of sexual harassment |<span style = "color: yellow"><b>Yellow</b></span>: Related to complaint or result of complaint</li>
+                <li>Hover over the lines to view details about the specified incident</li>
+          </ul>
+        </div>
+      </article>
+    </div> <!--scrolly-2-->
+    <div id = "scrolly-3" class = "row">
+      <figure>
+        <div id = "ayala-img" div class = "col" style="background:url('img/francisco_ayala.jpg') no-repeat center center /cover">
+          <h1>Francisco Ayala</h1>
+          <h2>Acclaimed evolutionary biologist at University of California, Irvine</h2>
+          <div id="chart2" class = "chart"></div>
+        </div>
+      </figure>
+      <article>
+        <div id = "step3" class='step' data-step='1'>
+        <p>Inder Verma and Francisco Ayala were both titans in their field--cancer biology and evolutionary biology, respectively. Their inappropriate behavior were noted by many, well before formal investigations took place. Their careers continued to soar and their achievements exalted, while women continued to be targets of their harassment. In Verma's case, <span style = "color: #f7931e"><b>women who turned to Salk after being harassed were told to keep quiet of their experiences</b></span>. Both men failed to right their behaviors even after initial complaints were filed with human resources.</p>
+      </div>
+      </article>
+    </div> <!--scrolly-3-->
+    <div id = "scrolly-4" class = "row">
+      <figure>
+        <div id = "krauss-img" div class = "col" style="background:url('img/lawrence_krauss.jpg') no-repeat center center /cover">
+          <h1>Lawrence Krauss</h1>
+          <h2>Celebrity physicist and intellectual at Arizona State university</h2>
+          <div id = "chart3" class = "chart"></div>
+        </div>
+      </figure>
+      <article>
+        <div id = "step4" class='step' data-step='1'>
+          <p>Lawrence Krauss was a celebrity physicist and a staunch advocate for atheism. He was well known among the skeptical movement, whose members believe in rational inquiry and the use of empirical research to back claims. His career is littered with instances of sexual harassment, and some cases of outright sexual assault. He has denied all allegations against him, and attributes them to his fame. <span style = "color: #f7931e"><b>"It is common knowledge that celebrity attracts all forms of negative attention from many different angles...There is no pattern of discontent revealed here that suggests any other explanation,"</b></span> Krauss has stated.</p>
+        </div>
+      </article>
+    </div> <!--scrolly-4-->
+  </div> <!--container 3 -->
+  <div id = "container-4" class = "container">
+    <div class = "row">
+      <div class = "col">
+        <h5 style = "margin-top: 50px">These men held so much power and influence in both the scientific world and their institutions that it took the voices of countless women and decades of damage before appropriate action was taken.</h5>
+      </div>
+      <div class = "col-7">
+        <p style = "margin-top: 5vh;">In all cases, initial complaints were filed well before official investigations took place. There were multiple accounts of sexual misconduct by the perpetrators before and after these complaints. There were “whisper networks” of women telling newcomers to stay away from these men, or to be careful around them. These men held so much power and influence in both the scientific world and their institutions that it took the voices of countless women and decades of damage before appropriate action was taken.</p>
+        <h4 style = "text-align: center; margin-top:5vh;">Part Three</h4>
+        <hr style = "margin-bottom:5vh;">
+        <p><span style = "font-family: futura-pt; text-transform: uppercase; font-size: 20px"><b>Certainly because</b></span> of the actions of men like these and those that support them (amongst other reasons), women have had difficulty navigating the STEM academic environment. Especially concerning are the retention rates for women in advanced stages of their career--there is an apparent and extreme pipeline problem that has yet to be resolved.</p>
+        <p>Institutions are aware of this, and as early as the 90s, have published faculty equity reports in order to mitigate the problem. When comparing data obtained from faculty equity reports of two prestigious universities in New York City, we see a few patterns emerge. First of all, the percentage of female faculty in the sciences have consistently been the lowest across major disciplines. There is little improvement when comparing the numbers; Columbia, which has the higher rate of female faculty in the sciences, has only managed to raise the percentage from 16% in 2000 to 22% in 2016 (not even a quarter of the faculty).</p>
+      </div>
+      <div class = "col">
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+        <img src="img/pt2_graph1.svg" alt="female faculty by discipline" align = center style = "transform: scale(0.75)"> 
+      </div>
+    </div>
+  </div> <!--container4 -->
+  <div id = "container-5" class= "container-fluid">
+    <div class = "row">
+      <div id = "scrolly-5" class = "col">
+      <figure>
+        <img id = "pipeline" src="img/pt2_graph2_before.svg" alt="female percentage by rank" align = right>
+      </figure>
+      <article>
+          <div class='step' data-step='1'>
+            <p>The pipeline problem becomes obvious when taking a closer look at Columbia’s breakdown of women in the sciences in each step of the academic career ladder.  <span style = "color: #f7931e"><b>Women make up half of the undergraduate student body majoring in the sciences--at times even more than half, the highest rate being 54%.</b></span> At the graduate level, this percentage drops off slightly, but in the past few years, have been trending upwards to 50%. </p>
+          </div>
+          <div class='step' data-step='2'>
+            <p>The drop-off in numbers emerges at the tenure-eligible faculty and especially tenured faculty level. <span style = "color: #f7931e"><b>In 1990, a mere 8.3% of tenured faculty were women; in 2015, 21%.</b></span> The trajectory of a theoretical cohort who started undergraduate studies in 1990 is outlined by the dotted squares.</p> 
+            <p>So many women choose to pursue careers in science--where do they all go?</p>
+          </div>
+      </article>
+      </div>
+    </div>
+  </div>
+  <div id = "container-6" class = "container">
+    <div class = "row">
+      <div class = "col">
+      </div>
+      <div class = "col-7">
+        <p style = "margin-top: 5vh;"><span style = "font-family: futura-pt; text-transform: uppercase; font-size: 20px"><b>The pipeline problem</b></span> is not a simple one to solve. However, the innate sexism in STEM academia does nothing but hurt the case for women. Dr. BethAnn McLaughlin, an assistant professor of neurology and pharmacology at Vanderbilt University and a leader in female advocacy in STEM, experienced this issue firsthand. As a tenure track professor, her tenure was initially approved in 2015 by her department and the Faculty Appointments & Promotions Committee, but the process was derailed for nearly two years while a disciplinary investigation against her took place concerning an issue over her behavioral conduct. This probe was initiated by complaints from Aurelio Galli, a then colleague at Vanderbilt, whom she testified against during his sexual harassment case in 2015. Though the probe found her not guilty, when the process restarted in 2017, Jeff Blaser, the dean of Vanderbilt School of Medicine circulated the report to the Executive Committee of the Executive Faculty (ECEF) at the School of Medicine. She was then unanimously denied tenure. The process has been described as “highly irregular” by academics and lawyers alike.</p>
+        <p>Dr. McLaughlin has since ramped up her efforts in advocacy for accountability in STEM academia. She has played a key role in convincing organizations such as the National Academy of Sciences (NAS) and the American Association for the Advancement of Science (AAAS) to adopt policies that allow honors and memberships to be stripped from proven sexual harassers. She has also launched a non-profit organization called MeTooStem that aims to give a voice to those who have been harassed, and to call for accountability at the institutional level. The hashtag #MeTooStem has also become a rallying point for women in STEM. Here are some tweets from female scientists, suggesting ways in which allies can support those undergoing harassment or discrimination:</p>
+      </div>
+      <div class = "col">
+      </div>
+    </div>
+  </div>
+  <div id = "container-7" class = "container">
+    <div class = "row">
+      <div class = "col">
+        <h5>Male allies can use their privilege to advocate for victims internally. Listening to womxn and their experiences with sexual harassment, sharing how upsetting the situation is and emotionally validating the unfair situation can be incredibly impactful.</h5>
+      </div>
+      <div class = "col">
+        <h5>One of the most important ways people can support those involved in harassment/ assault/discrimination is to NOT change the way that you treat that person.</h5>
+      </div>
+      <div class = "col">
+        <h5>"Why didn't you say no?"...is a nonsensical response to someone else's experience. It doesn't take into account the power dynamics and it's a comment that usually comes from someone that has never been in a disenfranchised position.</h5>
+      </div>
+    </div>
+    <div class = "row" style = "margin-top: 5vh; margin-bottom: 5vh;">
+      <div class = "col">
+      </div>
+      <div class = "col-7">
+        <h4 style = "text-align: center; margin-top:5vh;">Conclusion</h4>
+        <hr style = "margin-bottom: 5vh">
+        <p>Visibility of the issue of sexual harassment in STEM has steadily increased to the point where it has piqued mainstream attention. As more and more issues are exposed into the open and discontent rises, it becomes necessary to have a plan that organizes this anger into actionable change. Based on the collected data and recommendations of advocates of women in STEM academia, the following are general focus points that should be addressed:
+        <ol style = "margin-top: 5vh; margin-bottom: 5vh;">
+          <li><span style = "color: #f7931e"><b>Accountability by institutions</b></span>: <br>Institutions must hold perpetrators of sexual misconduct accountable for their actions, and assign appropriate consequences in a timely manner</li>
+          <li><span style = "color: #f7931e"><b>Accountability by national STEM organisations</b></span>: <br>National organizations such as NIH and NASEM must revoke honors, awards, and funding from investigators found guilty of sexual misconduct</li>
+          <li><span style = "color: #f7931e"><b>Educational opportunities that increase awareness of sexual harassment and discrimination at a younger age</b></span>: <br>Especially in an environment such as STEM where sexism is ingrained, educational opportunities are necessary to mitigate the negative effects of such an environment.</li>
+          <li><span style = "color: #f7931e"><b>Better institutional support for those who have experienced harassment</b></span>: <br>Institutions must provide support for survivors of harassment, not protection for the perpetrators</li>
+          <li><span style = "color: #f7931e"><b>Promotion of more women to leadership roles</b></span>: <br>Without women in leadership roles, we will continue to have biases against women when considering promotions</li>
+          <li><span style = "color: #f7931e"><b>Educational opportunities for allies of women in STEM</b></span>: <br>It is important for women in STEM to have support networks, and male allies should be educated on how best to support women who have experienced harassment and/or discrimination</li>
+        </ol>
+         <p>One of the first steps towards change is awareness, in any situation, no matter how big or small--sexual harassment in STEM academia is no different. As the greater society continues to increase awareness and coverage of these issues, it is up to us to rise to the occasion and ride this wave to equal opportunity and treatment of all sexes and genders. A field so advanced in its discoveries has no reason to be stuck in the past.</p>
+      </div>
+      <div class = "col">
+      </div>
+  </div>
+  <hr size = "10" style = "margin-bottom: 5vh">
+  <div class = "row">
+    <div class = "col">
+    </div>
+    <div class = "col-7">
+      <h4 style= "text-align: center">Select References</h4>
+      <ol>
+        <li>Advancement of Women Through the Academic Ranks of the Columbia University Graduate School of Arts and Sciences: Where Are the Leaks in the Pipeline? Report. The Commission on the Status of Women, Columbia University. November 2001.</li>
+        <li>Aldhous, Peter. "Celebrity Atheist Lawrence Krauss Accused Of Sexual Misconduct For Over A Decade." BuzzFeed News. October 13, 2018. Accessed May 07, 2019. https://www.buzzfeednews.com/article/peteraldhous/lawrence-krauss-sexual-harassment-allegations.</li>
+        <li>Brown, Sarah. "This Scientist Was the Architect of #MeTooSTEM. Now Others Are Fighting to Save Her Job." The Chronicle of Higher Education. March 01, 2019. Accessed March 26, 2019. https://www.chronicle.com/article/This-Scientist-Was-the/245806.</li>
+        <li>Corbyn, Zoë. "BethAnn McLaughlin: 'Too Many Women in Science Have to Run the Gauntlet of Abuse and Leave'." The Guardian. April 07, 2019. Accessed May 07, 2019. https://www.theguardian.com/science/2019/apr/07/bethann-mclaughlin-sexual-harassment-in-science.</li>
+        <li>Geocognition Research Laboratory. "The Academic Sexual Misconduct and Violations of Relationship Policies Database." GEOCOGNITION RESEARCH LABORATORY. September 15, 2018. Accessed March 26, 2019. https://geocognitionresearchlaboratory.com/2018/08/20/the-academic-sexual-misconduct-database/.</li>
+        <li>"Home." Me Too STEM. Accessed March 26, 2019. https://metoostem.com/.</li>
+        <li>Pelowitz, Erik, and Karen Bell. Findings of the Office of Equal Opportunity and Diversity (OEOD).Report. Office of Equal Opportunity and Diversity, University of California Irvine. May 16, 2018.</li>
+        <li>Policy and Planning Committee Equity Reports.Report. Policy and Planning Committee, Columbia University. October 2018.</li>
+        <li>Science & Engineering Indicators 2016. National Science Board. Place of Publication Not Identified: Distributed by ERIC Clearinghouse, 2016.</li>
+        <li>Sexual Harassment of Women: Climate, Culture, and Consequences in Academic Sciences, Engineering, and Medicine. Washington D.C.: National Academies Press, 2018.</li>
+        <li>Shoshkes Reiss, Carol, and Andre Fenton. Faculty of Arts and Sciences Equity Committee Executive Summary of Data to End of 17/18 Academic Year and Recommendations. Report. Faculty of Arts and Sciences Equity Committee, New York University.</li>
+        <li>Tolstoy, Maya. 2004-2013 Update: Advancement of Women Through the Academic Ranks of the Columbia University Graduate School of Arts and Sciences: Where Are the Leaks in the Pipeline? Report. Commission on the Status of Women, Professor Daniel Rabinowitz (Dept of Statistics), Columbia University Senate, Columbia University. April 20, 2015.</li>
+        <li>Wadman, Meredith. "A Hidden History." Science. May 04, 2018. Accessed May 07, 2019. http://science.sciencemag.org/content/360/6388/480.full.</li>
+        <li>Wadman, Meredith. "Vanderbilt Panel Weighs in against Tenure for #MeToo Scientist." Science. March 11, 2019. Accessed May 07, 2019. https://www.sciencemag.org/news/2019/03/vanderbilt-panel-votes-against-tenure-metoo-scientist.</li>
+        <li>"Women in Science Take on Sexual Harassment." Feature | Women in Science Take on Sexual Harassment. Accessed March 26, 2019. http://www.asbmb.org/asbmbtoday/201809/Feature/Harassment/.</li>
+    </div>
+    <div class = "col">
+    </div>
+  </div>
+  
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
