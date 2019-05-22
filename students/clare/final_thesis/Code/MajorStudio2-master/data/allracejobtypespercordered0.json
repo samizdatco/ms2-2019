@@ -1,0 +1,975 @@
+[{
+    "id": 0,
+    "raceethnicity": "American Indian or Alaskan Native & Native Hawaiian or Pacific Islander",
+    "total": 20,
+    "dat": [0, 0, 0, 2, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 1, 0, 2, 1, 5, 0, 0, 3],
+    "percentdat": [0, 0, 0, 10, 0, 0, 0, 15, 15, 0, 0, 0, 0, 0, 5, 0, 10, 5, 25, 0, 0, 15],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 2,
+      "percent": 0.63
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 3,
+      "percent": 0.27
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 3,
+      "percent": 0.54
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 1,
+      "percent": 0.77
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 2,
+      "percent": 0.34
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 1,
+      "percent": 0.24
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 5,
+      "percent": 0.48
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 3,
+      "percent": 0.58
+    }]
+  },
+  {
+
+    "id": 1,
+    "raceethnicity": "Asian",
+    "total": 665,
+    "dat": [1, 53, 5, 23, 12, 25, 6, 80, 51, 34, 27, 9, 8, 12, 14, 8, 29, 50, 111, 14, 31, 62],
+    "percentdat": [0.15, 7.97, 0.75, 3.46, 1.8, 3.76, 0.9, 12.03, 7.67, 5.11, 4.06, 1.35, 1.2, 1.8, 2.11, 1.2, 4.36, 7.52, 16.69, 2.11, 4.66, 9.32],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 1,
+      "percent": 7.14
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 53,
+      "percent": 6.61
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 5,
+      "percent": 5.81
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 23,
+      "percent": 7.23
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 12,
+      "percent": 18.46
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 25,
+      "percent": 9.65
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 6,
+      "percent": 10.34
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 80,
+      "percent": 7.27
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 51,
+      "percent": 9.22
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 34,
+      "percent": 18.38
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 27,
+      "percent": 16.98
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 9,
+      "percent": 4.52
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 8,
+      "percent": 9.2
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 12,
+      "percent": 8.51
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 14,
+      "percent": 10.77
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 8,
+      "percent": 13.79
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 29,
+      "percent": 4.97
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 50,
+      "percent": 11.79
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 111,
+      "percent": 10.61
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 14,
+      "percent": 5.81
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 31,
+      "percent": 9.78
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 62,
+      "percent": 11.95
+    }]
+  },
+  {
+    "id": 2,
+    "raceethnicity": "Black or African American",
+    "total": 1165,
+    "dat": [1, 50, 9, 5, 1, 15, 1, 157, 186, 37, 19, 7, 6, 5, 20, 10, 23, 89, 355, 44, 10, 115],
+    "percentdat": [0.09, 4.29, 0.77, 0.43, 0.09, 1.29, 0.09, 13.48, 15.97, 3.18, 1.63, 0.6, 0.52, 0.43, 1.72, 0.86, 1.97, 7.64, 30.47, 3.78, 0.86, 9.87],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 1,
+      "percent": 7.14
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 50,
+      "percent": 6.23
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 9,
+      "percent": 10.47
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 5,
+      "percent": 1.57
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 1,
+      "percent": 1.54
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 15,
+      "percent": 5.79
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 1,
+      "percent": 1.72
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 157,
+      "percent": 14.26
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 186,
+      "percent": 33.63
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 37,
+      "percent": 20
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 19,
+      "percent": 11.95
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 7,
+      "percent": 3.52
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 6,
+      "percent": 6.9
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 5,
+      "percent": 3.55
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 20,
+      "percent": 15.38
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 10,
+      "percent": 17.24
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 23,
+      "percent": 3.95
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 89,
+      "percent": 20.99
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 355,
+      "percent": 33.91
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 44,
+      "percent": 18.26
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 10,
+      "percent": 3.15
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 115,
+      "percent": 22.16
+    }]
+  },
+  {
+    "id": 3,
+    "raceethnicity": "Hispanic",
+    "total": 766,
+    "dat": [5, 42, 15, 14, 4, 9, 1, 156, 113, 19, 14, 6, 7, 9, 10, 7, 31, 85, 138, 27, 11, 43],
+    "percentdat": [0.65,5.48,1.96,1.83,0.52,1.17,0.13,20.37,14.75,2.48,1.83,0.78,0.91,1.17,1.31,0.91,4.05,11.1,18.02,3.52,1.44,5.61],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 5,
+      "percent": 35.71
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 42,
+      "percent": 5.24
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 15,
+      "percent": 17.44
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 14,
+      "percent": 4.4
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 4,
+      "percent": 6.15
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 9,
+      "percent": 3.47
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 1,
+      "percent": 1.72
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 156,
+      "percent": 14.17
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 113,
+      "percent": 20.43
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 19,
+      "percent": 10.27
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 14,
+      "percent": 8.81
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 6,
+      "percent": 3.02
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 7,
+      "percent": 8.05
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 9,
+      "percent": 6.38
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 10,
+      "percent": 7.69
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 7,
+      "percent": 12.07
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 31,
+      "percent": 5.32
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 85,
+      "percent": 20.05
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 138,
+      "percent": 13.18
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 27,
+      "percent": 11.2
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 11,
+      "percent": 3.47
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 43,
+      "percent": 8.29
+    }]
+  },
+  {
+    "id": 4,
+    "raceethnicity": "Two Or More Races",
+    "total": 138,
+    "dat": [0, 2, 2, 4, 3, 8, 1, 25, 5, 2, 1, 2, 2, 3, 8, 2, 15, 3, 12, 6, 9, 23],
+    "percentdat": [0, 1.45, 1.45, 2.9, 2.17, 5.8, 0.72, 18.16, 3.62, 1.45, 0.72, 1.45, 1.45, 2.17, 5.8, 1.45, 10.87, 2.17, 8.7, 4.35, 6.52, 16.67],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 2,
+      "percent": 0.25
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 2,
+      "percent": 2.33
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 4,
+      "percent": 1.26
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 3,
+      "percent": 4.62
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 8,
+      "percent": 3.09
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 1,
+      "percent": 1.72
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 25,
+      "percent": 2.27
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 5,
+      "percent": 0.9
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 2,
+      "percent": 1.08
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 1,
+      "percent": 0.63
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 2,
+      "percent": 1.01
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 2,
+      "percent": 2.3
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 3,
+      "percent": 2.13
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 8,
+      "percent": 6.15
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 2,
+      "percent": 3.45
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 15,
+      "percent": 2.57
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 3,
+      "percent": 0.71
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 12,
+      "percent": 1.15
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 6,
+      "percent": 2.49
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 9,
+      "percent": 2.84
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 23,
+      "percent": 4.43
+    }]
+  },
+  {
+    "id": 5,
+    "raceethnicity": "White",
+    "total": 4529,
+    "dat": [7, 636, 55, 270, 44, 200, 49, 670, 194, 92, 98, 175, 60, 110, 77, 31, 471, 196, 424, 149, 251, 270],
+    "percentdat": [0.15, 14.04, 1.21, 5.96, 0.97, 4.42, 1.08, 14.79, 4.28, 2.03, 2.16, 3.86, 1.32, 2.43, 1.7, 0.68, 10.4, 4.33, 9.36, 3.29, 5.54, 5.96],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 7,
+      "percent": 50
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 636,
+      "percent": 79.3
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 55,
+      "percent": 63.95
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 270,
+      "percent": 84.91
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 44,
+      "percent": 67.69
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 200,
+      "percent": 77.22
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 49,
+      "percent": 84.48
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 670,
+      "percent": 60.85
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 194,
+      "percent": 35.08
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 92,
+      "percent": 49.73
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 98,
+      "percent": 61.64
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 175,
+      "percent": 87.94
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 60,
+      "percent": 68.97
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 110,
+      "percent": 78.01
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 77,
+      "percent": 59.23
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 31,
+      "percent": 53.45
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 471,
+      "percent": 80.79
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 196,
+      "percent": 46.23
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 424,
+      "percent": 40.5
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 149,
+      "percent": 61.83
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 251,
+      "percent": 79.18
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 270,
+      "percent": 52.02
+    }]
+  },
+  {
+    "id": 6,
+    "raceethnicity": "Declined to State",
+    "total": 63,
+    "dat": [0, 19, 0, 0, 1, 2, 0, 10, 1, 1, 0, 0, 4, 2, 0, 0, 12, 0, 2, 1, 5, 3],
+    "percentdat": [0, 30.16, 0, 0, 1.59, 3.17, 0, 15.87, 1.59, 1.59, 0, 0, 6.35, 3.17, 0, 0, 19.05, 0, 3.17, 1.59, 7.94, 4.76],
+    "jobtype10": [{
+      "id": 10,
+      "job": "Artist/Performer",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype11": [{
+      "id": 11,
+      "job": "Board",
+      "number": 19,
+      "percent": 2.37
+    }],
+    "jobtype12": [{
+      "id": 12,
+      "job": "Community/Engagement",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype13": [{
+      "id": 13,
+      "job": "Curator",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype14": [{
+      "id": 14,
+      "job": "Designer",
+      "number": 1,
+      "percent": 1.54
+    }],
+    "jobtype15": [{
+      "id": 15,
+      "job": "Development",
+      "number": 2,
+      "percent": 0.77
+    }],
+    "jobtype16": [{
+      "id": 16,
+      "job": "Editorial",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype17": [{
+      "id": 17,
+      "job": "Education",
+      "number": 10,
+      "percent": 0.91
+    }],
+    "jobtype18": [{
+      "id": 18,
+      "job": "Facilities",
+      "number": 1,
+      "percent": 0.18
+    }],
+    "jobtype19": [{
+      "id": 19,
+      "job": "Finance",
+      "number": 1,
+      "percent": 0.54
+    }],
+    "jobtype20": [{
+      "id": 20,
+      "job": "IT/Web Development",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype21": [{
+      "id": 21,
+      "job": "Leadership",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype22": [{
+      "id": 22,
+      "job": "Librarian",
+      "number": 4,
+      "percent": 4.6
+    }],
+    "jobtype23": [{
+      "id": 23,
+      "job": "Marketing/PR",
+      "number": 2,
+      "percent": 1.42
+    }],
+    "jobtype24": [{
+      "id": 24,
+      "job": "Membership/Constituent Services",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype25": [{
+      "id": 25,
+      "job": "Programming",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype26": [{
+      "id": 26,
+      "job": "Project/Exhibition",
+      "number": 12,
+      "percent": 2.06
+    }],
+    "jobtype27": [{
+      "id": 27,
+      "job": "Retail/Merchandise",
+      "number": 0,
+      "percent": 0
+    }],
+    "jobtype28": [{
+      "id": 28,
+      "job": "Security",
+      "number": 2,
+      "percent": 0.19
+    }],
+    "jobtype29": [{
+      "id": 29,
+      "job": "Support/Administration",
+      "number": 1,
+      "percent": 0.41
+    }],
+    "jobtype30": [{
+      "id": 30,
+      "job": "Technical Production",
+      "number": 5,
+      "percent": 1.58
+    }],
+    "jobtype31": [{
+      "id": 31,
+      "job": "Visitor/Patron Services",
+      "number": 3,
+      "percent": 0.58
+    }]
+  }
+]

@@ -1,0 +1,92 @@
+[
+        {
+        "id": 0,
+         "jobtype": "",
+         "raceethnicity": "",
+         "percent": "Asian"
+        },
+        {
+        "id": 1,
+         "jobtype": "curatorial_education",
+         "raceethnicity": "Asian",
+         "percent": 7
+        },
+        {
+        "id": 2,
+         "jobtype": "leadership_conservation",
+         "raceethnicity": "Asian",
+         "percent": 3
+        },
+        {
+         "id": 3,
+         "jobtype": "",
+         "raceethnicity": "",
+         "percent": "Black or African American"
+        },
+        { 
+         "id": 4,
+         "jobtype": "curatorial_education",
+         "raceethnicity": "Black or African American",
+         "percent": 11
+        },
+        {
+         "id": 5,
+         "jobtype": "leadership_conservation",
+         "raceethnicity": "Black or African American",
+         "percent": 4
+        },
+        {
+         "id": 6,
+         "jobtype": "",
+         "raceethnicity": "",
+         "percent": "Hispanic"
+        },
+        {
+         "id": 7,
+         "jobtype": "curatorial_education",
+         "raceethnicity": "Hispanic",
+         "percent": 5
+        },
+        {
+         "id": 8,
+         "jobtype": "leadership_conservation",
+         "raceethnicity": "Hispanic",
+         "percent": 3
+        },
+        {
+         "id": 9,
+         "jobtype": "",
+         "raceethnicity": "",
+         "percent": "Two Or More Races"
+        },
+        {
+         "id": 10,
+         "jobtype": "curatorial_education",
+         "raceethnicity": "Two Or More Races",
+         "percent": 6
+        },
+        {
+         "id": 11,
+         "jobtype": "leadership_conservation",
+         "raceethnicity": "Two Or More Races",
+         "percent": 2
+        },
+        {
+         "id": 12,
+         "jobtype": "",
+         "raceethnicity": "",
+         "percent": "White"
+        },
+        {
+         "id": 13,
+         "jobtype": "curatorial_education",
+         "raceethnicity": "White",
+         "percent": 70
+        },
+        {
+         "id": 14,
+         "jobtype": "leadership_conservation",
+         "raceethnicity": "White",
+         "percent": 88
+        }
+]

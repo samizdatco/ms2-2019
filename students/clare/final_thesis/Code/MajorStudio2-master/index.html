@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--website for project thesis Parsons 2019 clare churchouse-->
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!--match the screen's width in device-independent pixels-->
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        
+        <title>art museums</title>
+
+        <meta name="description" content="art museums and demographics around staffing and audiences: statistics, comparisons, data visualizations, inferences">
+        
+        <link rel="stylesheet" type="text/css" href="style/style.css" charset="utf-8">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/dsl0cau.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+
+
+        <!-- dependencies -->
+      
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        
+        <script language="javascript" type="text/javascript" src="js/graph-scroll.js"></script>
+
+    </head>
+
+    <body onresize='window.location.reload(true)'>
+<wrapper>
+        <main id="mainfull">
+            <header>
+                <h1 id="header">
+                    <h1 class="title1">do museums </h1>
+                    <h3 class="title2">reflect <br>who we are as a society? </h3>
+                    <h2 id="header2" class="subhead">
+                        <h2 style="font-size:150%; color:#231e1a;">&nbsp;statistics</h2> <h4 class="subhead2">comparisons</h4>
+                        <h2 style="font-size:150%; color:#231e1a;">&nbsp;data visualizations</h2> <h4 class="subhead2">inferences</h4></h2>
+            </header>
+        </main>
+
+  <!--2 column text-->
+<main class="main2col">  
+     <div class='paragraph2col' >
+            <h4 class="textblockleft">There are 2,620 art museums across the U.S. Who works in -- 
+                and who visits -- museums? 
+                Employing publicly available datasets from the National Endowment for the Arts (NEA), 
+                the New York City Department of Cultural Affairs (DCLA)</h4>
+               
+             <h4 class="textblockright">grantee staff survey, and findings from two national art museum staff demographic
+                surveys, as well as artwork data from the Brooklyn Museum, these visualizations examine 
+                staffing, visitors, and acquisitions. 
+             </h4>
+        </div> 
+        
+</main>
+
+<!--local staff-->
+     <main class="charts" id="chartempty">
+            <!--<p class="graph-scroll-active"></p>-->
+                    <!--test circle nav-->
+                    <!--<div class="graph-sequence-indicator"></div>-->
+                    
+                <div id="container2" class="container">
+              
+                              <div id="sections2" class="section"> 
+                                <div id="NYC" class="section0"> <h2 class="who">Local museum staff: 2015</h2><p class="text2"> At 
+                                New York City Department of Cultural Affairs-funded museums with budgets greater than $1 million.
+                                The staff survey, undertaken by Ithaka S+R in 2015, was developed out of an earlier effort to measure  
+                                demographics of those working in U.S. art museums.
+                            </p>
+                         
+                        </div>
+                    
+                    </div>
+                </div>   <!--close this section-->
+                    
+            </div> <!--close this container-->
+</main>
+
+
+<!--DCLA circles grid goes across the whole screen  -->
+    <main class="imgacross">
+            <div id="container21" class="horizontalcircles" class="full">
+
+                <div id="svg21"></div>
+                
+      		        <div id="percent-btn" class="stylepercent"></div>
+      		        <div id="numbers-btn" class="stylenumbers"></div>
+		            
+          
+            </div> <!--close this container-->
+
+</main>
+
+<!--text on DCLA staff job type grid-->
+<!--2 column text-->
+<main class="main2col">  
+     <div class='paragraph2col' >
+        <h4 class="textblockleft">7,346 paid museum staff, including 802 board members (paid and volunteer), work at New York City museums with budgets of 
+                    $1 million or more. The NYC Department of Cultural Affairs (DCLA) 2015 survey identified staff by 22 job types and 
+                    individuals by 2010 US Census race and ethnicity categories. Museum staff numbers are sorted by race and 
+                    ethnicity along a horizontal axis. Hovering over each yellow circle reveals how many people work in this job category.<br>
+                    Numbers tell one part of the story. The pink percent button tracks a single ethnic or racial group along a horizontal axis. Hovering
+                    over a pink circle reveals what percentage of that racial group works in that specific job category, e.g. Facilities or Education.
+                    The green button sorts the percentages by job type along a vertical axis, showing the percentage of each racial and ethnic group 
+                    for each job category. <br> 
+		    In 2015, 38.36% of paid staff and board members at these museums (2,817 people) identify as people of color -- compared to 66.7% of the NYC population.
+                    <br> <h4 class="textblockright"> This chart illustrates the museum 'discipline' within the larger DCLA cultural survey.<br> The 2015 findings from Ithaka S+R and its 
+                    funding partner, The Andrew W. Mellon Foundation, had a big impact on the city’s cultural community. Following the
+                    report, the DCLA initiated a cultural plan, reaching out to nearly 200,000 local residents. 
+                    In July 2017, the "CreateNYC Plan" was released. One aspect of this plan involved tying funding to diversity plans: “DCLA will 
+                    introduce new diversity measures for our city's cultural organizations including collecting data from grantees 
+                    about the diversity of staff and board members; asking for organizations'
+                    approaches to Diversity, Equity, and Inclusion (DEI); and in FY 2019 will require DEI 
+                    plans from the CIG [Cultural Institutions Group]." The CIG is a group of 33 institutions on city-owned 
+                    property (including The Metropolitan Museum of Art, and Brooklyn Museum.) These institutions operate as 
+                    publicly-owned facilities whose mandate is to provide cultural services accessible to all New Yorkers.
+                </h4>
+        </div>
+</main>
+
+<main id="dashline1">
+</main>
+
+
+<!--audiences-->
+   <main class="charts" id="audienceband">
+            <!--<p class=".graph-circle"></p>-->
+
+                <!--<p class="graph-scroll-active"></p>-->
+
+            <div id="container1" class="container">
+                <div id="graph1" class="graph">  
+                
+                   <div data-cloud9-id='9' id="svg1">
+                        <div data-cloud9-id='10' id="tooltipNEA" class="hidden">
+                          <p data-cloud9-id='11'><span data-cloud9-id='12' id="value"></span>%</p></div>
+                        </div>
+                        </div>  <!--close this graph-->
+                      <div id="sections1" class="section"> 
+                            <div class="section0"> <h2 class="who">National Art Audiences</h2><p class="text2">
+                             
+                                National Endowment for the Arts (NEA) reports on the percent of the U.S. adult population 
+                                who visited an art museum or gallery that year. The chart shows changing 
+								audience attendance for 1982-2017.</p> 
+                            </div>
+                        </div>
+                         <div id="sections0" class="section"> 
+                       <p class="textnoground" style="padding-top: 0em;">Who goes to art museums? About 79% of audiences 
+                       were white non-Hispanic, 9% Hispanic, and 6% African-American (2015).<br>
+			These groups constitute approximately 69%, 14%, and 11% of the U.S. population (NEA).
+                     </p>
+                  </div>         
+                       
+                   
+                </div>   <!--close this section-->
+            </div> <!--close this container-->
+</main>
+
+   <main class="charts" class="audienceband">
+            <div id="container24" class="container">
+                    <div id="graph24" class="graph"> 
+                    
+                         <div id="svg24">
+                             
+          <div id="tooltipline1" class="hidden">
+          <p data-cloud9-id='2'><span data-cloud9-id='3' id="value"></span></p></div>
+           
+          <div  id="tooltipline2" class="hidden">
+           <p data-cloud9-id='11'><span data-cloud9-id='12' id="value1"></span></p></div>
+                            
+          <div  id="tooltipline3" class="hidden">
+           <p data-cloud9-id='4'><span data-cloud9-id='5' id="value2"></span></p></div>
+                          
+           <div  id="tooltipline4" class="hidden">
+           <p data-cloud9-id='6'><span data-cloud9-id='7' id="value3"></span></p></div>
+          
+	   <div  id="tooltipline5" class="hidden">
+            <p data-cloud9-id='8'><span data-cloud9-id='14' id="value4"></span></p></div>
+            
+	   <div  id="tooltipline6" class="hidden">
+            <p data-cloud9-id='16'><span data-cloud9-id='15' id="value5"></span></p></div>
+            </div>
+               </div>  <!--close this graph-->
+              <div id="sections0" class="section"> 
+                        
+                              <p class="textnoground" style="padding-top: 1.3em; margin-top: 3em;">Trend lines for race and ethnic 
+                              sub-groups illustrate variations in national art museum attendance for years 2012-2017:<br>
+                              Hispanic, African American, other, all, Asian, and white.<br>Percent of U.S. adults 
+                              who went to an art museum or gallery.
+                              </p>
+                          <p></p>
+                        </div>
+                 </div>   <!--close this section-->
+            </div> <!--close this container-->
+</main>
+
+
+<!--2 column text-->
+<main class="main2col" style="padding-top: 1em">  
+     <div class='paragraph2col' >
+        <h4 class="textblockleft">The 2000 U.S. Census groupings have been used to categorize employees and 
+                audiences by race and Hispanic/Latino status. As the DCLA 2015 survey report pointed out, these 
+                separate</h4> 
+          <h4 class="textblockright">categories are inadequate, since many individuals do not identify themselves with these groups. 
+						However, these are the Census categories at present.
+            </h4>
+        </div>
+    
+</main>
+
+</main>
+
+<main id="dashline2">
+</main>
+
+
+<!--national art museum staff-->
+<main class="charts">
+            <!--<p class="graph-scroll-active"></p>-->
+        <div id="container7" class="container">
+                <div id="graph7" class="graph">
+                    
+                   <div id="svg16"></div>
+                   
+                   <div id="svg18"></div>
+                   
+                </div><!--close this graph-->
+                    <div id="sections7" class="section"> 
+                        <div class="section0"><h2 class="who">National art museum staff: 2015-2018</h2><p class="text2">
+                                Two additional national art museum demographic surveys were
+                                undertaken<br> by Ithaka S+R.
+                                <!--with an -->
+                                <!--advisory committee of Association of Art Museum Directors staff and member museums.-->
+                               Staff were approximately ten percentage points more racially 
+                                and ethnically homogenous than the U.S. population in 2015.</p>
+                        </div>
+                    </div>   <!--close this section-->
+		 <div id="sections9" class="section"><p class="textnoground" style="padding-top: 0em;">
+	
+			 The 2018 Art Museum Staff Demographic Survey revealed that 35% of new hires among repeat participants 
+			 were people of color, up from 26% in 2015. But the report showed that hiring in the 4 "intellectual leadership" 
+			 job positions revealed differences between curatorial and education staff versus art museum leadership (including 
+			 executive positions) and conservation staff who lagged the trend. These two charts are from the 2018 survey report.
+                            </p>
+                  </div>   <!--close this section-->
+
+              </div> <!--close this container-->
+</main>
+
+<!--recent national art museum staff trends-->
+    <main class="charts">
+         <!--<p class="graph-scroll-active"></p>-->
+            <div id="container10" class="container">
+                <div id="graph10" class="graph">
+
+                  <div id="svg27"></div>
+                  
+                </div>   <!--close this graph-->
+            
+            </div> <!--close this container-->
+                
+</main>
+
+
+<main id="dashline3">
+</main>
+
+<!--DCLA curators - small multiples-->
+<main class="charts" id="chartsmultiples">
+        <!--<p class="graph-scroll-active"></p>-->
+        
+            <div id="container3" class="container">
+                    <div id="graph3" class="graph">
+                        <div id="svgheading" ></div>
+                        <div id="svg4"></div>
+                        <div id="svg5"></div>
+                        <div id="svg6"></div>
+                        <div id="svg7"></div>
+                        <div id="svg8"></div>
+                        <div id="svg9"></div>
+     
+                </div>  <!--close this graph-->
+                  <div id="sections3" class="section"> 
+                   <div id="NYC1" class="section0"> <h2 class="who">Local Museum Curators: 2015</h2>
+                        <p class="text2">318 paid curators at NYC Department of Cultural Affairs-funded museums with 
+                        budgets greater than $1 million. The deeper yellow color represents the number of curators 
+						hired prior to 2010: the top brighter yellow represents those hired 2010 through
+						to the survey in 2015.
+                            </p>
+                        </div>
+                    </div>   <!--close this section-->
+                    
+            </div> <!--close this container-->
+                    
+ </main>          
+
+<main id="dashline4">
+</main>
+
+<!--artworks-->
+
+<!--2 column text    -->
+<main class="main2col" style="margin-top: 0; padding-bottom: 4em; padding-top: 4em;">  
+     <div class='paragraph2col' >
+        <h4 class="textblockleft">The following visualizations chart Brooklyn Museum artworks by nationality of artist. Each 
+					circle is scaled to represent the number of artworks linked to a particular nationality. 
+         <br> 60 nationalities are recorded with 39 variants where nationality and birthplace do not coincide.
+					776 artworks do not have an entry for artist nationality.<br>
+      	The second visualization divides the collection into artworks acquired before 
+      	2015: 9,961 (97.18%), and between 2015 and March 2019: 289 (2.82%). Here the circles indicate
+	    the percentage of artworks by nationality. Colors</h4>
+	<h4 class="textblockright">indicate continents. 
+	Artworks by American artists represent over 68% of work collected before 2015. This figure decreases 
+	down to 40% of the artworks acquired 2015 and after. British artwork acquisition increased from 5.44% pre-2015 
+	to 37.72% after 2015. Paradoxically, the total of Anglo-American artworks increased from 74% of the total acquired 
+	1943-2015 to 78% of the artworks acquired 2015 to March 2019. In terms of recent acquisitions, Haiti replaced Germany 
+	as the fourth most collected country. 6.23% of artworks acquired in the last five years are by Haitian artists. 
+				
+        </h4>
+    
+        </div>
+  
+</main> 
+
+	    
+<!--local artworks  -->
+<main class="charts" id=chartsbubblemain>
+        <!--<p class="graph-scroll-active"></p>-->
+            <div id="container8" class="container">
+                <div id="graph8" class="graph">
+                    
+            <div id="textBkinfo">  <h4 class="museumheadingtext3">Artists in the Brooklyn Museum: </h4><br>
+									
+			<h4 class="museumheadingtext1" style="line-height: 0; style=padding-top: 0.02em">Where Do They Come From? </h4><br><br>
+									<p></p>
+         					<p></p>
+									<p></p>
+       <h4 class="museumheadingtext3" style="margin-top: 3.25em; font-size: 1.1em">NUMBERS</h4><br>
+									
+                    </h4>
+                    </div>
+                </div><!--close this graph-->
+                    
+                    <div id="sections8" class="section"> 
+                       <div id="NYC4" class="section0"><h2 class="who">local museum artworks: 2019</h2>
+                       <p class="text2">Each circle groups artworks from the Contemporary Collection by 
+                       nationality of the artists. Data on the 10,253 artworks from the Brooklyn Museum's api.
+                            </p>
+
+                        </div>
+                </div>   <!--close this section-->
+            </div> <!--close this container-->
+</main>  
+
+<!--all artworks-->
+<main class="charts" id=chartsbubblemain>
+        <!--<p class="graph-scroll-active"></p>-->
+            <div id="container8" class="container">
+                <div id="graph8" class="graph">
+                     
+                     <div id="svg15"></div>
+                     
+                </div><!--close this graph-->
+                    
+                    <div id="sections8" class="section"> 
+                    <div id="NYC4" class="section0">
+                      
+                    </div>
+                </div>   <!--close this section-->
+            </div> <!--close this container-->
+</main>
+  
+
+<!-- artworks by percent   -->
+<main class="imgacross" id="imgacross2" >  
+     <container id="museumheading"  >
+  
+     <container id="museumheading"  >
+			 <h4 class="museumheadingtext5">Acquisitions at the Brooklyn Museum</h5><br>
+        <h4 class="museumheadingtext2" style="padding-top: 0.02em">1943-2015 vs. 2015-March 2019 </h4><br>
+        <h4 class="museumheadingtext5" style="margin-top: 4em; font-size: 0.8em">PERCENTAGES <br></h4> 
+
+    </container>
+ </main> 
+
+<!-- across the whole screen so no graph div    -->
+<!--artworks before 2015 and artworks 2015 and after-->
+    <main id="bubbles2across">
+            <div id="container22" class="horizontalcircles" class="full">
+
+           	<div id="svg28"></div>
+              
+                <div id="svg29" ></div>
+                 
+            </div> 
+</main>
+
+         
+<main class="main2col" id="conclusion">  
+
+</main>
+
+<main class="imgacross">  
+     <div id='textend' >
+
+        <section class="endnotes">
+
+		<p class="endnotes">Datasets:</>
+<p class="endnotes">Public use data files accessed on the <a href="https://www.icpsr.umich.edu/icpsrweb/NADAC/studies/36606">National Archive of Data on Arts and Culture</a>, ICPSR 36606, Schonfeld, Roger, and Sweeney, Liam. “Diversity 
+		Survey of the New York City Department of Cultural Affairs Grantees,” 2015. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2017-01-10. 
+		https://doi.org/10.3886/ICPSR36606.v2</p>
+	    <p class="endnotes">Kevin Williams and David Keen. <a href="https://www.arts.gov/sites/default/files/2008-SPPA.pdf"> 2008 Survey of Public Participation in the Arts</a>, National Endowment for the Arts (NEA), Nov. 2009, 
+	    accessed Mar. 16, 2019, Fig.3-7, P18</p>
+	    <p class="endnotes">Public use data files accessed on the <a href="https://www.arts.gov/artistic-fields/research-analysis/arts-data-profiles/arts-data-profile-18">2017 Survey of Public Participation in the Arts (SPPA)</a>,
+	    Demographic changes in arts attendance and literary reading: 2012 to 2017, ADP18-DemographicTables. National Endowment for the Arts (NEA).
+	    NEA’s Office of Research & Analysis and the U.S. 
+	    Census Bureau.</p>
+	<p class="endnotes">Westermann, Mariët, Liam Sweeney, and Roger C. Schonfeld. <a href="https://sr.ithaka.org/wp-content/uploads/2019/01/SR-Mellon-Report-Art-Museum-Staff-Demographic-Survey-01282019.pdf">Art Museum Staff 
+	Demographic Survey 2018</a>, Ithaka S+R. Last Modified 28 January 2019. 
+  </p>
+	   <p class="endnotes">Schonfeld, Roger, Westermann, Mariët, Sweeney, Liam. <a href="https://mellon.org/media/filer_public/ba/99/ba99e53a-48d5-4038-80e1-66f9ba1c020e/awmf_museum_diversity_report_aamd_7-28-15.pdf">Art 
+	   Museum Staff Demographic Survey</a>, The Andrew W. Mellon Foundation, July 28, 2015. 
+		    </p>
+	<p class="endnotes"><a href="https://www.brooklynmuseum.org/opencollection/api">Brooklyn Museum Contemporary Collection api</a> accessed 3.19. </p>
+        </section>
+        </div>
+</main>
+
+<main class="main2colend" id="conclusion">  
+      <div class='paragraph2col' > 
+        
+<h3 id="conclusion">Acknowledgements</h3> 
+<h4 class="textblockleft1">This thesis data visualization was built on and strongly draws from the instrumental work of Ithaka S+R and The Andrew W. Mellon Foundation: 
+<a href="https://mellon.org/programs/arts-and-cultural-heritage/art-history-conservation-museums/demographic-survey/" class="aa">The Andrew W. Mellon Foundation Art Museum Staff Demographic Survey 2015</a>, and 
+follow-up <a href="https://mellon.org/resources/news/articles/art-museum-staff-demographic-survey-2018/" class="aa">2018 survey</a>, 
+and on Ithaka S+R’s survey  
+<a href="https://sr.ithaka.org/publications/diversity-in-the-new-york-city-department-of-cultural-affairs-community/" class="aa">Diversity in the New York City Department of Cultural Affairs Community</a>.
+</h4>
+<h4 class="textblockright1">
+Thank you to professors at Parsons for helping me shape and realize this project for your invaluable feedback. In particular, Christian Swinehart, 
+Richard The, Daniel Sauter, and Aaron Hill, and to my <a href="https://parsons.nyc/thesis-2019/" class="aa" style="text-transform:lowercase;">talented colleagues</a> in Major Studio 2, to Masaki Iwabuchi and to Felix Buchholz 
+for expert technical assistance. 
+ The code and data sets are on <a href="https://github.com/churc/MajorStudio2" class="aa">github</a>. 
+</h4> 
+  
+     </div> 
+</main>
+
+</wrapper>
+
+<!--data visualizations in order-->
+<!--call at bottom of body when everything is loaded-->
+
+           <!--local staff-->
+            <script language="javascript" type="text/javascript" src="js/percentDCLAcirclegrid6horsort.js"></script>
+            
+            <!--audience-->
+            
+            <script language="javascript" type="text/javascript" src="js/indexNEA1982-2017script.js"></script>
+             <script language="javascript" type="text/javascript" src="js/indexNEAaudience7.js"></script>
+             <script language="javascript" type="text/javascript" src="js/indexNEAaudience7raceeth12-17lines3.js"></script>
+
+            <!--national staff and changes-->
+             
+             <script language="javascript" type="text/javascript" src="js/indexNatArtMusraceethlines3.js"></script>
+            <script language="javascript" type="text/javascript" src="js/indexNatArtMus2015-18hiring3.js"></script>
+
+            <!--curators local-->
+            <script language="javascript" type="text/javascript" src="js/index5simplerightline3mult2.js"></script>
+        
+            <!--artworks-->
+            <script language="javascript" type="text/javascript" src="js/indexSpace_Full_bubble3.js"></script>
+	          <script language="javascript" type="text/javascript" src="js/indexSpace_Full_bubble_NumDateAccessionsPre15FINALpercent.js"></script>
+            <script language="javascript" type="text/javascript" src="js/indexSpace_Full_bubble_NumDateAccessions15FINALpercent.js"></script>
+
+
+    </body>
+
+</html>

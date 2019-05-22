@@ -1,0 +1,596 @@
+[
+  {
+    "nationality": "American",
+    "count": 6930,
+    "continent": "Northern America",
+    "continentnum": 3 
+  },
+  {
+    "nationality": "not recorded",
+    "count": 776,
+    "continent": "not recorded",
+    "continentnum": 2
+  },
+  {
+    "nationality": "British",
+    "count": 651,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "German",
+    "count": 209,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Japanese",
+    "count": 134,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Mexican",
+    "count": 133,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "French",
+    "count": 125,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Italian",
+    "count": 96,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Hungary",
+    "count": 96,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Canadian",
+    "count": 86,
+    "continent": "Northern America",
+    "continentnum": 3
+  },
+  {
+    "nationality": "American, born Russia",
+    "count": 85,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Spanish",
+    "count": 70,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Israeli",
+    "count": 62,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Russian",
+    "count": 56,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Dutch",
+    "count": 54,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Australian",
+    "count": 40,
+    "continent": "Oceania",
+    "continentnum": 7
+  },
+  {
+    "nationality": "Chilean",
+    "count": 37,
+    "continent": "Latin America and the Caribbean ",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Czech",
+    "count": 37,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Germany",
+    "count": 36,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Austrian",
+    "count": 32,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Romanian",
+    "count": 31,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Polish",
+    "count": 29,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "Haitian",
+    "count": 28,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born Yugoslavia",
+    "count": 28,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Swedish",
+    "count": 27,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "Swiss",
+    "count": 24,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Brazilian",
+    "count": 22,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Cuban",
+    "count": 22,
+    "continent": "Latin America and the Caribbean ",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Venezuelan",
+    "count": 21,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Argentine",
+    "count": 20,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Colombian",
+    "count": 17,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Puerto Rican",
+    "count": 15,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Scottish",
+    "count": 14,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born China",
+    "count": 14,
+    "continent": "Northern America born Asia",
+    "continentnum": 9
+  },
+  {
+    "nationality": "Panamanian",
+    "count": 13,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born Israel",
+    "count": 11,
+    "continent": "Northern America born Asia",
+    "continentnum": 9 
+  },
+  {
+    "nationality": "Korean",
+    "count": 9,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "American, born Mexico",
+    "count": 9,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Swedish, born Brazil",
+    "count": 8,
+    "continent": "Europe born Northern America born Latin America and the Caribbean",
+    "continentnum": 11
+  },
+  {
+    "nationality": "Norwegian",
+    "count": 7,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "American, born England",
+    "count": 6,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Hungarian",
+    "count": 6,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Puerto Rico",
+    "count": 5,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Belgian",
+    "count": 5,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "Jamaican",
+    "count": 5,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Chinese",
+    "count": 5,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "American and Latvian",
+    "count": 4,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "English",
+    "count": 4,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Ukraine",
+    "count": 4,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Indian",
+    "count": 4,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "British-Nigerian",
+    "count": 3,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Lithuania",
+    "count": 3,
+    "continent": "Northern America born Europe",
+    "continentnum": 8 
+  },
+  {
+    "nationality": "American, born Romania",
+    "count": 3,
+    "continent": "Northern America born Europe",
+    "continentnum": 8 
+  },
+  {
+    "nationality": "American, born India",
+    "count": 3,
+    "continent": "Northern America born Asia",
+    "continentnum": 9
+  },
+  {
+    "nationality": "Finnish",
+    "count": 3,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "Danish",
+    "count": 3,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "French, born Russia",
+    "count": 3,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Uruguayan",
+    "count": 2,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born Ecuador",
+    "count": 2,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Irish",
+    "count": 2,
+    "continent": "Europe",
+    "continentnum": 6 
+  },
+  {
+    "nationality": "American, born Barbados",
+    "count": 2,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Thai",
+    "count": 2,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Guatemalan",
+    "count": 2,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born Chile",
+    "count": 2,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "American, born Iran",
+    "count": 2,
+    "continent": "Northern America born Asia",
+    "continentnum": 9
+  },
+  {
+    "nationality": "Spanish, born Philippines",
+    "count": 2,
+    "continent": "Europe born Asia",
+    "continentnum": 12
+  },
+  {
+    "nationality": "Egyptian",
+    "count": 2,
+    "continent": "Africa",
+    "continentnum": 14
+  },
+  {
+    "nationality": "Mexican Spanish",
+    "count": 2,
+    "continent": "Europe",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Yugoslavian",
+    "count": 2,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Israeli, born Morocco",
+    "count": 2,
+    "continent": "Asia born Africa",
+    "continentnum": 13
+  },
+  {
+    "nationality": "British and Palestinian",
+    "count": 1,
+    "continent": "Europe born Asia",
+    "continentnum": 12
+  },
+  {
+    "nationality": "Native American, Flathead",
+    "count": 1,
+    "continent": "Northern America",
+    "continentnum": 3
+  },
+  {
+    "nationality": "Ghanaian",
+    "count": 1,
+    "continent": "Africa",
+    "continentnum": 14
+  },
+  {
+    "nationality": "Cuban American",
+    "count": 1,
+    "continent": "Northern America born Latin America and the Caribbean ",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Kenyan",
+    "count": 1,
+    "continent": "Africa",
+    "continentnum": 14
+  },
+  {
+    "nationality": "Pakistani",
+    "count": 1,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Lebanese",
+    "count": 1,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Moroccan",
+    "count": 1,
+    "continent": "Africa",
+    "continentnum": 14
+  },
+  {
+    "nationality": "Czechoslovakian",
+    "count": 1,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Native American, Cree",
+    "count": 1,
+    "continent": "Northern America",
+    "continentnum": 3
+  },
+  {
+    "nationality": "Slovenian",
+    "count": 1,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Switzerland,",
+    "count": 1,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Turkish",
+    "count": 1,
+    "continent": "Asia",
+    "continentnum": 1
+  },
+  {
+    "nationality": "Greek",
+    "count": 1,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "British, born Ireland",
+    "count": 1,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "American, born Honduras",
+    "count": 1,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Bolivian",
+    "count": 1,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Native American, Apache, Chiricahua",
+    "count": 1,
+    "continent": "Northern America",
+    "continentnum": 3
+  },
+  {
+    "nationality": "Bahamian",
+    "count": 1,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "Dominican",
+    "count": 1,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born Argentina",
+    "count": 1,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "American, born France",
+    "count": 1,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "Canadian, born Romania",
+    "count": 1,
+    "continent": "Northern America born Europe",
+    "continentnum": 8
+  },
+  {
+    "nationality": "American, born Cuba",
+    "count": 1,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  },
+  {
+    "nationality": "Ukrainian",
+    "count": 1,
+    "continent": "Europe",
+    "continentnum": 6
+  },
+  {
+    "nationality": "Pakistani American",
+    "count": 1,
+    "continent": "Northern America born Asia",
+    "continentnum": 9
+  },
+  {
+    "nationality": "Guyanese",
+    "count": 1,
+    "continent": "Latin America and the Caribbean",
+    "continentnum": 4
+  },
+  {
+    "nationality": "South African",
+    "count": 1,
+    "continent": "Africa",
+    "continentnum": 14
+  },
+  {
+    "nationality": "American, born Aruba",
+    "count": 1,
+    "continent": "Northern America born Latin America and the Caribbean",
+    "continentnum": 10
+  }
+]

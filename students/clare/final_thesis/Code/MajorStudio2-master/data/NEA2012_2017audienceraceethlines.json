@@ -1,0 +1,31 @@
+[{
+        "id": 0,
+        "raceEthnicity": "Hispanic",
+        "percent":  [14.3, 16.2]
+     },
+{
+        "id": 1,
+        "raceEthnicity": "White",
+        "percent":  [24.1, 26.7]
+     },
+     	{
+        "id": 2,
+        "raceEthnicity": "African American",
+        "percent":  [12, 17.1]
+     },
+{
+        "id": 3,
+        "raceEthnicity": "Asian",
+        "percent":  [23, 26.2]
+     },
+     	{
+        "id": 4,
+        "raceEthnicity": "Other",
+        "percent":  [16.9, 22.1]
+     },
+        {
+        "id": 5,
+        "raceEthnicity": "All",
+        "percent":  [21, 23.7]
+     }
+]

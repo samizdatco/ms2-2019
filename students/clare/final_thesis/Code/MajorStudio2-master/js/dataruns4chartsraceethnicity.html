@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<!--DCLA - RUN DATA FOR CHARTS-->
+<!--FILTERED OUT VOLUNTEERS _ PAID CURATORS ONLY  318 paid curators at museums with budgets over 1m-->
+<!--FILTERED OUT LOW BUDGET MUSEUMS so only BUDGETS MORE THAN $999,999: 7647 museums-->
+<!--LINE CHART WORKING file current for line chart curators-->
+<!--NYC DCLA all curators & curators hired since 2010-->
+<!--this index5simplerightline.html moves numbers to right side noting change on right axis-->
+<!--THEN do 2nd chart with percentage increase / decrease all starting from 0 at lhs and % up / down on right-->
+<!--DATA FILTERED SO ONLY MUSEUMS  -->
+
+<!--TO RUN DATA GO TO LINES 985-->
+
+<!--ways to join data-->
+
+<!--// let line6v2 = [alltotnot[12], alltotnot[12]];-->
+
+<!--let finance = [0,34,37,19,2,92,1];-->
+<!--let curator = [10,33,67,19,2,92,1];-->
+<!--var alljobtypes = [finance, curator];-->
+<!--console.log("alljobtypes:", alljobtypes);-->
+<!--console.log("finance:", alljobtypes[0]);-->
+
+<!--let finance1 = {-->
+<!--    "jobtype": "finance",-->
+<!--    "data": [0,34,37,19,2,92,1]-->
+<!--    };-->
+<!--let curator1 = {-->
+<!--    "jobtype": "curator",-->
+<!--    "data": [0,23,37,19,2,1,1]-->
+<!--    };-->
+<!--var alljobtypes = [finance1, curator1];-->
+<!--console.log("alljobtypes:", alljobtypes);-->
+<!--console.log("alljobtypes:", alljobtypes[0].data);-->
+<html>
+
+	<head>
+
+		<title>DCLA area curators</title>
+		<script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				font-size: 20px;
+				padding: 80px;
+			}
+
+			#svg1 {
+				/*width: 450px;*/
+				/*height: 620px;*/
+			}
+
+			.line {
+				/*transition: all 0.4s ease-in-out 0.4s;*/
+				/*transition: all 0.9s ease-in 0.9s;*/
+				/*transition-timing-function: ease;*/
+				transition-timing-function: ease-in;
+				transition: 2s;
+			}
+		</style>
+		<div id="svg1"></div>
+		<!--I think it’s best to work with just one svg and use groups inside that-->
+
+		<div id="legend"></div>
+
+	</head>
+
+	<body>
+		<script>
+			////NYC DCLA data select 
+			////look at Has More Recent Hiring at NYC Museums - Curators - Seen an Increase 
+			////in Diversity in Race/Ethnicity?
+
+			d3.csv("NYCDCLA1.csv").then((data) => {
+				// console.log(data);
+				svgPlot(data);
+			});
+
+			var margin = { top: 80, right: 70, bottom: 60, left: 70 };
+
+			// var margin = {top: 30, right: 40, bottom: 30, left: 40};
+			// var width = 350 - margin.left - margin.right; // Use the window's width 
+			// var height = 450 - margin.top - margin.bottom; // Use the window's height
+			var width = 750 - margin.left - margin.right; // Use the window's width 
+			var height = 550 - margin.top - margin.bottom; // Use the window's height
+			console.log(margin.top)
+
+			var color_legend = {
+				1: ["American Indian or Alaskan Native & Native Hawaiian or Pacific Islander", "purple"],
+				2: ["Asian", "pink"],
+				3: ["Black or African American", "green"],
+				4: ["Hispanic", "orange"],
+				5: ["Two Or More Races", "blue"],
+				6: ["white, non-Hispanic", "yellow"],
+				7: ["Declined to State", "red"]
+			}
+
+
+			//let graph = d3.select('body')
+			//             .append('svg')			
+			var svg = d3.select('#svg1')
+				// var svg = d3.select('body') ////here select named svg and put it into the var svg
+				//     .append('#svg1')
+				.append('svg') ////then append an svg 
+				.attr("width", width + margin.left + margin.right)
+				.attr("height", height + margin.top + margin.bottom)
+
+			var g = svg.append('g') ////then append to global g - so now the div svg is appended
+				///note for multiple svgs you need a new g variable so you'd have g1, g2, etc
+
+				.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+			// console.log(width);  ////the above transform gives the space around the chart
+
+			//var all = [];
+
+			let svgPlot = (data) => { ////need to call a different svgPlot 
+					console.log(data); ////with each chart for multiple charts
+
+					//  	var margin = {top: 60, right: 130, bottom: 30, left: 100};
+					// // var margin = {top: 30, right: 40, bottom: 30, left: 40};
+					// // var width = 350 - margin.left - margin.right; // Use the window's width 
+					// // var height = 450 - margin.top - margin.bottom; // Use the window's height
+					// var width = 700 - margin.left - margin.right; // Use the window's width 
+					// var height = 585 - margin.top - margin.bottom; // Use the window's height 
+
+
+					////FILTER the data set to get MUSEUM only
+					let museum = data.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.DISCIPLINE == "Museum") {
+							return e;
+						}
+					}); // need all of the elements museums, data.DISCIPLINE[i]
+					console.log(museum);
+					// console.log(museum);
+
+					////ADDING
+					////FILTER museum to get budget 3,4,5 over $999,999 annual budget 
+					let museums = museum.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.BUDGET == "3" || e.BUDGET == "4" || e.BUDGET == "5") {
+							return e;
+						}
+					}); // need all of the elements museums, data.DISCIPLINE[i]
+					console.log(museums);
+					// console.log(museums);
+
+					//////=====ADD filter by race and ethnicity
+					// filtering using museums only budgets $999999 and over
+
+					let AmericanInd = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "1") {
+							return e;
+						}
+					});
+					console.log(AmericanInd);
+					console.log(AmericanInd.length);
+
+					let Asian = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "2") {
+							return e;
+						}
+					});
+					console.log(Asian);
+					console.log(Asian.length);
+
+					let BlackAfrAmerican = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "3") {
+							return e;
+						}
+					});
+					console.log(BlackAfrAmerican);
+					console.log(BlackAfrAmerican.length);
+
+					let Hispanic = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "4") {
+							return e;
+						}
+					});
+					console.log(Hispanic);
+					console.log(Hispanic.length);
+
+					let TworMoreRaces = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "5") {
+							return e;
+						}
+					});
+					console.log(TworMoreRaces);
+					console.log(TworMoreRaces.length);
+
+					let White = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "6") {
+							return e;
+						}
+					});
+					console.log(White);
+					console.log(White.length);
+
+					let Declined = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+						if (e.RACEETHNICITY == "-8") {
+							return e;
+						}
+					});
+					console.log(Declined);
+					console.log(Declined.length)
+
+					let racebyjobtype = [AmericanInd, Asian, BlackAfrAmerican, Hispanic, TworMoreRaces, White, Declined]
+					console.log(racebyjobtype)
+					console.log(racebyjobtype.length)
+
+					let racebyjobtypenum = [AmericanInd.length, Asian.length, BlackAfrAmerican.length, Hispanic.length, TworMoreRaces.length, White.length, Declined.length]
+					console.log(racebyjobtypenum)
+					
+					
+			
+					// filter out volunteers except for board volunteers
+
+					// let racebyjobtypepaid = racebyjobtype.filter((e) => {
+					// 			if (e.VOLUNTEER == "2") { // 2 is not a volunteer, that is paid employees
+					// 				return e;
+					// 			}
+					// });
+					// 			console.log(racebyjobtypepaid)
+					// 			console.log(racebyjobtypepaid.length)
+
+
+
+								////FILTER volunteer in museums to get employed & budget 3,4,5 over $999,999 annual budget 
+								let employ = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+									if (e.VOLUNTEER == "2") { // 2 is not a volunteer
+										return e;
+									}
+								}); // need all of the elements museums, data.DISCIPLINE[i]
+								console.log(employ);
+
+								////FILTER all Board + volunteer in museums to get employed & budget 3,4,5 over $999,999 annual budget 
+								let employBoard = museums.filter((e) => { ////this loops through and selects museum only within the discipline column
+									if (e.VOLUNTEER == "2" || e.JOBTYPE == "2") { // 2 is not a volunteer
+										return e;
+									}
+								}); // need all of the elements museums, data.DISCIPLINE[i]
+								console.log(employBoard);
+
+								////FILTER lrg budget museums to get only jobtype curator
+								let curatorsmus = museums.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.JOBTYPE == "4") {
+										return e;
+									}
+								});
+								// console.log(curatorsmus);
+								// console.log(curatorsmus.length);
+
+								////ADDING
+								////FILTER volunteer to get only paid employees
+
+								let curator = curatorsmus.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.VOLUNTEER == "2") {
+										return e;
+									}
+								});
+								// console.log(curator);
+
+								////total number of employed curators at museums with budgets over $999,999
+								// console.log(curator.length);
+
+								////filter museums with large budgets to get last 5 years hired - hired in decade 2010s
+								let fiveyrs = museums.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.DECADEHIRED == "2010") {
+										return e;
+									}
+								});
+								console.log(fiveyrs.length);
+
+								////////NOT HIRED in last 5 years, that is hired prior to 2010			
+								let notfiveyrs = museums.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.DECADEHIRED !== "2010") {
+										return e;
+									}
+								});
+								console.log(notfiveyrs.length);
+
+								////filter last five years & not volunteer to just get curator not volunteer - these are at large museums only
+								let curatorfiveyrs = fiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "4" && e.VOLUNTEER == "2")
+									// if (e.JOBTYPE=="4" )
+									{
+										return e;
+									}
+								});
+
+								////number of paid curators hired 2010-15 in museums with budgets over $999,999
+								/////132
+								// console.log(curatorfiveyrs);
+
+								/////filter curators NOT HIRED in last 5 years
+								let curatornotfiveyrs = notfiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "4" && e.VOLUNTEER == "2")
+									// if (e.JOBTYPE=="4" )
+									{
+										return e;
+									}
+								});
+
+								////number of curators working at time of survey hired prior to 2010 paid in large museums
+								////186
+								// console.log(curatornotfiveyrs);
+
+								///curators last five years filter by race/ethnicity
+
+								let curatorfiveyr1 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr1);
+
+								let curatorfiveyr2 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr2);
+
+								let curatorfiveyr3 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr3);
+
+								let curatorfiveyr4 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr4);
+
+								let curatorfiveyr5 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr5);
+
+								let curatorfiveyr6 = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyr6);
+
+								let curatorfiveyrundef = curatorfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								console.log(curatorfiveyrundef);
+
+								// curators hired in last 5 years by race/ethnicity
+								var ethcuratorgrp = [curatorfiveyr1.length, curatorfiveyr2.length, curatorfiveyr3.length, curatorfiveyr4.length, curatorfiveyr5.length, curatorfiveyr6.length, curatorfiveyrundef.length];
+
+								// 		console.log(ethcuratorgrp);
+
+								// ///////race/ethnicity 6 only five years: 107
+								// 		console.log(curatorfiveyr6.length)
+								// ///////////////\\\\\\\\\\\\
+
+								//////curators hired before 2010 filter by race/ethnicity
+
+								let curatornotfiveyr1 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr1);
+
+								let curatornotfiveyr2 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr2);
+
+								let curatornotfiveyr3 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr3);
+
+								let curatornotfiveyr4 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr4);
+
+								let curatornotfiveyr5 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr5);
+
+								let curatornotfiveyr6 = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyr6);
+
+								let curatornotfiveyrundef = curatornotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								console.log(curatornotfiveyrundef);
+
+								// curators hired in last 5 years by race/ethnicity
+								var ethcuratornotgrp = [curatornotfiveyr1.length, curatornotfiveyr2.length, curatornotfiveyr3.length, curatornotfiveyr4.length, curatornotfiveyr5.length, curatornotfiveyr6.length, curatornotfiveyrundef.length];
+
+								// 		console.log(ethcuratornotgrp);
+
+								// ///////race/ethnicity 6 not hired in last five years: 163
+								// 		console.log(curatornotfiveyr6.length)
+
+
+								/////TURN TO 2nd chart to check this for job seniority - were these mid / senior levels
+
+
+								// 	///mid & senior level curators last five years filter by race/ethnicity
+								// 		let curatorfiveyrjob = curatorfiveyrs.filter((e)=> {
+								// 			if (e.LEVEL=="2" || e.LEVEL=="3")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob);
+
+								// 		let curatorfiveyrjob1 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="1")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob1);
+
+								// 		let curatorfiveyrjob2 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="2")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob2);
+
+								// 		let curatorfiveyrjob3 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="3")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob3);
+
+								// 		let curatorfiveyrjob4 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="4")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob4);
+
+								// 		let curatorfiveyrjob5 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="5")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob5);
+
+								// 		let curatorfiveyrjob6 = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="6")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjob6);
+
+								// 		let curatorfiveyrjobundef = curatorfiveyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="-8")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorfiveyrjobundef);
+
+								// var ethjobcuratorgrp = [curatorfiveyrjob1.length, curatorfiveyrjob2.length, curatorfiveyrjob3.length, curatorfiveyrjob4.length, curatorfiveyrjob5.length, curatorfiveyrjob6.length, curatorfiveyrjobundef.length];
+
+								// // console.log(ethjobcuratorgrp);
+
+
+
+								//////////TURN to 3rd bar chart - data for ALL YEARS
+
+
+								/////paid curators all years working at large museums filter by race/ethnicity
+								let curatorallyr1 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								// console.log(curatorallyr1);
+
+								let curatorallyr2 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								// console.log(curatorallyr2);
+
+								let curatorallyr3 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								// console.log(curatorallyr3);
+
+								let curatorallyr4 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								// console.log(curatorallyr4);
+
+								let curatorallyr5 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								// console.log(curatorallyr5);
+
+								let curatorallyr6 = curator.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(curatorallyr6);
+
+								let curatorallyrundef = curator.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								// console.log(curatorallyrundef);
+
+
+								var ethcuratorallgrp = [curatorallyr1.length, curatorallyr2.length, curatorallyr3.length, curatorallyr4.length, curatorallyr5.length, curatorallyr6.length, curatorallyrundef.length];
+
+								/////all curators employed at museums with budgets over $999,999
+								////318
+								// console.log(ethcuratorallgrp);
+
+
+								// console.log(curatorallyr6.length);
+
+
+								////4th chart filter by mid senior level curators
+
+								// 		let curatorallyrjob = curator.filter((e)=> {
+								// 			if (e.LEVEL=="2" || e.LEVEL=="3")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob);
+
+								// 		let curatorallyrjob1 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="1")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob1);
+
+								// 		let curatorallyrjob2 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="2")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob2);
+
+								// 		let curatorallyrjob3 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="3")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob3);
+
+								// 		let curatorallyrjob4 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="4")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob4);
+
+								// 		let curatorallyrjob5 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="5")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob5);
+
+								// 		let curatorallyrjob6 = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY==="6")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjob6);
+
+								// 		let curatorallyrjobundef = curatorallyrjob.filter((e)=> {
+								// 			if (e.RACEETHNICITY=="-8")
+								// 				{
+								// 					return e;
+								// 				}
+								// 		});
+								// 		// console.log(curatorallyrjobundef);
+
+								// var ethjoballcuratorgrp = [curatorallyrjob1.length, curatorallyrjob2.length, curatorallyrjob3.length, curatorallyrjob4.length, curatorallyrjob5.length, curatorallyrjob6.length, curatorallyrjobundef.length];
+
+								// // console.log(ethjoballcuratorgrp);
+
+
+								//////////////=============== now group by pairs and draw graph========
+
+								/////group the data into all curators and five years curators 1st bar chart
+								/////all years.length data is in ethcuratorallgrp - 318
+								/////five years.length data is in ethcuratorgrp for curators hired 2010-2015 - 132
+								// console.log(ethcuratorgrp);
+
+								var alltot = ethcuratorallgrp.concat(ethcuratorgrp);
+								// console.log(alltot);
+
+								/////select pairs by race/ethnicity 
+								let all1tot1 = alltot.filter((d, i) => {
+									{
+										return i == 0 || i == 7;
+									}
+								});
+								let all2tot2 = alltot.filter((d, i) => {
+									{
+										return i == 1 || i == 8;
+									}
+								});
+								let all3tot3 = alltot.filter((d, i) => {
+									{
+										return i == 2 || i == 9;
+									}
+								});
+								let all4tot4 = alltot.filter((d, i) => {
+									{
+										return i == 3 || i == 10;
+									}
+								});
+								let all5tot5 = alltot.filter((d, i) => {
+									{
+										return i == 4 || i == 11;
+									}
+								});
+								let all6tot6 = alltot.filter((d, i) => {
+									{
+										return i == 5 || i == 12;
+									}
+								});
+								let all7tot7 = alltot.filter((d, i) => {
+									{
+										return i == 6 || i == 13;
+									}
+								});
+
+								var alltotgrp = [all1tot1, all2tot2, all3tot3, all4tot4, all5tot5, all6tot6, all7tot7];
+
+								// console.log(alltotgrp);
+
+								// console.log(all1tot1, all2tot2, all3tot3, all4tot4, all5tot5, all6tot6, all7tot7);
+
+								/////////////\\\\\\\\\\\\\\\\\\\\\new
+
+								/////HIRED PRIOR TO 2010s group the data into all curators and curators hired before 2010 1st bar chart
+								/////all years.length data is in ethcuratorallgrp
+								/////five years.length data is in ethcuratorgrp for curators hired 2010-2015
+								// console.log(ethcuratornotgrp); 
+
+								// var alltotnot = ethcuratornotgrp.concat(ethcuratorallgrp);
+								var alltotnot = ethcuratorallgrp.concat(ethcuratornotgrp);
+
+								// console.log(alltotnot);
+
+								/////select pairs by race/ethnicity 
+								let all1tot1not = alltotnot.filter((d, i) => {
+									{
+										return i == 0 || i == 7;
+									}
+								});
+								let all2tot2not = alltotnot.filter((d, i) => {
+									{
+										return i == 1 || i == 8;
+									}
+								});
+								let all3tot3not = alltotnot.filter((d, i) => {
+									{
+										return i == 2 || i == 9;
+									}
+								});
+								let all4tot4not = alltotnot.filter((d, i) => {
+									{
+										return i == 3 || i == 10;
+									}
+								});
+								let all5tot5not = alltotnot.filter((d, i) => {
+									{
+										return i == 4 || i == 11;
+									}
+								});
+								let all6tot6not = alltotnot.filter((d, i) => {
+									{
+										return i == 5 || i == 12;
+									}
+								});
+								let all7tot7not = alltotnot.filter((d, i) => {
+									{
+										return i == 6 || i == 13;
+									}
+								});
+
+								// console.log(all1tot1not, all2tot2not, all3tot3not, all4tot4not, all5tot5not, all6tot6not, all7tot7not);
+
+								///////NEW area chart with line for white curators to show number of white hires since 2010
+								////white curators total at time of survey
+								////white curators hired since 2010 and still hired at time of survey
+								/////======
+								/////TO GET AREA UNDER curators hired prior to 2010s duplicate 2nd ref to draw straight line
+								// console.log(alltotnot);
+
+								//////make new array with just the SAME two numbers
+
+								let line6v2 = [alltotnot[12], alltotnot[12]];
+
+
+								///////////////////============
+								//BOARD
+
+								////FILTER museums with high budgets to get only jobtype BOARD 802
+								let board = museums.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.JOBTYPE == "2") {
+										return e;
+									}
+								});
+								console.log(board);
+								console.log(board.length);
+
+								////FILTER museums to get only jobtype BOARD employed - 224
+								//////doesnt make sense to use paid board members only as board is often a voluntary position
+								let boarding = board.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.VOLUNTEER == "2") {
+										return e;
+									}
+								});
+								// console.log(boarding);
+								console.log(boarding.length);
+
+
+								/////filter board NOT HIRED in last 5 years
+								//////board 465 hired prior to 2010
+								let boardnotfiveyrs = notfiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "2")
+
+									{
+										return e;
+									}
+								});
+								// console.log(boardnotfiveyrs)
+
+								// //filter last five years to get just the job type curator 
+								let boardfiveyrs = fiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "2") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyrs);
+								// console.log(boardfiveyrs.length);
+
+								// ///curators last five years filter by race/ethnicity
+								let boardfiveyr1 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr1);
+
+								let boardfiveyr2 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr2);
+
+								let boardfiveyr3 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr3);
+
+								let boardfiveyr4 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr4);
+
+								let boardfiveyr5 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr5);
+
+								let boardfiveyr6 = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyr6);
+
+								let boardfiveyrundef = boardfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								// console.log(boardfiveyrundef);
+
+								//////337 board hired in last 5 years large museums
+								var ethboardgrp = [boardfiveyr1.length, boardfiveyr2.length, boardfiveyr3.length, boardfiveyr4.length, boardfiveyr5.length, boardfiveyr6.length, boardfiveyrundef.length];
+
+								// console.log(ethboardgrp);
+
+
+
+								// 		///boards all years filter by race/ethnicity
+								let boardallyr1 = board.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								// console.log(boardallyr1);
+
+								let boardallyr2 = board.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								// console.log(boardallyr2);
+
+								let boardallyr3 = board.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								// console.log(boardallyr3);
+
+								let boardallyr4 = board.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								// console.log(boardallyr4);
+
+								let boardallyr5 = board.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								// console.log(boardallyr5);
+
+								let boardallyr6 = board.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								// console.log(boardallyr6);
+
+								let boardallyrundef = board.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								// console.log(boardallyrundef);
+
+								///////all 802 board by race ethnicity
+								var ethboardallgrp2 = [boardallyr1.length, boardallyr2.length, boardallyr3.length, boardallyr4.length, boardallyr5.length, boardallyr6.length, boardallyrundef.length];
+
+								console.log(ethboardallgrp2);
+
+								//////=====BOARD members=======
+
+								//////board hired before 2010 filter by race/ethnicity
+
+								let boardnotfiveyr1 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr1);
+
+								let boardnotfiveyr2 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr2);
+
+								let boardnotfiveyr3 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr3);
+
+								let boardnotfiveyr4 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr4);
+
+								let boardnotfiveyr5 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr5);
+
+								let boardnotfiveyr6 = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyr6);
+
+								let boardnotfiveyrundef = boardnotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								console.log(boardnotfiveyrundef);
+
+								// boards 465  hired prior to 2010 5 years by race/ethnicity
+								var ethboardnotgrp = [boardnotfiveyr1.length, boardnotfiveyr2.length, boardnotfiveyr3.length, boardnotfiveyr4.length, boardnotfiveyr5.length, boardnotfiveyr6.length, boardnotfiveyrundef.length];
+
+								// console.log(ethboardnotgrp);
+
+								//////concat both board member arrays
+
+								var allboardtot = ethboardallgrp2.concat(ethboardgrp);
+								// console.log(allboardtot);
+								/////////////\\\\\\\\\\\\\\\\end of new
+
+								////////////////================
+								/////////LEADERSHIP - 12
+								/////////TO RUN NEED TO CHANGE LINE 923 and 1009 and 1023
+
+								// ////FILTER lrg budget museums 3,4,5 to get only jobtype leadership
+								let leadersmus = museums.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.JOBTYPE == "5") {
+										return e;
+									}
+								});
+								console.log(leadersmus);
+								console.log(leadersmus.length);
+								////199 leadership large museums			
+								////ADDING
+								////FILTER volunteer to get only paid employees
+								let leader = leadersmus.filter((e) => { ////use the variable museums and loop through to filter just those staff hired since 2010
+									if (e.VOLUNTEER == "2") {
+										return e;
+									}
+								});
+								console.log(leader);
+								// 	////199 leadership no volunteers			
+								// 				////total number of employed curators at museums with budgets over $999,999
+								// 				console.log(leader.length);
+
+								// ////filter museums with large budgets to get last 5 years hired - hired in decade 2010s
+								// 			let fiveyrs = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 				if (e.DECADEHIRED=="2010")   
+								// 					{
+								// 						return e;
+								// 					}
+								// 			});
+								// 			console.log(fiveyrs.length);
+
+								// ////////NOT HIRED in last 5 years, that is hired prior to 2010			
+								// 				let notfiveyrs = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 					if (e.DECADEHIRED!=="2010")   
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(notfiveyrs.length);
+
+								////filter last five years & not volunteer to just get curator not volunteer - these are at large museums only
+								// 				let leaderfiveyrs = fiveyrs.filter((e)=> {  ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+								// 					// if (e.JOBTYPE=="12" && e.VOLUNTEER=="2")
+								// 					if (e.JOBTYPE=="12" )
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+
+								// 	////number of paid leadership hired 2010-15 in museums with budgets over $999,999
+								// 	/////64 leadership
+								// 				console.log(leaderfiveyrs);
+
+								// /////filter curators NOT HIRED in last 5 years
+								// 		let leadernotfiveyrs = notfiveyrs.filter((e)=> {  ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+								// 					// if (e.JOBTYPE=="12" && e.VOLUNTEER=="2")
+								// 					if (e.JOBTYPE=="12" )
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								///////////////\\\\\\\\\\\\\\\\\\\\\\\\\
+
+								// TRY CHANGING JOBTYPE AND RUNNING
+								// TO RUN NEED TO CHANGE LINES 923 and 1009 and 1023
+								////filter last five years & not volunteer to just get curator not volunteer - these are at large museums only
+								// JOBTYPE EDUCATION 1101, 666 hired in last 5 years, 1101 all
+								////JOBTYPE SECURITY 1047 all
+								/////ARTIST 45 only 14 paid, included only paid
+								/////COMMUNITY ENGAGEMENT 86 all paid
+								/////DESIGNER 65 all paid
+								/////DEVELOPMENT 259 paid 2 volunteer not included
+								/////EDITORIAL 58 all paid
+								//////FACILITIES 553 all paid
+								////FINANCE 185 all paid
+								////IT/WEB development 159 all paid
+								/////LIBRARIAN 87 paid 90 with all but just using paid
+								/////MARKETING/PR 141 paid all 143 but using paid
+								////MEMBERSHIP/CONSTITUENT SERVICES 130 all paid
+								/////PROGRAMMING 58 all paid
+								////PROJECT/EXHIBITION 583 paid 584 vol but using paid
+								/////RETAIL/MERCHANDISE 424 all
+								////SECURITY we have
+								////SUPPORT/ADMINISTRATION 241 paid 260 vol just using paid
+								////TECHNICAL/PRODUCTION 317 all paid
+								////VISITOR/PATRON SERVICES
+
+								let leaderfiveyrs = fiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "5" && e.VOLUNTEER == "2")
+									// if (e.JOBTYPE=="8" )
+									{
+										return e;
+									}
+								});
+
+								////number of paid leadership hired 2010-15 in museums with budgets over $999,999
+								/////JOBTYPE Education 666 last 5 years
+								// 645 education last 5 years are not volunteers
+								console.log(leaderfiveyrs);
+
+								/////filter curators NOT HIRED in last 5 years
+								let leadernotfiveyrs = notfiveyrs.filter((e) => { ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+									if (e.JOBTYPE == "5" && e.VOLUNTEER == "2")
+									// if (e.JOBTYPE=="8" )
+									{
+										return e;
+									}
+								});
+
+								/////////////////\\\\\\\\\\\\\\\\\\\\\\\\
+								////number of leadership working at time of survey hired prior to 2010 paid in large museums
+								////457 education large museum 456 paid not hired in last 5 years
+								console.log(leadernotfiveyrs);
+								console.log(leaderfiveyrs)
+								///curators last five years filter by race/ethnicity
+
+								let leaderfiveyr1 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr1);
+
+								let leaderfiveyr2 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr2);
+
+								let leaderfiveyr3 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr3);
+
+								let leaderfiveyr4 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr4);
+
+								let leaderfiveyr5 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr5);
+
+								let leaderfiveyr6 = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyr6);
+
+								let leaderfiveyrundef = leaderfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								console.log(leaderfiveyrundef);
+
+								// 64 leader hired in last 5 years by race/ethnicity
+								var ethleadergrp = [leaderfiveyr1.length, leaderfiveyr2.length, leaderfiveyr3.length, leaderfiveyr4.length, leaderfiveyr5.length, leaderfiveyr6.length, leaderfiveyrundef.length];
+
+								console.log(ethleadergrp);
+
+								// ///////race/ethnicity 6 only five years: 
+								// 		console.log(leaderfiveyr6.length)
+								// ///////////////\\\\\\\\\\\\
+
+								// //////135 leader hired before 2010 filter by race/ethnicity
+
+								let leadernotfiveyr1 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr1);
+
+								let leadernotfiveyr2 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr2);
+
+								let leadernotfiveyr3 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr3);
+
+								let leadernotfiveyr4 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr4);
+
+								let leadernotfiveyr5 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr5);
+
+								let leadernotfiveyr6 = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyr6);
+
+								let leadernotfiveyrundef = leadernotfiveyrs.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								console.log(leadernotfiveyrundef);
+
+								// leader hired in last 5 years by race/ethnicity
+								var ethleadernotgrp = [leadernotfiveyr1.length, leadernotfiveyr2.length, leadernotfiveyr3.length, leadernotfiveyr4.length, leadernotfiveyr5.length, leadernotfiveyr6.length, leadernotfiveyrundef.length];
+
+								console.log(ethleadernotgrp);
+
+								///////race/ethnicity 6 not hired in last five years: 163
+								console.log(leadernotfiveyr6.length)
+
+
+								// 199 all leadership by race ethnicity
+
+								// 		///leader all years filter by race/ethnicity
+								let leaderallyr1 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "1") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr1);
+
+								let leaderallyr2 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "2") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr2);
+
+								let leaderallyr3 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "3") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr3);
+
+								let leaderallyr4 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "4") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr4);
+
+								let leaderallyr5 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "5") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr5);
+
+								let leaderallyr6 = leader.filter((e) => {
+									if (e.RACEETHNICITY == "6") {
+										return e;
+									}
+								});
+								// console.log(leaderallyr6);
+
+								let leaderallyrundef = leader.filter((e) => {
+									if (e.RACEETHNICITY == "-8") {
+										return e;
+									}
+								});
+								// console.log(leaderallyrundef);
+
+								///////all 199 leadership by race ethnicity
+								var ethleaderallgrp2 = [leaderallyr1.length, leaderallyr2.length, leaderallyr3.length, leaderallyr4.length, leaderallyr5.length, leaderallyr6.length, leaderallyrundef.length];
+
+								console.log(ethleaderallgrp2);
+								/////////////==================
+
+								//////////////================
+
+								////////////////================
+								/////////EDUCATION - 8
+								//FILTER lrg budget museums 3,4,5 to get only jobtype leadership
+								// 			let educationsmus = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 				if (e.JOBTYPE=="8")   
+								// 					{
+								// 						return e;
+								// 					}
+								// 			});
+								// 			console.log(educationsmus);
+								// 			console.log(educationsmus.length);
+								// ////199 leadership large museums			
+								// 	////ADDING
+								// 	////FILTER volunteer to get only paid employees
+								// 			let education = educationsmus.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 				if (e.VOLUNTEER=="2")   
+								// 					{
+								// 						return e;
+								// 					}
+								// 			});
+								// 			console.log(education);
+								////FILTER lrg budget museums 3,4,5 to get only jobtype leadership
+								// 				let educationsmus = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 					if (e.JOBTYPE=="8")   
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadersmus);
+								// 				console.log(leadersmus.length);
+								// 	////199 leadership large museums			
+								// 		////ADDING
+								// 		////FILTER volunteer to get only paid employees
+								// 				let leader = leadersmus.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 					if (e.VOLUNTEER=="2")   
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leader);
+								// 	////199 leadership no volunteers			
+								// 				////total number of employed curators at museums with budgets over $999,999
+								// 				console.log(leader.length);
+
+								// 	// ////filter museums with large budgets to get last 5 years hired - hired in decade 2010s
+								// 	// 			let fiveyrs = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// 	// 				if (e.DECADEHIRED=="2010")   
+								// 	// 					{
+								// 	// 						return e;
+								// 	// 					}
+								// 	// 			});
+								// 	// 			console.log(fiveyrs.length);
+
+								// // ////////NOT HIRED in last 5 years, that is hired prior to 2010			
+								// // 				let notfiveyrs = museums.filter((e)=> {  ////use the variable museums and loop through to filter just those staff hired since 2010
+								// // 					if (e.DECADEHIRED!=="2010")   
+								// // 						{
+								// // 							return e;
+								// // 						}
+								// // 				});
+								// // 				console.log(notfiveyrs.length);
+
+								// 		////filter last five years & not volunteer to just get curator not volunteer - these are at large museums only
+								// 				let leaderfiveyrs = fiveyrs.filter((e)=> {  ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+								// 					// if (e.JOBTYPE=="12" && e.VOLUNTEER=="2")
+								// 					if (e.JOBTYPE=="12" )
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+
+								// 	////number of paid leadership hired 2010-15 in museums with budgets over $999,999
+								// 	/////64 leadership
+								// 				console.log(leaderfiveyrs);
+
+								// /////filter leaders NOT HIRED in last 5 years
+								// 		let leadernotfiveyrs = notfiveyrs.filter((e)=> {  ////use the variable hired in the last five years and loop through fiveyrs to filter by race ethnicity
+								// 					// if (e.JOBTYPE=="12" && e.VOLUNTEER=="2")
+								// 					if (e.JOBTYPE=="12" )
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+
+								// ////number of leadership working at time of survey hired prior to 2010 paid in large museums
+								// 	////135
+								// 				console.log(leadernotfiveyrs);
+
+								// ///leaders last five years filter by race/ethnicity
+
+								// 				let leaderfiveyr1 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="1")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr1);
+
+								// 				let leaderfiveyr2 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="2")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr2);
+
+								// 				let leaderfiveyr3 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="3")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr3);
+
+								// 				let leaderfiveyr4 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="4")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr4);
+
+								// 				let leaderfiveyr5 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="5")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr5);
+
+								// 				let leaderfiveyr6 = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="6")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyr6);
+
+								// 				let leaderfiveyrundef = leaderfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="-8")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leaderfiveyrundef);
+
+								// // 64 leader hired in last 5 years by race/ethnicity
+								// 		var ethleadergrp = [leaderfiveyr1.length, leaderfiveyr2.length, leaderfiveyr3.length, leaderfiveyr4.length, leaderfiveyr5.length, leaderfiveyr6.length, leaderfiveyrundef.length];
+
+								// 		console.log(ethleadergrp);
+
+								// // ///////race/ethnicity 6 only five years: 
+								// // 		console.log(leaderfiveyr6.length)
+								// // ///////////////\\\\\\\\\\\\
+
+								// // //////135 leader hired before 2010 filter by race/ethnicity
+
+								// 				let leadernotfiveyr1 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="1")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr1);
+
+								// 				let leadernotfiveyr2 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="2")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr2);
+
+								// 				let leadernotfiveyr3 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="3")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr3);
+
+								// 				let leadernotfiveyr4 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="4")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr4);
+
+								// 				let leadernotfiveyr5 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="5")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr5);
+
+								// 				let leadernotfiveyr6 = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="6")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyr6);
+
+								// 				let leadernotfiveyrundef = leadernotfiveyrs.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="-8")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				console.log(leadernotfiveyrundef);
+
+								// // leader hired in last 5 years by race/ethnicity
+								// 		var ethleadernotgrp = [leadernotfiveyr1.length, leadernotfiveyr2.length, leadernotfiveyr3.length, leadernotfiveyr4.length, leadernotfiveyr5.length, leadernotfiveyr6.length, leadernotfiveyrundef.length];
+
+								// 		console.log(ethleadernotgrp);
+
+								// ///////race/ethnicity 6 not hired in last five years: 163
+								// 		console.log(leadernotfiveyr6.length)
+
+
+								// // 199 all leadership by race ethnicity
+
+								// // 		///boards all years filter by race/ethnicity
+								// 				let leaderallyr1 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="1")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr1);
+
+								// 				let leaderallyr2 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="2")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr2);
+
+								// 				let leaderallyr3 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="3")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr3);
+
+								// 				let leaderallyr4 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="4")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr4);
+
+								// 				let leaderallyr5 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="5")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr5);
+
+								// 				let leaderallyr6 = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="6")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyr6);
+
+								// 				let leaderallyrundef = leader.filter((e)=> {
+								// 					if (e.RACEETHNICITY=="-8")
+								// 						{
+								// 							return e;
+								// 						}
+								// 				});
+								// 				// console.log(leaderallyrundef);
+
+								// ///////all 199 leadership by race ethnicity
+								// 		var ethleaderallgrp2 = [leaderallyr1.length, leaderallyr2.length, leaderallyr3.length, leaderallyr4.length, leaderallyr5.length, leaderallyr6.length, leaderallyrundef.length];
+
+								// 		console.log(ethleaderallgrp2);
+
+								/////find max of the max of the 4 variables and use that for scale
+								// 4 variables are ethcuratorgrp, ethjobcuratorgrp, ethcuratorallgrp, ethjoballcuratorgrp
+								///here using max of all curators and hired 2010-2015 curators (not including senior & mid positions)
+								/////now here using max of all curators and hired 2010-2015 curators (not including senior & mid positions)
+								// var max1 = d3.max(ethcuratorgrp);
+								var max1 = d3.max(ethcuratornotgrp);
+								// var max2 = d3.max(ethjobcuratorgrp);
+								var max3 = d3.max(ethcuratorallgrp);
+								// var max4 = d3.max(ethjoballcuratorgrp);
+
+								// console.log(max1);
+
+								//all1 = [max1, max2, max3, max4];
+								all = [max1, max3];
+								console.log(all.length);
+
+								let max = d3.max(all) ////max number in the array
+								// console.log(max);
+
+								// console.log(ethcuratornotgrp)
+
+								/////draw the lINES
+								// // 5. X scale will use the index of our data - Example
+								// var xScale = d3.scaleLinear()
+								//     .domain([0, n-1]) // input
+								//     .range([0, width]); // output
+								// // 6. Y scale will use the randomly generate number - Example
+								// var yScale = d3.scaleLinear()
+								//     .domain([0, 1]) // input 
+								//     .range([height, 0]); // output 
+
+								// The number of datapoints for paired lines
+								var n = 2;
+								//////
+
+								var xScale = d3.scaleLinear()
+									.domain([0, n - 1])
+									.range([0, width - margin.right - margin.left]);
+								// .range(['padding', width-'padding']);
+
+								console.log(max)
+								var yScale = d3.scaleLinear()
+									.domain([0 - 18, max + 30]) ///adds some height to axes
+									.range([height, 0]);
+								// .range([height+5-'padding', 'padding']);
+
+
+								/////draw pairs of lines by race/ethnicity
+
+								// 7. d3's line generator - Example
+								// var line = d3.line()
+								//     .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
+								//     .y(function(d) { return yScale(d.y); }) // set the y values for the line generator 
+								//     .curve(d3.curveMonotoneX) // apply smoothing to the line
+								//.x(function(d) { return x_scale(d[0]); })
+								//               .y(function(d) { return y_scale(d[1]); }) ;
+
+								var line = d3.line()
+									.x(function (d, i) { // to use “i” in xScale 
+										// you have to list d first and then i and separate by comma
+										console.log(xScale(i))
+										return width / 3 - (xScale(i));
+									})
+									.y(function (d, i) {
+										// console.log(d)
+										// return height-(yScale(d)); 
+										return yScale(d);
+									});
+
+								// // 9. Append the path, bind the data, and call the line generator - Example
+								// svg.append("path")
+								//     .datum(dataset) // 10. Binds data to the line 
+								//     .attr("class", "line") // Assign a class for styling 
+								//     .attr("d", line); // 11. Calls the line generator 
+
+								// 1 : ["American Indian or Alaskan Native & Native Hawaiian or Pacific Islander", "#f871aa"],
+								// 2 : ["Asian", "#9cb749"],
+								// 3 : ["Black or African American", "#58f97e"],
+								// 4 : ["Hispanic", "#2be6fc"],
+								// 5 : ["Two Or More Races", "#fcc42b"],
+								// 6 : ["white, non-Hispanic", "#a557fc"],
+								// 7 : ["Declined to State", "red"] //no data 
+
+								///////\\\\\\\\\\\\\\\showing one line only
+								// let line1 = svg.append("line")
+								// let line1 = g.append("path")
+								//     			.datum(all1tot1) // 10. Binds data to the line
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			.attr('fill', 'none')
+								//     			.attr('stroke', '#f871aa')
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' American Indian or Alaskan Native & Native Hawaiian or Pacific Islander curators; ' + d[1] + ' hired 2010+')
+								//                         .attr('font-size', '10px')
+								//                         })                            ////// tspan
+								//                 .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                 	// .transition()
+								//                 	// 	.ease(Math.sqrt)
+								//                  //       .delay(100)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr('font-size', '12px')
+								//                         .attr("class", "line");
+								//                     });
+								//  //console.log(line1)
+
+								// let line2 = g.append("path")
+								//     			.datum(all2tot2)
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			.attr('fill', 'none')
+								//     			// .attr('stroke', 'pink')
+								//     			.attr('stroke', "#9cb749")
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' Asian curators; '+ d[1] + ' were hired 2010-2015')
+								//     					})   
+								//                  .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr("class", "line"); 
+								//                     });
+								//  //console.log(line2)
+
+								// let line3 = g.append("path")
+								//     			.datum(all3tot3)
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			.attr('fill', 'none')
+								//     			.attr('stroke', '#58f97e')
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' Black or African American curators; '+ d[1] + ' were hired 2010-2015')
+								//     		     	}) 
+								//                  .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr("class", "line"); 
+								//                     });
+								//  //console.log(line3)
+
+								// let line4 = g.append("path")
+								//     			.datum(all4tot4)
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			.attr('fill', 'none')
+								//     			.attr('stroke', '#2be6fc')
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' Hispanic curators; '+ d[1] + ' were hired 2010-2015')
+								//     			   }) 
+								//                  .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr("class", "line"); 
+								//                     });
+								//  //console.log(line4)
+
+								// let line5 = g.append("path")
+								//     			.datum(all5tot5)
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			.attr('fill', 'none')
+								//     			.attr('stroke', '#fcc42b')
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     				.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' curators of two or more races; '+ d[1] + ' were hired 2010-2015')
+								//     				}) 
+								//                  .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr("class", "line"); 
+								//                     });
+								//  //console.log(line5)
+
+								/////////////\\\\\\\\\\\\\\\end of showing one line only
+								// area 
+
+								// 724 above used the line generator
+								// var line = d3.line()
+								// 	.x(function(d,i) { // to use “i” in xScale 
+								// 					   // you have to list d first and then i and separate by comma
+								// 		console.log(xScale(i))
+								// 		return width/3-(xScale(i)); 
+
+								// 	})
+								// 	.y(function(d, i) { 
+								// 		// console.log(d)
+								// 		// return height-(yScale(d)); 
+								// 		return yScale(d);
+								// 	});
+
+
+								// var area = d3.area()
+								//     .x(function(d) { return x(d.date); })
+								//     .y1(function(d) { return y(d.value); })
+								//     .y0(y(0));
+
+								var area1 = d3.area() //////can use this twice just call in each of the 2 lines
+									.x(function (d, i) { // to use “i” in xScale 
+										// you have to list d first and then i and separate by comma
+										// console.log(xScale(i))
+										return width / 3 - (xScale(i));
+									})
+									.y1(function (d, i) {
+										// console.log(d)
+										// return height-(yScale(d)); 
+										return yScale(d);
+									})
+									.y0(yScale(0));
+
+								// var area2 = d3.area()
+								// 	.x(function(d,i) { // to use “i” in xScale 
+								// 					   // you have to list d first and then i and separate by comma
+								// 		// console.log(xScale(i))
+								// 		return width/3-(xScale(i)); 
+								// 	})
+								// 	.y1(function(d,i) {   ///////HOW TO MAKE THIS first data point?????
+								// 		console.log(d)
+								// 		// return height-(yScale(d)); 
+								// 		return yScale(d);      ///////HOW TO MAKE THIS use second data point twice?
+								// 		return yScale(d);  
+								// 	})
+								// 	.y0(yScale(0));
+
+								///////race/ethnicity white - 6
+
+								//////////////\\\\\\\\\\\\\\\
+								// taking out while i work on the data
+								// let line6 = g.append("path")
+								//     			.datum(all6tot6not)
+								//     			// .attr("class", "line") // Assign a class for styling
+								//     			.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			// .attr("transform", "translate(" + margin.left/2 + "," + margin.top + ")")
+								//     			.attr('fill', 'purple')
+								//     			.attr('stroke', 'yellow')
+								//     			.attr('stroke-width', 1)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			// .call(yAxisRight)
+								//             	// .call(yAxis)
+								//             	.attr('d', area1(all6tot6not))     
+								// 				.attr("fill", "yellow")
+								// 				// .attr('stroke', 'none')
+								//     				.on('mouseenter', function(d){
+								//                         console.log('hover');
+								//                         console.log(d)
+								//                         heading.text(d[0]  + ' white curators; '+ d[1] + ' were hired 2010-2015')
+								//     				}) 
+								//                  .on('mouseout', function(d) {
+								//                 		console.log(d)
+								//                         heading.text((d) => { return "NYC DCLA Grantees 2015: Museum Curators"; })
+								//                         .attr("class", "line"); 
+								//                     });
+
+								//  //console.log(line6)
+								// //////////////\\\\\\\\\\\\\\\
+								// // taking out while i work on the data
+								//  let line6_2 = g.append("path")
+								//     			.datum(line6v2)  /////use the new array with the same 2 numbers
+								// 				.attr('d', function(d,i) {
+								//     				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//     			})
+								//     			// .attr("transform", "translate(" + margin.left/2 + "," + margin.top + ")")
+								//     			.attr("fill-opacity","0.5")
+								//     			.attr('fill', 'orange')
+								//     			.attr('stroke-dasharray', '4')
+								//     			// .top ('stroke-dasharray','4')
+								//     			.attr('stroke', '#a557fc')
+								//     			.attr('stroke-width', 1)
+								//     			.attr('shape-rendering', 'crispEdges')
+								//     			.attr('d', area1(line6v2))  /////use area 1
+								//     			// .attr('stroke', 'none');  
+
+								/////no one declined to state so removing this
+								//let line7 = g.append("path")
+								//   			.datum(all7tot7)
+								//   			// .attr("class", "line") // Assign a class for styling
+								//   			.attr('d', function(d,i) {
+								//   				return line(d,i)    ////\\here add function in the line generator taking in the 
+								//   			})
+								//   			.attr('fill', 'none')
+								//   			.attr('stroke', 'red')
+								//   			.attr('stroke-width', 1.5)
+								//   			.attr('shape-rendering', 'crispEdges')
+								//   				.on('mouseenter', function(d){
+								//                       console.log('hover');
+								//                       console.log(d)
+								//                       heading.text(d[0]  + ' curators who declined to state race/ethnicity of which '+ d[1] + ' were hired since 2010'); 
+								//                   });
+								//console.log(line7)
+
+								// let line1 = g.append("line")
+								//     			.attr("x1", 0)     // x position of the first end of the line
+								//     			.attr("y1", 3*100)      // y position of the first end of the line
+								//     			.attr("x2", 1000)     // x position of the second end of the line
+								//     			.attr("y2", 4*100)
+								//     			.attr('fill', 'none')
+								//     			.attr('stroke', 'purple')
+								//     			.attr('stroke-width', 1.5)
+								//     			.attr('shape-rendering', 'crispEdges');
+								//  console.log(line1)
+
+
+
+
+								////Call the x axis in a group tag
+								///////////\\\\\\\not sure how to change this to g.selectAll('#svg')
+
+								/////////\\\\\\for pair data no xAxis and add right y axis
+								// var xAxis =	g.selectAll('#svg1')
+								// let xAxis = svg.append("path")
+								// 	svg.append("g")
+								//     .attr("class", "x axis")
+								//     .attr('fill', 'none')
+								//     .attr('stroke', 'black')
+								//     .attr('stroke-width', 3)
+								//     .attr("transform", "translate(0," + height + ")")
+								//     .call(d3.axisTop(xScale));
+								// .call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+
+
+								// 4. Call the y axis in a group tag
+
+								// let yAxis = svg.append("g")
+								let yAxis = g.append("g") // just append axis to global space
+									.attr("class", "y axis")
+									.attr('fill', 'none')
+									.attr('stroke', 'black')
+									.attr('stroke-width', 0.3)
+									// .attr("transform", "translate(" + margin.left + "," + margin.right + "," - margin.top + ")")
+									// .attr("transform", "translate( "+ -margin.left/2 + ", 0 )")
+									.attr("transform", `translate(${-margin.left}  , 0 )`)
+									.call(d3.axisLeft(yScale) //call axisLeft to use yScale for axis ticks and scale
+										.tickSize(3)
+										.ticks("") ///takes out numbers on lh axis
+									);
+
+
+
+								/////////\\\\\\for pair data add right y axis
+								// let yAxisRight = svg.append("g")
+								let yaxisRight = g.append("g")
+									.attr("class", "y axis")
+									.attr('fill', 'none')
+									.attr('stroke', 'black')
+									.attr('stroke-width', 0.3)
+									// .attr("transform", `translate(  ${width - margin.right - margin.left*1.5}  , 0 )`)
+									//.attr("transform", `translate(${width - margin.left*5.8}  , 0 )`)
+									.attr("transform", `translate(${width - margin.right*5.8}  , 0 )`)
+									//.attr("transform", `translate(${margin.right + margin.left*2}  , 0 )`)
+									.call(d3.axisRight(yScale) ///.above move the axis to place that the chart ends - within the margins
+										.tickSize(3)
+										.ticks(11)
+										// .ticks(5)
+									)
+								// .attr("transform", `translate(  ${width - margin.right - margin.left/2}  , 0 )`)
+								// .attr("transform", "translate(" + margin.left/2 + "," + margin.top + ")")
+								console.log(width) 
+								console.log(margin.top)
+								// .attr("transform", "translate( " + width + "," + 0 + " )")
+								// // .attr("transform", `translate(  ${width - margin.right - margin.left}  , 0 )`)
+								// .attr("transform", "translate(" + margin.left/2 + "," + margin.top + ")"); // Create an axis component with d3.axisRight
+								;
+
+								let ytext2 = g.append('g')
+									.append('text')
+									.text('museum curators => subset: museum curators hired from 2010-2015')
+									// .attr('x', 0-width/1.5)
+									.attr('x', 0 - margin.left * 5.55)
+									// .attr('y', margin.left*2+margin.right*2)
+									.attr('y', margin.top * 2 + margin.bottom * 2)
+									.attr("transform", "rotate(-90)")
+									.attr('font-size', '65%'); // or can do .25in or %
+
+								let chart1 = g.append('g')
+									.append('text')
+									.text('white curators')
+									.attr('x', 0 - margin.left / 4)
+									.attr('y', 0 - margin.top / 15)
+									.attr('font-size', '65%');
+
+								let heading = g.append('g') //// append text to global
+									.append('text')
+									.text('WORKING ON THE DATA_NYC DCLA Grantees 2015: Museum Curators')
+									// .attr('x', -125)
+									// .attr('y', -48)
+									.attr('x', 0 - margin.left)
+									.attr('y', 0 - margin.top / 1.2)
+									.attr('font-size', '80%');
+
+								let subhead1 = g.append('g')
+									.append('text') /////to site text you can always do negative values to be outside the chart
+									.text('Out of 7,647 staff at museums with budgets over $999,999, 318 are curators')
+									.attr('x', 0 - margin.left)
+									.attr('y', 0 - margin.top / 1.9)
+									.attr('font-size', '65%');
+
+								let subhead2 = g.append('g')
+									.append('text')
+									.text('132 of those curators were hired between 2010-2015')
+									.attr('x', 0 - margin.left)
+									.attr('y', 0 - margin.top / 3)
+									.attr('font-size', '65%');
+
+								let legend = g.append("g");
+								svg.append()
+									.attr("class", "legend")
+									.attr("height", 120)
+									.attr("width", 100)
+									.attr('transform', 'translate(20,50)')
+									.style("font-size", "10px");
+								// .call(d3.legend);
+
+								legend.selectAll('rect')
+									//.data(d)
+									.enter()
+									.append("rect")
+									.attr("x", width - 65)
+									.attr("y", function (d, i) {
+										return i * 20;
+									})
+									.attr("width", 2)
+									.attr("height", 5)
+									.style("fill", function (d) {
+										var color = color_legend[dataset.indexOf(d)][1];
+										return color;
+									})
+
+								legend.selectAll('text')
+									//.data(d)
+									.enter()
+									.append("text")
+									.attr("x", width - 52)
+									.attr("y", function (d, i) {
+										return i * 20 + 9;
+									})
+									.text(function (d) {
+										var text = color_legend[dataset.indexOf(d)][0];
+										return text;
+									});
+
+								//////////
+								// 12. Appends a circle for each datapoint 
+
+								// svg.selectAll('circle') ////\\circle
+								//     .data(all1tot1)
+								// 	.enter().append("circle") //Uses the enter().append() method
+								//     .attr("class", "dot") // Assign a class for styling
+								//     .attr('fill', 'pink')
+								//     .attr('stroke', 'pink')
+								//     .attr('stroke-width', 1)
+								//     .attr("cx", function(d,i) { return xScale(i) })////\\same xScale & 
+								//     .attr("cy", function(d,i) { return yScale(i) })////\\same yScale as above
+								//     // .attr("cx", function(d,i) { return xScale(i) })////\\same xScale & 
+								//     // .attr("cy", function(d,i) { return yScale(d) })////\\same yScale as above
+								//     .attr("r", 5)
+								//  	.on('mouseenter', function(d){
+								//             // console.log('hover');
+								//             // console.log(d)
+								//             heading.text('Last five years: number of ' + 'curators at all levels: ' + d); 
+								//          });
+
+
+							};
+		</script>
+
+	</body>
+
+</html>

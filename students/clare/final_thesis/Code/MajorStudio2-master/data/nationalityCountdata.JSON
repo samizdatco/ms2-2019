@@ -1,0 +1,402 @@
+[
+  {
+    "nationality": "American",
+    "count": 6930
+  },
+  {
+    "nationality": "",
+    "count": 776
+  },
+  {
+    "nationality": "British",
+    "count": 649
+  },
+  {
+    "nationality": "German",
+    "count": 209
+  },
+  {
+    "nationality": "Japanese",
+    "count": 134
+  },
+  {
+    "nationality": "Mexican",
+    "count": 133
+  },
+  {
+    "nationality": "French",
+    "count": 125
+  },
+  {
+    "nationality": "Italian",
+    "count": 96
+  },
+  {
+    "nationality": "American, born Hungary",
+    "count": 96
+  },
+  {
+    "nationality": "Canadian",
+    "count": 86
+  },
+  {
+    "nationality": "American, born Russia",
+    "count": 85
+  },
+  {
+    "nationality": "Spanish",
+    "count": 70
+  },
+  {
+    "nationality": "Israeli",
+    "count": 62
+  },
+  {
+    "nationality": "Russian",
+    "count": 56
+  },
+  {
+    "nationality": "Dutch",
+    "count": 54
+  },
+  {
+    "nationality": "Australian",
+    "count": 40
+  },
+  {
+    "nationality": "Chilean",
+    "count": 37
+  },
+  {
+    "nationality": "Czech",
+    "count": 37
+  },
+  {
+    "nationality": "American, born Germany",
+    "count": 36
+  },
+  {
+    "nationality": "Austrian",
+    "count": 32
+  },
+  {
+    "nationality": "Romanian",
+    "count": 31
+  },
+  {
+    "nationality": "Polish",
+    "count": 29
+  },
+  {
+    "nationality": "Haitian",
+    "count": 28
+  },
+  {
+    "nationality": "American, juh",
+    "count": 28
+  },
+  {
+    "nationality": "Swedish",
+    "count": 27
+  },
+  {
+    "nationality": "Swiss",
+    "count": 24
+  },
+  {
+    "nationality": "Brazilian",
+    "count": 22
+  },
+  {
+    "nationality": "Cuban",
+    "count": 22
+  },
+  {
+    "nationality": "Venezuelan",
+    "count": 21
+  },
+  {
+    "nationality": "Argentine",
+    "count": 20
+  },
+  {
+    "nationality": "Colombian",
+    "count": 17
+  },
+  {
+    "nationality": "Puerto Rican",
+    "count": 15
+  },
+  {
+    "nationality": "Scottish",
+    "count": 14
+  },
+  {
+    "nationality": "American, born China",
+    "count": 14
+  },
+  {
+    "nationality": "Panamanian",
+    "count": 13
+  },
+  {
+    "nationality": "American, born Israel",
+    "count": 11
+  },
+  {
+    "nationality": "Korean",
+    "count": 9
+  },
+  {
+    "nationality": "American, born Mexico",
+    "count": 9
+  },
+  {
+    "nationality": "Swedish, born Brazil",
+    "count": 8
+  },
+  {
+    "nationality": "Norwegian",
+    "count": 7
+  },
+  {
+    "nationality": "American, born England",
+    "count": 6
+  },
+  {
+    "nationality": "Hungarian",
+    "count": 6
+  },
+  {
+    "nationality": "American, born Puerto Rico",
+    "count": 5
+  },
+  {
+    "nationality": "Belgian",
+    "count": 5
+  },
+  {
+    "nationality": "Jamaican",
+    "count": 5
+  },
+  {
+    "nationality": "Chinese",
+    "count": 5
+  },
+  {
+    "nationality": "American and Latvian",
+    "count": 4
+  },
+  {
+    "nationality": "English",
+    "count": 4
+  },
+  {
+    "nationality": "American, born Ukraine",
+    "count": 4
+  },
+  {
+    "nationality": "Indian",
+    "count": 4
+  },
+  {
+    "nationality": "British-Nigerian",
+    "count": 3
+  },
+  {
+    "nationality": "American, born Lithuania",
+    "count": 3
+  },
+  {
+    "nationality": "American, born Romania",
+    "count": 3
+  },
+  {
+    "nationality": "American, born India",
+    "count": 3
+  },
+  {
+    "nationality": "Finnish",
+    "count": 3
+  },
+  {
+    "nationality": "Danish",
+    "count": 3
+  },
+  {
+    "nationality": "French, born Russia",
+    "count": 3
+  },
+  {
+    "nationality": "Uruguayan",
+    "count": 2
+  },
+  {
+    "nationality": "American, born Ecuador",
+    "count": 2
+  },
+  {
+    "nationality": "British, 1928-2016",
+    "count": 2
+  },
+  {
+    "nationality": "Irish",
+    "count": 2
+  },
+  {
+    "nationality": "American, born Barbados",
+    "count": 2
+  },
+  {
+    "nationality": "Thai",
+    "count": 2
+  },
+  {
+    "nationality": "Guatemalan",
+    "count": 2
+  },
+  {
+    "nationality": "American, born Chile",
+    "count": 2
+  },
+  {
+    "nationality": "American, born Iran",
+    "count": 2
+  },
+  {
+    "nationality": "Spanish, born Philippines",
+    "count": 2
+  },
+  {
+    "nationality": "Egyptian",
+    "count": 2
+  },
+  {
+    "nationality": "Mexican Spanish",
+    "count": 2
+  },
+  {
+    "nationality": "Yugoslavian",
+    "count": 2
+  },
+  {
+    "nationality": "Israeli, born Morocco",
+    "count": 2
+  },
+  {
+    "nationality": "British and Palestinian",
+    "count": 1
+  },
+  {
+    "nationality": "Native American, Flathead",
+    "count": 1
+  },
+  {
+    "nationality": "Ghanaian",
+    "count": 1
+  },
+  {
+    "nationality": "Cuban American",
+    "count": 1
+  },
+  {
+    "nationality": "Kenyan",
+    "count": 1
+  },
+  {
+    "nationality": "Pakistani",
+    "count": 1
+  },
+  {
+    "nationality": "Lebanese",
+    "count": 1
+  },
+  {
+    "nationality": "Moroccan",
+    "count": 1
+  },
+  {
+    "nationality": "Czechoslovakian",
+    "count": 1
+  },
+  {
+    "nationality": "Native American, Cree",
+    "count": 1
+  },
+  {
+    "nationality": "Slovenian",
+    "count": 1
+  },
+  {
+    "nationality": "American, born Switzerland,",
+    "count": 1
+  },
+  {
+    "nationality": "Turkish",
+    "count": 1
+  },
+  {
+    "nationality": "Greek",
+    "count": 1
+  },
+  {
+    "nationality": "British, born Ireland",
+    "count": 1
+  },
+  {
+    "nationality": "American, born Honduras",
+    "count": 1
+  },
+  {
+    "nationality": "Bolivian",
+    "count": 1
+  },
+  {
+    "nationality": "Native American, Apache, Chiricahua",
+    "count": 1
+  },
+  {
+    "nationality": "Bahamian",
+    "count": 1
+  },
+  {
+    "nationality": "Dominican",
+    "count": 1
+  },
+  {
+    "nationality": "American, born Argentina",
+    "count": 1
+  },
+  {
+    "nationality": "American, born France",
+    "count": 1
+  },
+  {
+    "nationality": "Canadian, born Romania",
+    "count": 1
+  },
+  {
+    "nationality": "American, born Cuba",
+    "count": 1
+  },
+  {
+    "nationality": "Ukrainian",
+    "count": 1
+  },
+  {
+    "nationality": "Pakistani American",
+    "count": 1
+  },
+  {
+    "nationality": "Guyanese",
+    "count": 1
+  },
+  {
+    "nationality": "South African",
+    "count": 1
+  },
+  {
+    "nationality": "American, born Aruba",
+    "count": 1
+  }
+]

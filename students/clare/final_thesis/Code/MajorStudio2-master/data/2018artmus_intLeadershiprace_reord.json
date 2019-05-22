@@ -1,0 +1,111 @@
+[
+        {
+        "id": 0,
+        "raceethnicity": "AIAN *",
+        "raceethnicityfull": "American Indian or Alaskan Native",
+        "year15": 5,
+        "year18": 3,
+        "yearline": 5,
+        "percentdifference": "- 40"
+        },
+        {
+        "id": 1,
+        "raceethnicity": "AIAN *",
+        "raceethnicityfull": "American Indian or Alaskan Native",
+        "year15": 5,
+        "year18": 3,
+        "yearline": 3,
+        "percentdifference": "- 40"
+        },
+         {
+        "id": 2,
+        "raceethnicity": "Hispanic",
+        "raceethnicityfull": "Hispanic",
+        "year15": 112,
+        "year18": 133,
+        "yearline": 112,
+        "percentdifference": 18.75
+        },
+         {
+        "id": 3,
+        "raceethnicity": "Hispanic",
+        "raceethnicityfull": "Hispanic",
+        "year15": 112,
+        "year18": 133,
+        "yearline": 133,
+        "percentdifference": 18.75
+        },
+         {
+        "id": 4,
+        "raceethnicity": "Asian",
+        "raceethnicityfull": "Asian",
+        "year15": 214,
+        "year18": 305,
+        "yearline": 214,
+        "percentdifference": 42.52
+        },
+        {
+        "id": 5,
+        "raceethnicity": "Asian",
+        "raceethnicityfull": "Asian",
+        "year15": 214,
+        "year18": 305,
+        "yearline": 305,
+        "percentdifference": 42.52
+        },
+        {
+        "id": 6,
+        "raceethnicity": "NHPI *",
+        "raceethnicityfull": "Native Hawaiian or other Pacific Islander",
+        "year15": 7,
+        "year18": 10,
+        "yearline": 7,
+        "percentdifference": 42.86
+        },
+        {
+        "id": 7,
+        "raceethnicity": "NHPI *",
+        "raceethnicityfull": "Native Hawaiian or other Pacific Islander",
+        "year15": 7,
+        "year18": 10,
+        "yearline": 10,
+        "percentdifference": 42.86
+        },
+       
+        {
+        "id": 8,
+        "raceethnicity": "Black or African American",
+        "raceethnicityfull": "Black or African American",
+        "year15": 172,
+        "year18": 278,
+        "yearline": 172,
+        "percentdifference": 61.63
+        },
+        {
+        "id": 9,
+        "raceethnicity": "Black or African American",
+        "raceethnicityfull": "Black or African American",
+        "year15": 172,
+        "year18": 278,
+        "yearline": 278,
+        "percentdifference": 61.63
+        },
+        {
+        "id": 10,
+        "raceethnicity": "Two Or More Races",
+        "raceethnicityfull": "Two Or More Races",
+        "year15": 74,
+        "year18": 161,
+        "yearline": 74,
+        "percentdifference":  117.56
+        },
+        {
+        "id": 11,
+        "raceethnicity": "Two Or More Races",
+        "raceethnicityfull": "Two Or More Races",
+        "year15": 74,
+        "year18": 161,
+        "yearline": 161,
+        "percentdifference": 117.56
+        }
+]

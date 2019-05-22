@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "jobtype": "Artist/Performer",
+        "dat": [0,1,1,5,0,7,0]
+    },
+    {
+        "id": 1,
+        "jobtype": "Board",
+        "dat": [0,53,50,42,2,636,19]
+    },
+    {
+        "id": 2,
+        "jobtype": "Community/Engagement",
+        "dat": [0,5,9,15,2,55,0]
+    },
+    {   
+        "id": 3,
+        "jobtype": "Curator",
+        "dat": [2,23,5,14,4,270,0]
+    },
+    {
+        "id": 4,
+        "jobtype": "Designer",
+        "dat": [0,12,1,4,3,44,1]
+    },
+    {
+        "id": 5,
+        "jobtype": "Development",
+        "dat": [0,25,15,9,8,200,2]
+    },
+    {
+        "id": 6,
+        "jobtype": "Editorial",
+        "dat": [0,6,1,1,1,49,0]
+    },
+    {
+        "id": 7,
+        "jobtype": "Education",
+        "dat": [3,80,157,156,25,670,10]
+    },
+    {
+        "id": 8,
+        "jobtype": "Facilities",
+        "dat": [3,51,186,113,5,194,1]
+    },
+    {
+        "id": 9,
+        "jobtype": "Finance",
+        "dat": [0,34,37,19,2,92,1]
+    },
+    {
+        "id": 10,
+        "jobtype": "IT/Web Development",
+        "dat": [0,27,19,14,1,98,0]
+    },
+    {
+        "id": 11,
+        "jobtype": "Leadership",
+        "dat": [0,9,7,6,2,175,0]
+    },
+    {
+        "id": 12,
+        "jobtype": "Librarian",
+        "dat": [0,8,6,7,2,60,4]
+    },
+    {
+        "id": 13,
+        "jobtype": "Marketing/PR",
+        "dat": [0,12,5,9,3,110,2]
+    },
+    {
+        "id": 14,
+        "jobtype": "Membership/Constituent Services",
+        "dat": [1,14,20,10,8,77,0]
+    },
+    {
+        "id": 15,
+        "jobtype": "Programming",
+        "dat": [0,8,10,7,2,31,0]
+    },
+    {
+        "id": 16,
+        "jobtype": "Project/Exhibition",
+        "dat": [2,29,23,31,15,471,12]
+    },
+    {
+        "id": 17,
+        "jobtype": "Retail/Merchandise",
+        "dat": [1,50,89,85,3,196,0]
+    },
+    {
+        "id": 18,
+        "jobtype": "Security",
+        "dat": [5,111,355,138,12,424,2]
+    },
+    { 
+        "id": 19,
+        "jobtype": "Support/Administration",
+        "dat": [0,14,44,27,6,149,1]
+    },
+    {
+        "id": 20,
+        "jobtype": "Technical Production",
+        "dat": [0,31,10,11,9,251,5]
+    },
+    {
+        "id": 21,
+        "jobtype": "Visitor/Patron Services",
+        "dat": [3,62,115,43,23,270,3]
+    }
+]

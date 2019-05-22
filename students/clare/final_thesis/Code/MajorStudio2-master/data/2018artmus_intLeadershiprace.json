@@ -1,0 +1,39 @@
+[
+        {
+        "id": 0,
+        "raceethnicity": "Native Hawaiian or other Pacific Islander",
+        "year15": 7,
+        "year18": 10
+        },
+        {
+        "id": 1,
+        "raceethnicity": "American Indian or Alaskan Native",
+        "year15": 5,
+        "year18": 3
+        },
+        {
+
+        "id": 2,
+        "raceethnicity": "Asian",
+        "year15": 214,
+        "year18": 305
+        },
+        {
+        "id": 3,
+        "raceethnicity": "Black or African American",
+        "year15": 172,
+        "year18": 278
+        },
+         {
+        "id": 4,
+        "raceethnicity": "Hispanic",
+        "year15": 112,
+        "year18": 133
+        },
+        {
+        "id": 5,
+        "raceethnicity": "Two Or More Races",
+        "year15": 74,
+        "year18": 161
+        }
+]

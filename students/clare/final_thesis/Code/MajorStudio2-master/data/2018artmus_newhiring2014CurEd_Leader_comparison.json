@@ -1,0 +1,63 @@
+[{
+
+        "id": 0,
+        "raceethnicity": "Asian",
+        "jobtype": "curators & educators",
+        "percent": 7
+        },
+        {
+
+        "id": 0,
+        "raceethnicity": "Asian",
+        "jobtype": "museum leadership & conservators",
+        "percent": 3 
+        },
+        {
+        "id": 1,
+        "raceethnicity": "Black or African American",
+        "jobtype": "curators & educators",
+        "percent": 11
+        },
+        {
+        "id": 1,
+        "raceethnicity": "Black or African American",
+        "jobtype": "museum leadership & conservators",
+        "percent": 4
+        },
+        {
+        "id": 2,
+        "raceethnicity": "Hispanic",
+        "jobtype": "curators & educators",
+        "percent": 5
+        },
+        {
+        "id": 2,
+        "raceethnicity": "Hispanic",
+        "jobtype": "museum leadership & conservators",
+        "percent": 3
+        },
+        {
+        "id": 3,
+        "raceethnicity": "two or more races",
+        "jobtype": "curators & educators",
+        "percent": 6
+        },
+        {
+        "id": 3,
+        "raceethnicity": "two or more races",
+        "jobtype": "museum leadership & conservators",
+        "percent": 2
+        },
+        {
+        "id": 4,
+        "raceethnicity": "white",
+        "jobtype": "curators & educators",
+        "percent": 70
+        },
+        {
+        "id": 4,
+        "raceethnicity": "white",
+        "jobtype": "museum leadership & conservators",
+        "percent": 88 
+        }
+]

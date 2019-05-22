@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--data wrangling full data set-->
+<!--Bkyln museum reading Cont Collection -->
+<html>
+    <head>
+        <title>Bk artworks</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" src="d3.min.js"></script>
+           <!--<script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>-->
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            circle {
+            	background-color: pink;
+            }
+        </style>
+
+        <div id="svg1"></div>
+         <!--I think it’s best to work with just one svg and use groups inside that-->
+       
+        <!--<div id="legend"></div>-->
+      
+    </head>
+     <body onresize='window.location.reload(true)'>
+        <script>
+
+      
+//  full data set			
+        d3.json("BrooklynContCol10253_Fullclean.json").then((data)=>{
+    		svg(data);
+			console.log(data);
+        });
+        
+	var margin = {top: 30, right: 40, bottom: 30, left: 40};
+	var width = 1000 - margin.left - margin.right; // Use the window's width 
+	var height = 450 - margin.top - margin.bottom; // Use the window's height
+
+           
+            let graph = d3.select('#svg1') ////here select named svg and put it into the var 
+                    .append('svg')  ////then append an svg 
+                    .attr('width', width)
+                    .attr('height', height);
+
+            let svg = (data) => {
+                // settings
+                let margin = {top: 30, right: 40, bottom: 30, left: 40};
+                let width = 1000 - margin.left - margin.right; // Use the window's width
+                let height = 1000 - margin.top - margin.bottom; // Use the window's height
+  
+            
+        //  var g = svg.append('g')    ////then append to global g - so now the div svg is appended
+        //      ///note for multiple svgs you need a new g variable so you'd have g1, g2, etc
+        //     	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        // // console.log(width);  ////the above transform gives the space around the chart
+             
+        
+            
+            // let svgPlot = (data) => { ////need to call a different svgPlot 
+                // console.log(data); ////with each chart for multiple charts
+            
+///////////=====================   
+////callout
+      let heading = graph.append('text')  //// append text to global
+                    .text('artworks Brooklyn Museum contemporary collection')
+                    .attr('x', 50)
+                    .attr('y', 50)
+                    .attr('font-size', '100%'); 
+                
+     //////Appends text to #svg1 - to the browser    
+          let svg = data.forEach((d, i) => { ///////
+                    d3.select('#svg1')
+                        .append('text') ////this writes text in the browser
+                        // .text(d.artists)
+                        .text(d.artists[0].name + '   |   ' + d.artists[0].nationality + ' | ' + d.artists[0].dates + '------ ')
+                        // .text(d.artists[0].nationality + ' | ' + '--')
+                        // .text(d.artists[0].name + '--')
+                        // .text(d.artists[0].id)
+                        .attr("x", 30)
+                        .attr("y", 30)
+                        // .attr('fill', 'red')
+                        .attr('font-size', '14px')
+                        // console.log(d.artists[0].name + ' | ' + d.artists[0].nationality + ' | ' + d.artists[0].dates) /////works to list each name with nationality
+                        // console.log(d.artists[0])  ////works to return array 
+                        // console.log(d.artists[0].dates) ////works to return just the info within dates
+                        // console.log(d.artists[0].nationality); ////WORKS to return nationality within artist array
+                        // console.log(d.length)
+                });
+             
+//// preprocess the data with array.filter to NOT include empty artists arrays
+                            const filtered = data.filter((d)=>{
+                                return d.artists[0] !== "[]";
+                            });
+                            console.log(filtered);
+                            
+                          
+                            // const circles = svg.selectAll('circle').data(filtered)
+                            
+                            // const circlestages = svg.selectAll('text')
+                            // 						.data(filtered)
+   
+              	var newData = filtered;  ////arrays that contain artist data
+  
+                let nested_data = d3.nest()
+                        .key(function(newData) { 
+                            return newData.artists[0].nationality; 
+                        })
+                        .entries(newData);
+                        // console.log(nested_data); //// return filtered data
+                    
+      //// map is a very useful method in JavaScript to re-arrange arrays
+                // it takes a bit to get used to it, but then it’s really helpful for tasks like this
+                // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+                
+                // The new variable nationalityCount is the result of the map method
+                // I’m applying the map method on the nested_data array
+                // I can define a arrow function that is applied to every element in the array
+                // In parentheses I define the parameters (e,i) which are arbitrary, but work like (d,i) in d3
+                // Every element in the array is replace by what I *return* in the function
+                // In this case a new object, with the nationality name and the length of the nested array
+                var nationalityCount = nested_data.map((e,i) => { 
+                    return {nationality: e.key, count: e.values.length};
+                });
+                // console.log(nationalityCount[0].count)
+                // console.log(nationalityCount)  
+                console.log(nationalityCount.length);
+ /////then sort to order by number
+               // Sort works similar, but the sorting logic is a bit unintuitive
+                // You have to define to parameters, and a comparison like '>' that returns a boolean
+                // the ? -1 : 1 is just a very concise ways to write an if else statement
+                // It’s not necessary to remember this syntax, I look it up, when I need it, too
+                // nationalityCount = nationalityCount.sort((a, b) => (a.count > b.count) ? -1 : 1); // This is to sort the array large to small
+              nationalityCount = nationalityCount.sort((a, b) => (a.count > b.count) ? 1 : -1); // small to large
+
+                
+               console.log(nationalityCount);   /////returns the count of each group in order      
+  
+  ////to get max number
+            let nat = nested_data.map((e,i) => { 
+                    return {count: e.values.length}; /////returns count: value
+                });
+            console.log(nat);  //////just the counts
+               
+               
+               var maxnatct = nat.map(function (art) {
+                  return art.count;   ////returns just the values
+                    });
+            
+            console.log(maxnatct);
+            // d3.max(nat);
+            
+             let maxnatcount = d3.max(maxnatct);
+            console.log(maxnatcount);   //////max number
+            
+            
+          //////dataset too large for AWS
+          
+/////use square root to get the area 
+            let radarea = d3.scaleSqrt()    ////to get area of circles need square root 
+                                .domain([0, (maxnatcount)])  
+                                .range([0, 600]);
+                            // console.log(radarea(maxnatcount))
+      
+            let circles = graph.selectAll("g") ///// selectAll selects every child in the selection
+                                .data(nationalityCount)
+                                .enter()
+                                .append("g")
+                                .attr('fill', 'none')
+                                .attr('stroke', 'pink')
+                       
+                                // .attr("cx", (d, i) => { 
+                                //     // return (d.count);  /////this gives the count for each 
+                                //     //////but count is probably not correct for the x and y
+                                //     return (i /4000 ) + 100;  //// Q2 why not multiple circles??
+                                //     // return (i * 50 + 200);
+                                // })
+                      
+                                // .attr("cy", height/2)
+                                // .attr("cy", (d, i) => { 
+                                //     return (i + 10);  //// Q2 why not multiple circles??
+                                //     // return (i * 50 + 200);
+                                // })
+                                // .attr("r", (d, i) => {
+                                //         return radarea(d)  //////this seems the way to approach this
+                                //         // return radius(d.count);  //////this seems the way to approach this
+                                // })
+                                .on('mouseover', (d) =>  {       ///// text on hover  
+   	                                      text                         
+                			        .text(d.nationality + ' - ' + d.count + '------ ')
+        
+                				// d3.select(this).select('text')
+                    //  				.text((d) => { return d.nationality + ' | ' + d.count + '------ '; })
+	                   //             d3.select(this).select('rect')      //////makes hover bar a diff color
+                    // 				.style('fill', 'blue');
+                                	})
+                            	.on('mouseout', function(d) {
+                            	    text
+                            	    .text(function (d) { 
+                            		d3.select(this).select('text')
+                            		    .text((d) => { return (d.nationality + ' - ' + d.count + '------ ')
+                            		    });
+                                })
+                            	})
+    //////using radarea here
+    // let text = graph.append("g")
+    let text = graph.append("text")
+                    .data(nationalityCount)
+                    .enter()
+                    .append("g"); 
+        /////BUT also makes a set of global under the circles not with each circle
+                    //   .attr("cx", (d, i) => { 
+                    //                 // return d[1].count/20;
+                    //                 // return(d.nationality + ' | ' + d.count + '------ ')
+                    //                 return (i);
+                    //                 // return (i + 1) + 100;  
+                    //                 // return (i * 50 + 200);
+                    //             })
+                    //   .attr("cy", height/2.5)  /////this is for below the circle or do i do this to area radius?
+                    //   .text(d.nationality + ' | ' + d.count + '------ ');
+                    //   .text((d, i) => i)
+                //       .text(function (d, i) { 
+                //                     return(d.nationality + ' - ' + d.count + '------ ')
+                // });                                                                     
+ 
+  //////draw circles
+                circles.append("circle")
+                    .attr("cx", (d, i) => { 
+   
+                                    // return ((i + (radarea(d.count))*8) + 150);
+                                    return (i * 350 + radarea(d.count));  ///////for spacing circles
+                         })
+                    .attr("cy", 200)
+                    .attr("r", (d, i) => {   //////for relative area of circles pass sqrt scale function
+                                return radarea(d.count);  //////this works to return circle area
+                            })
+                    // .attr('fill', 'pink')
+                    .attr("value", (d) => {
+                        return d.count;
+                    });
+                    // .text(function(d) {
+                    // return d.key; });        
+     
+                	// name label
+   
+                    circles.append("text")
+                            .attr('font-size', "30px")
+                            .style('fill', 'green')
+                             .attr("cx", (d, i) => { 
+                    //                 return (d.count);  /////this gives the count for each 
+                    //                 //////but count is probably not correct for the x and y
+                                    return ((i * 8) + 5000);
+                                    // return ((i / 5) );
+                         })
+                        // .attr("cy", (d, i) => { 
+                        // //                 return (d.count);  /////this gives the count for each 
+                        // //                 //////but count is probably not correct for the x and y
+                        //                 return (100);
+                        //      })   
+                        .attr("cy", 5000)
+                		.text((d) => { 
+                		    return d.nationality + ' | ' + d.count + '------ '; 
+                		})
+                		.attr('transform', (d) => { return "translate(" + this.margin.left + "," + this.margin.top + ")"; }); // concatinating strings
+          
+                            
+// // 7. d3's line generator - example
+// // var line = d3.line()
+// //     .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
+// //     .y(function(d) { return yScale(d.y); }) // set the y values for the line generator 
+    
+};
+
+////===============
+ </script>
+        
+    </body>
+</html>
