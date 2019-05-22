@@ -13,9 +13,8 @@ This final_thesis folder contains:
 
 1) Thesis: pdf format 
 
-[thesis word document](https://github.com/samizdatco/ms2-2019/tree/master/students/clare/final_thesis)
 
-[thesis pdf document](https://github.com/samizdatco/ms2-2019/tree/master/students/clare/final_thesis)
+[thesis pdf document](https://github.com/samizdatco/ms2-2019/tree/master/students/clare/final_thesis/Thesis)
 
 
 2) Code: 	index.html
