@@ -7,3 +7,5 @@ Catering to America’s material overflow, the self-storage industry has explode
 <br> 
 <br>
 <b> Data References/Sources: </b> IBISWorld Storage & Warehouse Leasing in the US December 2018 Report, <a href="https://www.sparefoot.com/self-storage/news/1432-self-storage-industry-statistics/"> Sparefoot. </a> Survey data was from the 2017 Self-Storage Demand Study via the 2019 Self-Storage Almanac, which was generously provided to me by the editor Erica Shatzer upon my research interview with her regarding this project.
+<br> <br>
+<b>Link to live site:</b> <a href="https://graceiseverywhere.github.io/thesis/index.html"> Self-Storage Nation. </a>
