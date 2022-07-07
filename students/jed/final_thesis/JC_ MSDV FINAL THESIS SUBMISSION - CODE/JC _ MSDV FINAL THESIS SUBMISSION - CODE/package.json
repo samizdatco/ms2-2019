@@ -24,7 +24,7 @@
     "d3": "^5.9.2",
     "d3-cloud": "^1.2.5",
     "fast-xml-parser": "^3.12.16",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "querystring": "^0.2.0",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
